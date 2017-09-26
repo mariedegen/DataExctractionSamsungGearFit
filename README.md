@@ -1,2 +1,2 @@
 # dataextraction
-Data Extaction from a connected bracelet (Samasung Gear Fit 2)
+Data Extaction from a connected bracelet (Samsung Gear Fit 2)
