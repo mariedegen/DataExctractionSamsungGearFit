@@ -14,3 +14,173 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.tizen.common.ui.Startup 1 0 2017-09-26 11:04:51.529
 !MESSAGE SDK Information: Path [C:\tizen-studio], Data Path [C:\tizen-studio-data], Platform Path [C:\tizen-studio\platforms\tizen-3.0\wearable]
+
+!ENTRY org.tizen.common.connection.toolbar.TargetToolBarManager 4 0 2017-09-26 17:12:15.172
+!MESSAGE [2017.09.26 17:12:15][ERROR] TargetToolBarManager.java(384) - Failed to get VM property
+
+
+!ENTRY org.tizen.common.connection 4 0 2017-09-26 17:12:15.211
+!MESSAGE Problem occurred while launching a emulator.
+
+!ENTRY org.tizen.common.connection.toolbar.TargetToolBarManager 4 0 2017-09-26 17:12:22.803
+!MESSAGE [2017.09.26 17:12:22][ERROR] TargetToolBarManager.java(384) - Failed to get VM property
+
+
+!ENTRY org.tizen.common.connection 4 0 2017-09-26 17:12:22.834
+!MESSAGE Problem occurred while launching a emulator.
+
+!ENTRY org.tizen.common.connection.toolbar.TargetToolBarManager 4 0 2017-09-26 17:12:29.007
+!MESSAGE [2017.09.26 17:12:29][ERROR] TargetToolBarManager.java(384) - Failed to get VM property
+
+
+!ENTRY org.tizen.common.connection 4 0 2017-09-26 17:12:29.023
+!MESSAGE Problem occurred while launching a emulator.
+
+!ENTRY org.tizen.common.connection.toolbar.TargetToolBarManager 4 0 2017-09-26 17:14:47.742
+!MESSAGE [2017.09.26 17:14:47][ERROR] TargetToolBarManager.java(384) - Failed to get VM property
+
+
+!ENTRY org.tizen.common.connection 4 0 2017-09-26 17:14:47.758
+!MESSAGE Problem occurred while launching a emulator.
+
+!ENTRY org.eclipse.core.contenttype 4 0 2017-09-26 17:19:33.801
+!MESSAGE Could not create content describer for org.tizen.common.externals.zipfile. Content type has been disabled.
+!STACK 0
+java.lang.IllegalStateException: org.eclipse.core.internal.content.LowLevelIOException
+	at zipeditor.model.ZipModel.detectType(ZipModel.java:139)
+	at zipeditor.model.ZipContentDescriber.detectType(ZipContentDescriber.java:61)
+	at zipeditor.model.ZipContentDescriber.describe(ZipContentDescriber.java:43)
+	at org.eclipse.core.internal.content.ContentType.describe(ContentType.java:166)
+	at org.eclipse.core.internal.content.ContentType.internalGetDescriptionFor(ContentType.java:477)
+	at org.eclipse.core.internal.content.ContentTypeCatalog.getDescriptionFor(ContentTypeCatalog.java:367)
+	at org.eclipse.core.internal.content.ContentTypeCatalog.getDescriptionFor(ContentTypeCatalog.java:371)
+	at org.eclipse.core.internal.content.ContentTypeMatcher.getDescriptionFor(ContentTypeMatcher.java:91)
+	at org.eclipse.core.internal.resources.ContentDescriptionManager.readDescription(ContentDescriptionManager.java:454)
+	at org.eclipse.core.internal.resources.ContentDescriptionManager.getDescriptionFor(ContentDescriptionManager.java:364)
+	at org.eclipse.core.internal.resources.File.getContentDescription(File.java:255)
+	at zipeditor.ZipContentProvider.isForUs(ZipContentProvider.java:137)
+	at zipeditor.ZipContentProvider.hasChildren(ZipContentProvider.java:107)
+	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider.hasChildren(SafeDelegateTreeContentProvider.java:112)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.callNormalHasChildren(NavigatorContentServiceContentProvider.java:444)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.access$4(NavigatorContentServiceContentProvider.java:439)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider$3.run(NavigatorContentServiceContentProvider.java:407)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.hasChildren(NavigatorContentServiceContentProvider.java:392)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.hasChildren(NavigatorContentServiceContentProvider.java:436)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.isExpandable(AbstractTreeViewer.java:2131)
+	at org.eclipse.jface.viewers.TreeViewer.isExpandable(TreeViewer.java:553)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.isExpandable(AbstractTreeViewer.java:2169)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.updatePlus(AbstractTreeViewer.java:2861)
+	at org.eclipse.jface.viewers.TreeViewer.updatePlus(TreeViewer.java:804)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.updateChildren(AbstractTreeViewer.java:2749)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefreshStruct(AbstractTreeViewer.java:1916)
+	at org.eclipse.jface.viewers.TreeViewer.internalRefreshStruct(TreeViewer.java:684)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1891)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1848)
+	at org.eclipse.ui.navigator.CommonViewer.internalRefresh(CommonViewer.java:527)
+	at org.eclipse.jface.viewers.StructuredViewer$8.run(StructuredViewer.java:1554)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1462)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:366)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1423)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1551)
+	at org.eclipse.jface.viewers.ColumnViewer.refresh(ColumnViewer.java:534)
+	at org.eclipse.ui.navigator.CommonViewer.refresh(CommonViewer.java:344)
+	at org.eclipse.ui.navigator.CommonViewer.refresh(CommonViewer.java:490)
+	at org.eclipse.cdt.ui.CElementContentProvider$RefreshElement.refresh(CElementContentProvider.java:367)
+	at org.eclipse.cdt.ui.CElementContentProvider$1.run(CElementContentProvider.java:452)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+Caused by: org.eclipse.core.internal.content.LowLevelIOException
+	at org.eclipse.core.internal.content.LazyInputStream.ensureAvailable(LazyInputStream.java:67)
+	at org.eclipse.core.internal.content.LazyInputStream.read(LazyInputStream.java:124)
+	at zipeditor.model.ZipModel.detectType(ZipModel.java:94)
+	... 65 more
+
+!ENTRY org.tizen.common.externals 4 0 2017-09-26 17:19:33.830
+!MESSAGE Resource '/dataextraction/org.example.dataextraction.zip' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/dataextraction/org.example.dataextraction.zip' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:334)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:208)
+	at org.eclipse.core.internal.resources.File.getContentDescription(File.java:247)
+	at zipeditor.ZipContentProvider.isForUs(ZipContentProvider.java:137)
+	at zipeditor.ZipContentProvider.hasChildren(ZipContentProvider.java:107)
+	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider.hasChildren(SafeDelegateTreeContentProvider.java:112)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.callNormalHasChildren(NavigatorContentServiceContentProvider.java:444)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.access$4(NavigatorContentServiceContentProvider.java:439)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider$3.run(NavigatorContentServiceContentProvider.java:407)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.hasChildren(NavigatorContentServiceContentProvider.java:392)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.hasChildren(NavigatorContentServiceContentProvider.java:436)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.isExpandable(AbstractTreeViewer.java:2131)
+	at org.eclipse.jface.viewers.TreeViewer.isExpandable(TreeViewer.java:553)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.isExpandable(AbstractTreeViewer.java:2169)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.optionallyPruneChildren(AbstractTreeViewer.java:2810)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.updateChildren(AbstractTreeViewer.java:2610)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefreshStruct(AbstractTreeViewer.java:1916)
+	at org.eclipse.jface.viewers.TreeViewer.internalRefreshStruct(TreeViewer.java:684)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefreshStruct(AbstractTreeViewer.java:1923)
+	at org.eclipse.jface.viewers.TreeViewer.internalRefreshStruct(TreeViewer.java:684)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1891)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1848)
+	at org.eclipse.ui.navigator.CommonViewer.internalRefresh(CommonViewer.java:527)
+	at org.eclipse.jface.viewers.StructuredViewer$8.run(StructuredViewer.java:1554)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1462)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:366)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1423)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1551)
+	at org.eclipse.jface.viewers.ColumnViewer.refresh(ColumnViewer.java:534)
+	at org.eclipse.ui.navigator.CommonViewer.refresh(CommonViewer.java:344)
+	at org.eclipse.ui.navigator.CommonViewer.refresh(CommonViewer.java:490)
+	at org.eclipse.cdt.ui.CElementContentProvider$RefreshElement.refresh(CElementContentProvider.java:367)
+	at org.eclipse.cdt.ui.CElementContentProvider$1.run(CElementContentProvider.java:452)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2017-09-26 17:19:33.831
+!MESSAGE Resource '/dataextraction/org.example.dataextraction.zip' does not exist.

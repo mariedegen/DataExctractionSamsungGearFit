@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="3.0" package="org.example.dataextraction" version="1.0.0">
+    <author>Marie Degen &amp; Pauline Lauron</author>
+    <profile name="wearable"/>
+    <ui-application appid="org.example.dataextraction" exec="dataextraction" multiple="false" nodisplay="false" taskmanage="true" type="capp">
+        <label>dataextraction</label>
+        <icon>logo.png</icon>
+    </ui-application>
+</manifest>
