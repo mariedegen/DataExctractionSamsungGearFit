@@ -1,6 +1,7 @@
-17:32:11 **** Auto Build of configuration Debug for project dataextraction ****
+16:59:34 **** Incremental Build of configuration Debug for project dataextraction ****
 ninja all 
-ninja: no work to do.
+[1/2] Building src/dataextraction.o
+[2/2] Linking dataextraction
 
-17:32:11 Build Finished (took 184ms)
+16:59:36 Build Finished (took 1s.908ms)
 

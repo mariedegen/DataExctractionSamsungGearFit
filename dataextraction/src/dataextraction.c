@@ -4,6 +4,10 @@ typedef struct appdata {
 	Evas_Object *win;
 	Evas_Object *conform;
 	Evas_Object *label;
+	Evas_Object *start_button;
+	Evas_Object *box;
+	Evas_Object *icon;
+	Evas_Object *nf;
 } appdata_s;
 
 static void
@@ -48,16 +52,36 @@ create_base_gui(appdata_s *ad)
 	elm_win_resize_object_add(ad->win, ad->conform);
 	evas_object_show(ad->conform);
 
-	/* Label */
-	/* Create an actual view of the base gui.
-	   Modify this part to change the view. */
-	ad->label = elm_label_add(ad->conform);
-	elm_object_text_set(ad->label, "<align=center> Hello bitch </align>");
+	/*Add the box*/
+	ad->box = elm_box_add(ad->conform);
+	evas_object_show(ad->box);
+
+
+	/*Add the start button*/
+	ad->start_button = elm_button_add(ad->box);
+
+	/*Set the button's style*/
+	elm_object_style_set(ad->start_button, "bottom");
+	elm_object_text_set(ad->start_button, "START");
+	evas_object_show(ad->start_button);
+	elm_box_pack_end(ad->box, ad->start_button);
+
+	/*Add the label*/
+	ad->label = elm_label_add(ad->box);
+	elm_object_text_set(ad->label, "<color=#fafafa>Press the start button to begin the heart rate recording.</color>");
+	elm_label_wrap_width_set(ad->label, 200);
+	elm_label_line_wrap_set(ad->label,ELM_WRAP_WORD);
+	evas_object_size_hint_align_set(ad->label,0.5,0.5);
 	evas_object_size_hint_weight_set(ad->label, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
-	elm_object_content_set(ad->conform, ad->label);
+	evas_object_show(ad->label);
+	elm_box_pack_end(ad->box,ad->label);
+	evas_object_show(ad->label);
+	elm_box_pack_end(ad->box, ad->label);
 
 	/* Show window after base gui is set up */
 	evas_object_show(ad->win);
+
+
 }
 
 static bool
