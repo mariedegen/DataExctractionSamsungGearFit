@@ -1,3 +1,7 @@
+ /**  Created on: Sep 25, 2017
+ *      Author: Marie DEGEN
+ **/
+
 #include "dataextraction.h"
 
 typedef struct appdata {
@@ -52,9 +56,29 @@ create_base_gui(appdata_s *ad)
 	elm_win_resize_object_add(ad->win, ad->conform);
 	evas_object_show(ad->conform);
 
+	/*Add naviframe*/
+    ad->nf = elm_naviframe_add(ad->conform);
+    evas_object_show(ad->nf);
+    elm_naviframe_prev_btn_auto_pushed_set(ad->nf, EINA_TRUE);
+    elm_object_content_set(ad->conform, ad->nf);
+
 	/*Add the box*/
-	ad->box = elm_box_add(ad->conform);
+	ad->box = elm_box_add(ad->nf);
 	evas_object_show(ad->box);
+	elm_naviframe_item_push(ad->nf, "<font=Tizen:style=condensed font_size=30>Heart Recording</font/>", ad->label, NULL, ad->box, NULL);
+
+
+	/*Add the label*/
+	ad->label = elm_label_add(ad->box);
+	elm_object_text_set(ad->label, "<font=Tizen:style=condensed font_size=25><color=#fafafa>Press the start button to begin the heart rate recording.</color></font/>");
+	elm_label_wrap_width_set(ad->label, 300);
+	elm_label_line_wrap_set(ad->label,ELM_WRAP_WORD);
+	evas_object_size_hint_align_set(ad->label,0.5,0.5);
+	evas_object_size_hint_weight_set(ad->label, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+	evas_object_show(ad->label);
+	elm_box_pack_end(ad->box,ad->label);
+	evas_object_show(ad->label);
+	elm_box_pack_end(ad->box, ad->label);
 
 
 	/*Add the start button*/
@@ -65,18 +89,6 @@ create_base_gui(appdata_s *ad)
 	elm_object_text_set(ad->start_button, "START");
 	evas_object_show(ad->start_button);
 	elm_box_pack_end(ad->box, ad->start_button);
-
-	/*Add the label*/
-	ad->label = elm_label_add(ad->box);
-	elm_object_text_set(ad->label, "<color=#fafafa>Press the start button to begin the heart rate recording.</color>");
-	elm_label_wrap_width_set(ad->label, 200);
-	elm_label_line_wrap_set(ad->label,ELM_WRAP_WORD);
-	evas_object_size_hint_align_set(ad->label,0.5,0.5);
-	evas_object_size_hint_weight_set(ad->label, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
-	evas_object_show(ad->label);
-	elm_box_pack_end(ad->box,ad->label);
-	evas_object_show(ad->label);
-	elm_box_pack_end(ad->box, ad->label);
 
 	/* Show window after base gui is set up */
 	evas_object_show(ad->win);
