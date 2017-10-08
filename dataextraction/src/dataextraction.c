@@ -102,7 +102,7 @@ create_base_gui(appdata_s *ad)
 
 	/*Add the progress bar*/
 	ad->progress_bar = elm_progressbar_add(ad->box_recording);
-	elm_object_style_set(ad->progress_bar, "process/popup/small");
+	elm_object_style_set(ad->progress_bar, "process");
 	elm_progressbar_pulse_set(ad->progress_bar, EINA_TRUE);
 	elm_progressbar_pulse(ad->progress_bar, EINA_TRUE);
 	evas_object_show(ad->progress_bar);
@@ -117,6 +117,21 @@ create_base_gui(appdata_s *ad)
 	evas_object_show(ad->stop_button);
 	elm_box_pack_end(ad->box_recording, ad->stop_button);
 
+
+	/*Add the box for the bluetooth sending*/
+	ad->box_bluetooth = elm_box_add(ad->nf);
+	evas_object_show(ad->box_bluetooth);
+
+	/*Add the label*/
+	ad->label_bluetooth = elm_label_add(ad->box_bluetooth);
+	elm_object_text_set(ad->label_bluetooth, "<align=center><font=Tizen:style=regular font_size=25><color=#fafafa>The data are being sent to the main application please wait...</color></font/></align>");
+	elm_label_wrap_width_set(ad->label_bluetooth, 150);
+	elm_label_line_wrap_set(ad->label_bluetooth,ELM_WRAP_WORD);
+	evas_object_size_hint_align_set(ad->label_bluetooth,EVAS_HINT_FILL,0.5);
+	evas_object_size_hint_weight_set(ad->label_bluetooth, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+	evas_object_show(ad->label_bluetooth);
+	elm_box_pack_end(ad->box_bluetooth,ad->label_bluetooth);
+
 	//Disable the autorepeat feature
 	elm_button_autorepeat_set(ad->stop_button, EINA_FALSE);
 
@@ -129,6 +144,7 @@ create_base_gui(appdata_s *ad)
 	//clicked_button function callback when click on the button
 	evas_object_smart_callback_add(ad->stop_button, "clicked", clicked_recording_stop, (void*)ad);
 
+	elm_naviframe_item_push(ad->nf, "<font=Tizen:style=condensed font_size=30>Heart Recording</font/>", NULL, NULL, ad->box_bluetooth, NULL);
 	elm_naviframe_item_push(ad->nf, "<font=Tizen:style=condensed font_size=30>Heart Recording</font/>", NULL, NULL, ad->box_recording, NULL);
 	elm_naviframe_item_push(ad->nf, "<font=Tizen:style=condensed font_size=30>Heart Recording</font/>", NULL, NULL, ad->box, NULL);
 	/* Show window after base gui is set up */
@@ -161,6 +177,7 @@ static void
 app_pause(void *data)
 {
 	/* Take necessary actions when application becomes invisible. */
+	elm_exit();
 }
 
 static void
