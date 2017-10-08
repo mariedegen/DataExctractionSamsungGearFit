@@ -3,16 +3,7 @@
  **/
 
 #include "dataextraction.h"
-
-typedef struct appdata {
-	Evas_Object *win;
-	Evas_Object *conform;
-	Evas_Object *label;
-	Evas_Object *start_button;
-	Evas_Object *box;
-	Evas_Object *icon;
-	Evas_Object *nf;
-} appdata_s;
+#include "recording.h"
 
 static void
 win_delete_request_cb(void *data, Evas_Object *obj, void *event_info)
@@ -65,21 +56,16 @@ create_base_gui(appdata_s *ad)
 	/*Add the box*/
 	ad->box = elm_box_add(ad->nf);
 	evas_object_show(ad->box);
-	elm_naviframe_item_push(ad->nf, "<font=Tizen:style=condensed font_size=30>Heart Recording</font/>", ad->label, NULL, ad->box, NULL);
-
 
 	/*Add the label*/
 	ad->label = elm_label_add(ad->box);
-	elm_object_text_set(ad->label, "<font=Tizen:style=condensed font_size=25><color=#fafafa>Press the start button to begin the heart rate recording.</color></font/>");
-	elm_label_wrap_width_set(ad->label, 300);
+	elm_object_text_set(ad->label, "<align=center><font=Tizen:style=regular font_size=25><color=#fafafa>Press the start button to begin the heart rate recording.</color></font/></align>");
+	elm_label_wrap_width_set(ad->label, 150);
 	elm_label_line_wrap_set(ad->label,ELM_WRAP_WORD);
-	evas_object_size_hint_align_set(ad->label,0.5,0.5);
+	evas_object_size_hint_align_set(ad->label,EVAS_HINT_FILL,0.5);
 	evas_object_size_hint_weight_set(ad->label, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	evas_object_show(ad->label);
 	elm_box_pack_end(ad->box,ad->label);
-	evas_object_show(ad->label);
-	elm_box_pack_end(ad->box, ad->label);
-
 
 	/*Add the start button*/
 	ad->start_button = elm_button_add(ad->box);
@@ -90,6 +76,61 @@ create_base_gui(appdata_s *ad)
 	evas_object_show(ad->start_button);
 	elm_box_pack_end(ad->box, ad->start_button);
 
+	/*Add the box2*/
+	ad->box_recording = elm_box_add(ad->nf);
+	evas_object_show(ad->box_recording);
+
+	/*Add the label3*/
+	ad->label3 = elm_label_add(ad->box_recording);
+	elm_object_text_set(ad->label3, "<align=center><font=Tizen:style=regular font_size=25><color=#fafafa>00:00</color></font/></align>");
+	elm_label_wrap_width_set(ad->label3, 150);
+	elm_label_line_wrap_set(ad->label3,ELM_WRAP_WORD);
+	evas_object_size_hint_align_set(ad->label3,EVAS_HINT_FILL,0.5);
+	evas_object_size_hint_weight_set(ad->label3, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+	evas_object_show(ad->label3);
+	elm_box_pack_end(ad->box_recording,ad->label3);
+
+	/*Add the label*/
+	ad->label2 = elm_label_add(ad->box_recording);
+	elm_object_text_set(ad->label2, "<align=center><font=Tizen:style=regular font_size=25><color=#fafafa>Recording...</color></font/></align>");
+	elm_label_wrap_width_set(ad->label2, 150);
+	elm_label_line_wrap_set(ad->label2,ELM_WRAP_WORD);
+	evas_object_size_hint_align_set(ad->label2,EVAS_HINT_FILL,0.5);
+	evas_object_size_hint_weight_set(ad->label2, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+	evas_object_show(ad->label2);
+	elm_box_pack_end(ad->box_recording,ad->label2);
+
+	/*Add the progress bar*/
+	ad->progress_bar = elm_progressbar_add(ad->box_recording);
+	elm_object_style_set(ad->progress_bar, "process/popup/small");
+	elm_progressbar_pulse_set(ad->progress_bar, EINA_TRUE);
+	elm_progressbar_pulse(ad->progress_bar, EINA_TRUE);
+	evas_object_show(ad->progress_bar);
+	elm_box_pack_end(ad->box_recording, ad->progress_bar);
+
+	/*Add the stop button*/
+	ad->stop_button = elm_button_add(ad->box_recording);
+
+	/*Set the button's style*/
+	elm_object_style_set(ad->stop_button, "bottom");
+	elm_object_text_set(ad->stop_button, "STOP");
+	evas_object_show(ad->stop_button);
+	elm_box_pack_end(ad->box_recording, ad->stop_button);
+
+	//Disable the autorepeat feature
+	elm_button_autorepeat_set(ad->stop_button, EINA_FALSE);
+
+	//Disable the autorepeat feature
+	elm_button_autorepeat_set(ad->start_button, EINA_FALSE);
+
+	//clicked_button function callback when click on the button
+	evas_object_smart_callback_add(ad->start_button, "clicked", clicked_recording_start, (void*)ad);
+
+	//clicked_button function callback when click on the button
+	evas_object_smart_callback_add(ad->stop_button, "clicked", clicked_recording_stop, (void*)ad);
+
+	elm_naviframe_item_push(ad->nf, "<font=Tizen:style=condensed font_size=30>Heart Recording</font/>", NULL, NULL, ad->box_recording, NULL);
+	elm_naviframe_item_push(ad->nf, "<font=Tizen:style=condensed font_size=30>Heart Recording</font/>", NULL, NULL, ad->box, NULL);
 	/* Show window after base gui is set up */
 	evas_object_show(ad->win);
 

@@ -6,4 +6,7 @@
         <label>Health Reacording</label>
         <icon>logo.png</icon>
     </ui-application>
+    <privileges>
+        <privilege>http://tizen.org/privilege/healthinfo</privilege>
+    </privileges>
 </manifest>

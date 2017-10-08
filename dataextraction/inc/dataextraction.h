@@ -16,4 +16,18 @@
 #define PACKAGE "org.example.dataextraction"
 #endif
 
+typedef struct appdata {
+	Evas_Object *win;
+	Evas_Object *conform;
+	Evas_Object *label;
+	Evas_Object *start_button;
+	Evas_Object *box;
+	Evas_Object *box_recording;
+	Evas_Object *stop_button;
+	Evas_Object *progress_bar;
+	Evas_Object *label2;
+	Evas_Object *label3;
+	Evas_Object *nf;
+} appdata_s;
+
 #endif /* __dataextraction_H__ */
