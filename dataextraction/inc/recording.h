@@ -14,6 +14,7 @@
 #include <efl_extension.h>
 #include <dlog.h>
 
+void create_HRM_listener(void *data);
 void clicked_recording_start(void *data, Evas_Object *obj, void *event_info);
 void clicked_recording_stop(void *data, Evas_Object *obj, void *event_info);
 

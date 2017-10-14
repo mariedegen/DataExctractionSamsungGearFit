@@ -53,6 +53,8 @@ create_base_gui(appdata_s *ad)
     elm_naviframe_prev_btn_auto_pushed_set(ad->nf, EINA_TRUE);
     elm_object_content_set(ad->conform, ad->nf);
 
+    heart_rate_waiting(ad);
+
 	/*Add the box*/
 	ad->box = elm_box_add(ad->nf);
 	evas_object_show(ad->box);
@@ -79,6 +81,16 @@ create_base_gui(appdata_s *ad)
 	/*Add the box2*/
 	ad->box_recording = elm_box_add(ad->nf);
 	evas_object_show(ad->box_recording);
+
+	/*Add the label4*/
+	ad->label4 = elm_label_add(ad->box_recording);
+	elm_object_text_set(ad->label4, "<align=center><font=Tizen:style=regular font_size=25><color=#fafafa> Heart </color></font/></align>");
+	elm_label_wrap_width_set(ad->label4, 150);
+	elm_label_line_wrap_set(ad->label4,ELM_WRAP_WORD);
+	evas_object_size_hint_align_set(ad->label4,EVAS_HINT_FILL,0.5);
+	evas_object_size_hint_weight_set(ad->label4, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+	evas_object_show(ad->label4);
+	elm_box_pack_end(ad->box_recording,ad->label4);
 
 	/*Add the label3*/
 	ad->label3 = elm_label_add(ad->box_recording);
@@ -147,6 +159,10 @@ create_base_gui(appdata_s *ad)
 	elm_naviframe_item_push(ad->nf, "<font=Tizen:style=condensed font_size=30>Heart Recording</font/>", NULL, NULL, ad->box_bluetooth, NULL);
 	elm_naviframe_item_push(ad->nf, "<font=Tizen:style=condensed font_size=30>Heart Recording</font/>", NULL, NULL, ad->box_recording, NULL);
 	elm_naviframe_item_push(ad->nf, "<font=Tizen:style=condensed font_size=30>Heart Recording</font/>", NULL, NULL, ad->box, NULL);
+	//Push this window into the conformant
+		elm_naviframe_item_push(ad->nf, "<font=Tizen:style=condensed font_size=30>Heart Recording</font/>", NULL, NULL, ad->box_heartrate, NULL);
+
+
 	/* Show window after base gui is set up */
 	evas_object_show(ad->win);
 
@@ -162,7 +178,19 @@ app_create(void *data)
 		If this function returns false, the application is terminated */
 	appdata_s *ad = data;
 
+	//Init the result array.
+	ad->tab_result = NULL;
+	ad->tab_result_counter = 0;
+	ad->tab_result = malloc(ad->tab_result_counter * sizeof(float));
+	if(ad->tab_result == NULL) {
+		//Deal with the memory error
+
+	}
+	//Init the GUI
 	create_base_gui(ad);
+
+	//Initialization of the listener for the HRM sensor
+	create_HRM_listener(ad);
 
 	return true;
 }
