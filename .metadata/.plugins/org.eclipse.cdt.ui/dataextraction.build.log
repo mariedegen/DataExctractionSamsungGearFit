@@ -1,8 +1,7 @@
-23:26:39 **** Incremental Build of configuration Debug for project dataextraction ****
+22:51:33 **** Auto Build of configuration Debug for project dataextraction ****
 ninja all 
-[1/3] Building src/heartrate.o
-[2/3] Building src/recording.o
-[3/3] Linking dataextraction
+[1/2] Building src/recording.o
+[2/2] Linking dataextraction
 
-23:26:39 Build Finished (took 906ms)
+22:51:34 Build Finished (took 968ms)
 

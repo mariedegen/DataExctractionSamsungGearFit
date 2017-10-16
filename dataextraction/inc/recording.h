@@ -8,12 +8,15 @@
 #ifndef RECORDING_H_
 #define RECORDING_H_
 
-#include <app.h>
-#include <Elementary.h>
-#include <system_settings.h>
-#include <efl_extension.h>
-#include <dlog.h>
+#ifdef  LOG_TAG
+#undef  LOG_TAG
+#endif
+#define LOG_TAG "recording"
 
+#include "dataextraction.h"
+
+void on_sensor_event(sensor_h sensor, sensor_event_s *event, void *user_data);
+void on_sensor_event_2(sensor_h sensor, sensor_event_s *event, void *user_data);
 void create_HRM_listener(void *data);
 void clicked_recording_start(void *data, Evas_Object *obj, void *event_info);
 void clicked_recording_stop(void *data, Evas_Object *obj, void *event_info);

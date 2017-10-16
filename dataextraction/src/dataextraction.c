@@ -61,7 +61,7 @@ create_base_gui(appdata_s *ad)
 
 	/*Add the label*/
 	ad->label = elm_label_add(ad->box);
-	elm_object_text_set(ad->label, "<align=center><font=Tizen:style=regular font_size=25><color=#fafafa>Press the start button to begin the heart rate recording.</color></font/></align>");
+	elm_object_text_set(ad->label, "<align=center><font=Tizen:style=regular font_size=25>Press the start button to begin the heart rate recording.</font/></align>");
 	elm_label_wrap_width_set(ad->label, 150);
 	elm_label_line_wrap_set(ad->label,ELM_WRAP_WORD);
 	evas_object_size_hint_align_set(ad->label,EVAS_HINT_FILL,0.5);
@@ -84,7 +84,7 @@ create_base_gui(appdata_s *ad)
 
 	/*Add the label4*/
 	ad->label4 = elm_label_add(ad->box_recording);
-	elm_object_text_set(ad->label4, "<align=center><font=Tizen:style=regular font_size=25><color=#fafafa> Heart </color></font/></align>");
+	elm_object_text_set(ad->label4, "<align=center><font=Tizen:style=regular font_size=25>Heart</font/></align>");
 	elm_label_wrap_width_set(ad->label4, 150);
 	elm_label_line_wrap_set(ad->label4,ELM_WRAP_WORD);
 	evas_object_size_hint_align_set(ad->label4,EVAS_HINT_FILL,0.5);
@@ -94,7 +94,7 @@ create_base_gui(appdata_s *ad)
 
 	/*Add the label3*/
 	ad->label3 = elm_label_add(ad->box_recording);
-	elm_object_text_set(ad->label3, "<align=center><font=Tizen:style=regular font_size=25><color=#fafafa>00:00</color></font/></align>");
+	elm_object_text_set(ad->label3, "<align=center><font=Tizen:style=regular font_size=25>00:00</font/></align>");
 	elm_label_wrap_width_set(ad->label3, 150);
 	elm_label_line_wrap_set(ad->label3,ELM_WRAP_WORD);
 	evas_object_size_hint_align_set(ad->label3,EVAS_HINT_FILL,0.5);
@@ -104,7 +104,7 @@ create_base_gui(appdata_s *ad)
 
 	/*Add the label*/
 	ad->label2 = elm_label_add(ad->box_recording);
-	elm_object_text_set(ad->label2, "<align=center><font=Tizen:style=regular font_size=25><color=#fafafa>Recording...</color></font/></align>");
+	elm_object_text_set(ad->label2, "<align=center><font=Tizen:style=regular font_size=25>Recording...</font/></align>");
 	elm_label_wrap_width_set(ad->label2, 150);
 	elm_label_line_wrap_set(ad->label2,ELM_WRAP_WORD);
 	evas_object_size_hint_align_set(ad->label2,EVAS_HINT_FILL,0.5);
@@ -217,7 +217,10 @@ app_resume(void *data)
 static void
 app_terminate(void *data)
 {
-	/* Release all resources. */
+	appdata_s *ad = data;
+
+	//Release all the resources
+	free(ad->tab_result);
 }
 
 static void
