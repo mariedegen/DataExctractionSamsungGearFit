@@ -39,6 +39,7 @@ typedef struct appdata {
 	unsigned int tab_result_counter;
 	sensor_listener_h listener;
 	sensor_h sensor;
+	unsigned int start;
 } appdata_s;
 
 void _add_entry_text(const char *text);

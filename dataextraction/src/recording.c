@@ -7,6 +7,7 @@
 #include <sensor.h>
 #include <recording.h>
 #include <dataextraction.h>
+#include "timer.h"
 
 /**
  * The type of the sensor used
@@ -63,6 +64,12 @@ void on_sensor_event_2(sensor_h sensor, sensor_event_s *event, void *user_data)
 			//Update the label everytime the hpm change
 			sprintf(a,"<align=center><font=Tizen:style=regular font_size=25>HPM : %0.0f</font/></align>", event->values[0]);
 			elm_object_text_set(ad->label4, a);
+
+			//Update the timer's label
+			char* s = timer_sensor(ad->start);
+			sprintf(a,"<align=center><font=Tizen:style=regular font_size=25>Timer : %s</font/></align>", s);
+			free(s);
+			elm_object_text_set(ad->label3, a);
 
 			//Retrive the data and record them into an array
 			ad->tab_result_counter ++;
@@ -151,6 +158,8 @@ void clicked_recording_start(void *data, Evas_Object *obj, void *event_info) {
         dlog_print(DLOG_ERROR, LOG_TAG, "sensor_listener_set_event_cb error: %d", error);
         return;
     }
+
+    ad->start = time(NULL);
 
 	//Pop the next screen
 	elm_naviframe_item_pop(ad->nf);

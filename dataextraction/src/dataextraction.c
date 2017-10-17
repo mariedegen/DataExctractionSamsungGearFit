@@ -186,6 +186,9 @@ app_create(void *data)
 		//Deal with the memory error
 
 	}
+	//Initialize the start duration of the timer
+	ad->start = -1;
+
 	//Init the GUI
 	create_base_gui(ad);
 
