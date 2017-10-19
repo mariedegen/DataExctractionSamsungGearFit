@@ -46,7 +46,7 @@ static void create_base_gui(appdata_s *ad)
 	eext_object_event_callback_add(ad->win, EEXT_CALLBACK_BACK, win_back_cb, ad);
 
 	//Conformant
-	// Create and initialize elm_conformant.
+	//Create and initialize elm_conformant.
 	//elm_conformant is mandatory for base gui to have proper size when indicator or virtual keypad is visible.
 	ad->conform = elm_conformant_add(ad->win);
 	elm_win_indicator_mode_set(ad->win, ELM_WIN_INDICATOR_SHOW);
@@ -79,13 +79,13 @@ static bool app_create(void *data)
 	//If this function returns false, the application is terminated
 	appdata_s *ad = data;
 
-	//Initialize the result array.
+	//Initialize the result array and the counter
 	ad->tab_result = NULL;
 	ad->tab_result_counter = 0;
 	ad->tab_result = malloc(ad->tab_result_counter * sizeof(float));
 	if(ad->tab_result == NULL) {
 		//Deal with the memory error
-
+		dlog_print(DLOG_ERROR, LOG_TAG, "Out of memory for tab->result");
 	}
 
 	//Initialize the start duration of the timer
@@ -137,7 +137,6 @@ static void ui_app_lang_changed(app_event_info_h event_info, void *user_data)
 static void ui_app_orient_changed(app_event_info_h event_info, void *user_data)
 {
 	/*APP_EVENT_DEVICE_ORIENTATION_CHANGED*/
-	return;
 }
 
 static void ui_app_region_changed(app_event_info_h event_info, void *user_data)
