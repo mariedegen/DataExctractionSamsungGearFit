@@ -5,8 +5,9 @@
  */
 
 #include <sensor.h>
-#include <recording.h>
-#include <dataextraction.h>
+#include <dlog.h>
+#include "recording.h"
+#include "dataextraction.h"
 #include "timer.h"
 
 /**

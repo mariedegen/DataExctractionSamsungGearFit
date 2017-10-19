@@ -2,29 +2,38 @@
  *      Author: Marie DEGEN
  **/
 
+#include <app.h>
+#include <Elementary.h>
+#include <system_settings.h>
+#include <efl_extension.h>
+#include <dlog.h>
+#include <sensor.h>
+#include "bluetooth_screen.h"
+#include "start_button_screen.h"
+#include "stop_button_screen.h"
+#include "heart_rate_screen.h"
 #include "dataextraction.h"
 #include "recording.h"
+#include "constants.h"
 
-static void
-win_delete_request_cb(void *data, Evas_Object *obj, void *event_info)
+static void win_delete_request_cb(void *data, Evas_Object *obj, void *event_info)
 {
 	ui_app_exit();
 }
 
-static void
-win_back_cb(void *data, Evas_Object *obj, void *event_info)
+static void win_back_cb(void *data, Evas_Object *obj, void *event_info)
 {
 	appdata_s *ad = data;
-	/* Let window go to hide state. */
+
+	//Let window go to hide state.
 	elm_win_lower(ad->win);
 }
 
-static void
-create_base_gui(appdata_s *ad)
+static void create_base_gui(appdata_s *ad)
 {
-	/* Window */
-	/* Create and initialize elm_win.
-	   elm_win is mandatory to manipulate window. */
+	//Window
+	//Create and initialize elm_win.
+	//elm_win is mandatory to manipulate window.
 	ad->win = elm_win_util_standard_add(PACKAGE, PACKAGE);
 	elm_win_autodel_set(ad->win, EINA_TRUE);
 
@@ -36,10 +45,9 @@ create_base_gui(appdata_s *ad)
 	evas_object_smart_callback_add(ad->win, "delete,request", win_delete_request_cb, NULL);
 	eext_object_event_callback_add(ad->win, EEXT_CALLBACK_BACK, win_back_cb, ad);
 
-	/* Conformant */
-	/* Create and initialize elm_conformant.
-	   elm_conformant is mandatory for base gui to have proper size
-	   when indicator or virtual keypad is visible. */
+	//Conformant
+	// Create and initialize elm_conformant.
+	//elm_conformant is mandatory for base gui to have proper size when indicator or virtual keypad is visible.
 	ad->conform = elm_conformant_add(ad->win);
 	elm_win_indicator_mode_set(ad->win, ELM_WIN_INDICATOR_SHOW);
 	elm_win_indicator_opacity_set(ad->win, ELM_WIN_INDICATOR_OPAQUE);
@@ -47,138 +55,31 @@ create_base_gui(appdata_s *ad)
 	elm_win_resize_object_add(ad->win, ad->conform);
 	evas_object_show(ad->conform);
 
-	/*Add naviframe*/
+	//Add the naviframe
     ad->nf = elm_naviframe_add(ad->conform);
     evas_object_show(ad->nf);
     elm_naviframe_prev_btn_auto_pushed_set(ad->nf, EINA_TRUE);
     elm_object_content_set(ad->conform, ad->nf);
 
+    //Add the different box into the naviframe
     heart_rate_waiting(ad);
+    start_button_screen(ad);
+    stop_button_screen(ad);
+    bluetooth_screen(ad);
 
-	/*Add the box*/
-	ad->box = elm_box_add(ad->nf);
-	evas_object_show(ad->box);
-
-	/*Add the label*/
-	ad->label = elm_label_add(ad->box);
-	elm_object_text_set(ad->label, "<align=center><font=Tizen:style=regular font_size=25>Press the start button to begin the heart rate recording.</font/></align>");
-	elm_label_wrap_width_set(ad->label, 150);
-	elm_label_line_wrap_set(ad->label,ELM_WRAP_WORD);
-	evas_object_size_hint_align_set(ad->label,EVAS_HINT_FILL,0.5);
-	evas_object_size_hint_weight_set(ad->label, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
-	evas_object_show(ad->label);
-	elm_box_pack_end(ad->box,ad->label);
-
-	/*Add the start button*/
-	ad->start_button = elm_button_add(ad->box);
-
-	/*Set the button's style*/
-	elm_object_style_set(ad->start_button, "bottom");
-	elm_object_text_set(ad->start_button, "START");
-	evas_object_show(ad->start_button);
-	elm_box_pack_end(ad->box, ad->start_button);
-
-	/*Add the box2*/
-	ad->box_recording = elm_box_add(ad->nf);
-	evas_object_show(ad->box_recording);
-
-	/*Add the label4*/
-	ad->label4 = elm_label_add(ad->box_recording);
-	elm_object_text_set(ad->label4, "<align=center><font=Tizen:style=regular font_size=25>Heart</font/></align>");
-	elm_label_wrap_width_set(ad->label4, 150);
-	elm_label_line_wrap_set(ad->label4,ELM_WRAP_WORD);
-	evas_object_size_hint_align_set(ad->label4,EVAS_HINT_FILL,0.5);
-	evas_object_size_hint_weight_set(ad->label4, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
-	evas_object_show(ad->label4);
-	elm_box_pack_end(ad->box_recording,ad->label4);
-
-	/*Add the label3*/
-	ad->label3 = elm_label_add(ad->box_recording);
-	elm_object_text_set(ad->label3, "<align=center><font=Tizen:style=regular font_size=25>00:00</font/></align>");
-	elm_label_wrap_width_set(ad->label3, 150);
-	elm_label_line_wrap_set(ad->label3,ELM_WRAP_WORD);
-	evas_object_size_hint_align_set(ad->label3,EVAS_HINT_FILL,0.5);
-	evas_object_size_hint_weight_set(ad->label3, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
-	evas_object_show(ad->label3);
-	elm_box_pack_end(ad->box_recording,ad->label3);
-
-	/*Add the label*/
-	ad->label2 = elm_label_add(ad->box_recording);
-	elm_object_text_set(ad->label2, "<align=center><font=Tizen:style=regular font_size=25>Recording...</font/></align>");
-	elm_label_wrap_width_set(ad->label2, 150);
-	elm_label_line_wrap_set(ad->label2,ELM_WRAP_WORD);
-	evas_object_size_hint_align_set(ad->label2,EVAS_HINT_FILL,0.5);
-	evas_object_size_hint_weight_set(ad->label2, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
-	evas_object_show(ad->label2);
-	elm_box_pack_end(ad->box_recording,ad->label2);
-
-	/*Add the progress bar*/
-	ad->progress_bar = elm_progressbar_add(ad->box_recording);
-	elm_object_style_set(ad->progress_bar, "process");
-	elm_progressbar_pulse_set(ad->progress_bar, EINA_TRUE);
-	elm_progressbar_pulse(ad->progress_bar, EINA_TRUE);
-	evas_object_show(ad->progress_bar);
-	elm_box_pack_end(ad->box_recording, ad->progress_bar);
-
-	/*Add the stop button*/
-	ad->stop_button = elm_button_add(ad->box_recording);
-
-	/*Set the button's style*/
-	elm_object_style_set(ad->stop_button, "bottom");
-	elm_object_text_set(ad->stop_button, "STOP");
-	evas_object_show(ad->stop_button);
-	elm_box_pack_end(ad->box_recording, ad->stop_button);
-
-
-	/*Add the box for the bluetooth sending*/
-	ad->box_bluetooth = elm_box_add(ad->nf);
-	evas_object_show(ad->box_bluetooth);
-
-	/*Add the label*/
-	ad->label_bluetooth = elm_label_add(ad->box_bluetooth);
-	elm_object_text_set(ad->label_bluetooth, "<align=center><font=Tizen:style=regular font_size=25><color=#fafafa>The data are being sent to the main application please wait...</color></font/></align>");
-	elm_label_wrap_width_set(ad->label_bluetooth, 150);
-	elm_label_line_wrap_set(ad->label_bluetooth,ELM_WRAP_WORD);
-	evas_object_size_hint_align_set(ad->label_bluetooth,EVAS_HINT_FILL,0.5);
-	evas_object_size_hint_weight_set(ad->label_bluetooth, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
-	evas_object_show(ad->label_bluetooth);
-	elm_box_pack_end(ad->box_bluetooth,ad->label_bluetooth);
-
-	//Disable the autorepeat feature
-	elm_button_autorepeat_set(ad->stop_button, EINA_FALSE);
-
-	//Disable the autorepeat feature
-	elm_button_autorepeat_set(ad->start_button, EINA_FALSE);
-
-	//clicked_button function callback when click on the button
-	evas_object_smart_callback_add(ad->start_button, "clicked", clicked_recording_start, (void*)ad);
-
-	//clicked_button function callback when click on the button
-	evas_object_smart_callback_add(ad->stop_button, "clicked", clicked_recording_stop, (void*)ad);
-
-	elm_naviframe_item_push(ad->nf, "<font=Tizen:style=condensed font_size=30>Heart Recording</font/>", NULL, NULL, ad->box_bluetooth, NULL);
-	elm_naviframe_item_push(ad->nf, "<font=Tizen:style=condensed font_size=30>Heart Recording</font/>", NULL, NULL, ad->box_recording, NULL);
-	elm_naviframe_item_push(ad->nf, "<font=Tizen:style=condensed font_size=30>Heart Recording</font/>", NULL, NULL, ad->box, NULL);
-	//Push this window into the conformant
-		elm_naviframe_item_push(ad->nf, "<font=Tizen:style=condensed font_size=30>Heart Recording</font/>", NULL, NULL, ad->box_heartrate, NULL);
-
-
-	/* Show window after base gui is set up */
+	//Show window after base gui is set up
 	evas_object_show(ad->win);
-
-
 }
 
-static bool
-app_create(void *data)
+static bool app_create(void *data)
 {
-	/* Hook to take necessary actions before main event loop starts
-		Initialize UI resources and application's data
-		If this function returns true, the main loop of application starts
-		If this function returns false, the application is terminated */
+	//Hook to take necessary actions before main event loop starts
+	//Initialize UI resources and application's data
+	//If this function returns true, the main loop of application starts
+	//If this function returns false, the application is terminated
 	appdata_s *ad = data;
 
-	//Init the result array.
+	//Initialize the result array.
 	ad->tab_result = NULL;
 	ad->tab_result_counter = 0;
 	ad->tab_result = malloc(ad->tab_result_counter * sizeof(float));
@@ -186,39 +87,36 @@ app_create(void *data)
 		//Deal with the memory error
 
 	}
+
 	//Initialize the start duration of the timer
 	ad->start = -1;
 
-	//Init the GUI
+	//Initialize the GUI
 	create_base_gui(ad);
 
-	//Initialization of the listener for the HRM sensor
+	//Initialize of the listener for the HRM sensor
 	create_HRM_listener(ad);
 
 	return true;
 }
 
-static void
-app_control(app_control_h app_control, void *data)
+static void app_control(app_control_h app_control, void *data)
 {
 	/* Handle the launch request. */
 }
 
-static void
-app_pause(void *data)
+static void app_pause(void *data)
 {
 	/* Take necessary actions when application becomes invisible. */
 	elm_exit();
 }
 
-static void
-app_resume(void *data)
+static void app_resume(void *data)
 {
 	/* Take necessary actions when application becomes visible. */
 }
 
-static void
-app_terminate(void *data)
+static void app_terminate(void *data)
 {
 	appdata_s *ad = data;
 
@@ -226,8 +124,7 @@ app_terminate(void *data)
 	free(ad->tab_result);
 }
 
-static void
-ui_app_lang_changed(app_event_info_h event_info, void *user_data)
+static void ui_app_lang_changed(app_event_info_h event_info, void *user_data)
 {
 	/*APP_EVENT_LANGUAGE_CHANGED*/
 	char *locale = NULL;
@@ -237,33 +134,28 @@ ui_app_lang_changed(app_event_info_h event_info, void *user_data)
 	return;
 }
 
-static void
-ui_app_orient_changed(app_event_info_h event_info, void *user_data)
+static void ui_app_orient_changed(app_event_info_h event_info, void *user_data)
 {
 	/*APP_EVENT_DEVICE_ORIENTATION_CHANGED*/
 	return;
 }
 
-static void
-ui_app_region_changed(app_event_info_h event_info, void *user_data)
+static void ui_app_region_changed(app_event_info_h event_info, void *user_data)
 {
 	/*APP_EVENT_REGION_FORMAT_CHANGED*/
 }
 
-static void
-ui_app_low_battery(app_event_info_h event_info, void *user_data)
+static void ui_app_low_battery(app_event_info_h event_info, void *user_data)
 {
 	/*APP_EVENT_LOW_BATTERY*/
 }
 
-static void
-ui_app_low_memory(app_event_info_h event_info, void *user_data)
+static void ui_app_low_memory(app_event_info_h event_info, void *user_data)
 {
 	/*APP_EVENT_LOW_MEMORY*/
 }
 
-int
-main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	appdata_s ad = {0,};
 	int ret = 0;

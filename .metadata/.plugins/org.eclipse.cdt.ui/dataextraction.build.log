@@ -1,7 +1,7 @@
-14:32:51 **** Auto Build of configuration Debug for project dataextraction ****
+18:13:19 **** Auto Build of configuration Debug for project dataextraction ****
 ninja all 
 [1/2] Building src/dataextraction.o
 [2/2] Linking dataextraction
 
-14:32:52 Build Finished (took 1s.50ms)
+18:13:20 Build Finished (took 933ms)
 

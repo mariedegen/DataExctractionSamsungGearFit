@@ -1,13 +1,9 @@
 #ifndef __dataextraction_H__
 #define __dataextraction_H__
 
-#include <app.h>
 #include <Elementary.h>
-#include <system_settings.h>
-#include <efl_extension.h>
-#include <dlog.h>
 #include <sensor.h>
-#include "heartrate.h"
+
 
 #ifdef  LOG_TAG
 #undef  LOG_TAG
@@ -27,13 +23,13 @@ typedef struct appdata {
 	Evas_Object *box;
 	Evas_Object *box_recording;
 	Evas_Object *box_bluetooth;
-	Evas_Object *box_heartrate;
+	Evas_Object *box_heart_rate;
 	Evas_Object *progress_bar;
 	Evas_Object *label;
 	Evas_Object *label2;
 	Evas_Object *label3;
 	Evas_Object *label4;
-	Evas_Object *label_heartrate;
+	Evas_Object *label_heart_rate;
 	Evas_Object *label_bluetooth;
 	float *tab_result;
 	unsigned int tab_result_counter;

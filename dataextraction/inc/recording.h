@@ -5,15 +5,16 @@
  *      Author: Marie
  */
 
+#include <sensor.h>
+#include <Elementary.h>
+
 #ifndef RECORDING_H_
 #define RECORDING_H_
 
 #ifdef  LOG_TAG
 #undef  LOG_TAG
 #endif
-#define LOG_TAG "recording"
-
-#include "dataextraction.h"
+#define LOG_TAG "RECORDING_TAG"
 
 void on_sensor_event(sensor_h sensor, sensor_event_s *event, void *user_data);
 void on_sensor_event_2(sensor_h sensor, sensor_event_s *event, void *user_data);
