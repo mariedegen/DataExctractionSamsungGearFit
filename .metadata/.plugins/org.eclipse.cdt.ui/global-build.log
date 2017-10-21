@@ -17812,3 +17812,1066 @@ ninja: no work to do.
 19:18:20 **** Auto Build of configuration Debug for project dataextraction ****
 ninja all 
 ninja: no work to do.
+19:28:30 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:29:34 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/2] Building src/dataextraction.o
+[2/2] Linking dataextraction
+19:29:41 **** Incremental Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:29:44 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:29:46 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:29:49 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:30:12 **** Incremental Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:30:16 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:33:07 **** Incremental Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:33:11 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:38:27 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/2] Building src/heart_rate_screen.o
+[2/2] Linking dataextraction
+19:42:18 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/6] Building src/bluetooth_screen.o
+[2/6] Building src/heart_rate_screen.o
+[3/6] Building src/start_button_screen.o
+[4/6] Building src/stop_button_screen.o
+[5/6] Building src/dataextraction.o
+[6/6] Linking dataextraction
+19:42:51 **** Incremental Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:42:55 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:42:56 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:42:59 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:43:05 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:45:29 **** Clean-only build of configuration Debug for project dataextraction ****
+ninja clean 
+[1/3] Cleaning Coverage Reports..
+[2/3] Cleaning SA Report files ..
+[3/3] Cleaning build files ...
+Cleaning... 8 files.
+
+19:45:29 **** Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/8] Building src/timer.o
+[2/8] Building src/bluetooth_screen.o
+[3/8] Building src/heart_rate_screen.o
+[4/8] Building src/stop_button_screen.o
+[5/8] Building src/recording.o
+[6/8] Building src/start_button_screen.o
+[7/8] Building src/dataextraction.o
+[8/8] Linking dataextraction
+19:48:37 **** Incremental Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:48:42 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:48:44 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:48:46 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:48:52 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:49:49 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/2] Building src/heart_rate_screen.o
+[2/2] Linking dataextraction
+19:49:54 **** Incremental Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:49:58 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:49:59 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:50:02 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:50:09 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:51:44 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/2] Building src/heart_rate_screen.o
+FAILED: clang.exe -MMD -MT src/heart_rate_screen.o -MF src/heart_rate_screen.o.d  -DTIZEN_DEPRECATION -DDEPRECATION_WARNING -I"../inc" -O0 -g3 -Wall -c -fmessage-length=0 -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/libxml2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/SDL2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appcore-agent" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appcore-watch" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appfw" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/badge" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/base" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/cairo" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/calendar-service2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/chromium-ewk" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ckm" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/contacts-svc" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/content" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/context-service" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/csr" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dali" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dali-toolkit" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dbus-1.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/device" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dlog" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-buffer-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-con-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-file-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-imf-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-imf-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-input-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-input-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-ipc-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ector-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/e_dbus-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/edje-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eet-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efl-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efl-extension" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efreet-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eina-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eina-1/eina" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eio-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eldbus-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/elementary-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/embryo-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/emile-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eo-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eom" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ethumb-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ethumb-client-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/feedback" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/fontconfig" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/freetype2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/gio-unix-2.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/glib-2.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/harfbuzz" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/iotcon" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/json-glib-1.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/location" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/maps" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/media" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/media-content" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/messaging" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/metadata-editor" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/minizip" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/network" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/notification" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/nsd/" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/phonenumber-utils" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/sensor" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/storage" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/system" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/telephony" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/tzsh" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ui" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/vulkan" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_service" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_viewer_dali" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_viewer_evas" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/yaca" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/lib/dbus-1.0/include" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/lib/glib-2.0/include" -target arm-tizen-linux-gnueabi -gcc-toolchain "C:\tizen-studio\tools\arm-linux-gnueabi-gcc-4.9/" -ccc-gcc-name arm-linux-gnueabi-g++ -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mtune=cortex-a8 -Wno-gnu  -fPIE --sysroot="C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core" -mthumb -Werror-implicit-function-declaration  -c ../src/heart_rate_screen.c -o src/heart_rate_screen.o
+../src/heart_rate_screen.c:21:6: error: no member named 'label_heart' in 'struct appdata'
+
+        ad->label_heart = elm_label_add(ad->label_heart);
+
+        ~~  ^
+
+../src/heart_rate_screen.c:21:38: error: no member named 'label_heart' in 'struct appdata'
+
+        ad->label_heart = elm_label_add(ad->label_heart);
+
+                                        ~~  ^
+
+../src/heart_rate_screen.c:24:26: error: no member named 'label_heart' in 'struct appdata'
+
+        elm_object_text_set(ad->label_heart, style_text(HEART_RATE_SCREEN));
+
+                            ~~  ^
+
+C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/elementary-1\elm_object.h:18:66: note: expanded from macro 'elm_object_text_set'
+
+#define elm_object_text_set(obj, text) elm_object_part_text_set((obj), NULL, (text))
+
+                                                                 ^
+
+../src/heart_rate_screen.c:25:31: error: no member named 'label_heart' in 'struct appdata'
+
+        elm_label_wrap_width_set(ad->label_heart, 150);
+
+                                 ~~  ^
+
+../src/heart_rate_screen.c:26:30: error: no member named 'label_heart' in 'struct appdata'
+
+        elm_label_line_wrap_set(ad->label_heart,ELM_WRAP_WORD);
+
+                                ~~  ^
+
+../src/heart_rate_screen.c:27:38: error: no member named 'label_heart' in 'struct appdata'
+
+        evas_object_size_hint_align_set(ad->label_heart,EVAS_HINT_FILL,0.5);
+
+                                        ~~  ^
+
+../src/heart_rate_screen.c:28:39: error: no member named 'label_heart' in 'struct appdata'
+
+        evas_object_size_hint_weight_set(ad->label_heart, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+
+                                         ~~  ^
+
+../src/heart_rate_screen.c:29:23: error: no member named 'label_heart' in 'struct appdata'
+
+        evas_object_show(ad->label_heart);
+
+                         ~~  ^
+
+../src/heart_rate_screen.c:30:42: error: no member named 'label_heart' in 'struct appdata'
+
+        elm_box_pack_end(ad->box_heart_rate,ad->label_heart);
+
+                                            ~~  ^
+
+9 errors generated.
+
+ninja: build stopped: subcommand failed.
+19:51:55 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/8] Building src/timer.o
+[2/8] Building src/bluetooth_screen.o
+[3/8] Building src/heart_rate_screen.o
+[4/8] Building src/recording.o
+[5/8] Building src/dataextraction.o
+[6/8] Building src/stop_button_screen.o
+[7/8] Building src/start_button_screen.o
+[8/8] Linking dataextraction
+19:52:03 **** Incremental Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:52:06 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:52:08 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:52:11 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:52:17 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:52:48 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:52:52 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:52:58 **** Incremental Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:53:02 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:53:03 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:53:05 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:55:00 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/8] Building src/timer.o
+[2/8] Building src/bluetooth_screen.o
+[3/8] Building src/stop_button_screen.o
+[4/8] Building src/start_button_screen.o
+[5/8] Building src/recording.o
+[6/8] Building src/dataextraction.o
+[7/8] Building src/heart_rate_screen.o
+[8/8] Linking dataextraction
+19:55:15 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/2] Building src/heart_rate_screen.o
+[2/2] Linking dataextraction
+19:55:20 **** Incremental Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:55:24 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:55:26 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:55:29 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:55:35 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:56:27 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/8] Building src/timer.o
+[2/8] Building src/bluetooth_screen.o
+[3/8] Building src/dataextraction.o
+[4/8] Building src/heart_rate_screen.o
+[5/8] Building src/stop_button_screen.o
+[6/8] Building src/start_button_screen.o
+[7/8] Building src/recording.o
+[8/8] Linking dataextraction
+19:57:54 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+Recompacting log...
+[1/2] Building src/heart_rate_screen.o
+[2/2] Linking dataextraction
+19:58:00 **** Incremental Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:58:03 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:58:04 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:58:07 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+19:58:14 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+20:00:24 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/6] Building src/bluetooth_screen.o
+[2/6] Building src/stop_button_screen.o
+[3/6] Building src/heart_rate_screen.o
+[4/6] Building src/start_button_screen.o
+[5/6] Building src/dataextraction.o
+[6/6] Linking dataextraction
+20:00:34 **** Incremental Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+20:00:37 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+20:00:38 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+20:00:41 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+20:00:48 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+20:03:23 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/6] Building src/bluetooth_screen.o
+[2/6] Building src/dataextraction.o
+[3/6] Building src/start_button_screen.o
+[4/6] Building src/stop_button_screen.o
+[5/6] Building src/heart_rate_screen.o
+[6/6] Linking dataextraction
+20:03:27 **** Incremental Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+20:03:30 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+20:03:32 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+20:03:34 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+20:03:40 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+20:04:04 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/6] Building src/bluetooth_screen.o
+[2/6] Building src/stop_button_screen.o
+[3/6] Building src/heart_rate_screen.o
+[4/6] Building src/dataextraction.o
+[5/6] Building src/start_button_screen.o
+[6/6] Linking dataextraction
+20:04:06 **** Incremental Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+20:04:09 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+20:04:11 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+20:04:14 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+20:04:20 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+13:15:03 **** Incremental Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/7] Building src/stop_button_screen.o
+[2/7] Building src/bluetooth_screen.o
+[3/7] Building src/client_network.o
+[4/7] Building src/heart_rate_screen.o
+[5/7] Building src/dataextraction.o
+[6/7] Building src/start_button_screen.o
+FAILED: clang.exe -MMD -MT src/client_network.o -MF src/client_network.o.d  -DTIZEN_DEPRECATION -DDEPRECATION_WARNING -I"../inc" -O0 -g3 -Wall -c -fmessage-length=0 -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/libxml2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/SDL2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appcore-agent" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appcore-watch" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appfw" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/badge" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/base" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/cairo" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/calendar-service2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/chromium-ewk" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ckm" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/contacts-svc" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/content" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/context-service" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/csr" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dali" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dali-toolkit" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dbus-1.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/device" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dlog" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-buffer-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-con-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-file-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-imf-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-imf-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-input-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-input-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-ipc-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ector-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/e_dbus-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/edje-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eet-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efl-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efl-extension" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efreet-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eina-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eina-1/eina" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eio-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eldbus-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/elementary-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/embryo-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/emile-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eo-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eom" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ethumb-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ethumb-client-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/feedback" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/fontconfig" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/freetype2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/gio-unix-2.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/glib-2.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/harfbuzz" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/iotcon" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/json-glib-1.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/location" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/maps" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/media" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/media-content" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/messaging" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/metadata-editor" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/minizip" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/network" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/notification" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/nsd/" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/phonenumber-utils" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/sensor" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/storage" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/system" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/telephony" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/tzsh" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ui" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/vulkan" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_service" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_viewer_dali" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_viewer_evas" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/yaca" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/lib/dbus-1.0/include" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/lib/glib-2.0/include" -target arm-tizen-linux-gnueabi -gcc-toolchain "C:\tizen-studio\tools\arm-linux-gnueabi-gcc-4.9/" -ccc-gcc-name arm-linux-gnueabi-g++ -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mtune=cortex-a8 -Wno-gnu  -fPIE --sysroot="C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core" -mthumb -Werror-implicit-function-declaration  -c ../src/client_network.c -o src/client_network.o
+../src/client_network.c:30:52: error: use of undeclared identifier 'socket_connection_state_changed'; did you mean 'bt_socket_set_connection_state_changed_cb'?
+
+        error = bt_socket_set_connection_state_changed_cb(socket_connection_state_changed, NULL);
+
+                                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                                                          bt_socket_set_connection_state_changed_cb
+
+C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/network\bluetooth.h:1976:5: note: 'bt_socket_set_connection_state_changed_cb' declared here
+
+int bt_socket_set_connection_state_changed_cb(bt_socket_connection_state_changed_cb callback, void *user_data);
+
+    ^
+
+../src/client_network.c:37:35: error: use of undeclared identifier 'bt_server_address'
+
+        error = bt_socket_connect_rfcomm(bt_server_address, UUID);
+
+                                         ^
+
+../src/client_network.c:72:4: error: use of undeclared identifier 'server_socket_fd'
+
+                        server_socket_fd = connection->socket_fd;
+
+                        ^
+
+../src/client_network.c:78:4: error: use of undeclared identifier 'ret'
+
+                        ret = bt_socket_send_data(client_socket_fd, begin, sizeof(begin));
+
+                        ^
+
+../src/client_network.c:79:8: error: use of undeclared identifier 'ret'
+
+                        if (ret != BT_ERROR_NONE)
+
+                            ^
+
+../src/client_network.c:85:4: error: use of undeclared identifier 'ret'
+
+                        ret = bt_socket_send_data(client_socket_fd, ad->tab_result, sizeof(ad->tab_result));
+
+                        ^
+
+../src/client_network.c:85:48: warning: incompatible pointer types passing 'float *' to parameter of type 'const char *' [-Wincompatible-pointer-types]
+
+                        ret = bt_socket_send_data(client_socket_fd, ad->tab_result, sizeof(ad->tab_result));
+
+                                                                    ^~~~~~~~~~~~~~
+
+C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/network\bluetooth.h:1879:52: note: passing argument to parameter 'data' here
+
+int bt_socket_send_data(int socket_fd, const char *data, int length);
+
+                                                   ^
+
+../src/client_network.c:86:8: error: use of undeclared identifier 'ret'
+
+                        if (ret != BT_ERROR_NONE)
+
+                            ^
+
+../src/client_network.c:94:4: error: use of undeclared identifier 'ret'
+
+                        ret = bt_socket_send_data(client_socket_fd, end, sizeof(end));
+
+                        ^
+
+../src/client_network.c:95:8: error: use of undeclared identifier 'ret'
+
+                        if (ret != BT_ERROR_NONE)
+
+                            ^
+
+../src/client_network.c:101:4: error: use of undeclared identifier 'ret'
+
+                        ret = bt_socket_disconnect_rfcomm(server_socket_fd);
+
+                        ^
+
+../src/client_network.c:101:38: error: use of undeclared identifier 'server_socket_fd'; did you mean 'client_socket_fd'?
+
+                        ret = bt_socket_disconnect_rfcomm(server_socket_fd);
+
+                                                          ^~~~~~~~~~~~~~~~
+
+                                                          client_socket_fd
+
+../src/client_network.c:75:8: note: 'client_socket_fd' declared here
+
+                        int client_socket_fd = 0;
+
+                            ^
+
+../src/client_network.c:102:8: error: use of undeclared identifier 'ret'
+
+                        if (ret != BT_ERROR_NONE)
+
+                            ^
+
+../src/client_network.c:104:100: error: use of undeclared identifier 'server_socket_fd'; did you mean 'client_socket_fd'?
+
+                           dlog_print(DLOG_ERROR, LOG_TAG, "[bt_socket_destroy_rfcomm] Failed. server_socket_fd = %d.", server_socket_fd);
+
+                                                                                                                        ^~~~~~~~~~~~~~~~
+
+                                                                                                                        client_socket_fd
+
+../src/client_network.c:75:8: note: 'client_socket_fd' declared here
+
+                        int client_socket_fd = 0;
+
+                            ^
+
+../src/client_network.c:108:102: error: use of undeclared identifier 'server_socket_fd'; did you mean 'client_socket_fd'?
+
+                           dlog_print(DLOG_INFO, LOG_TAG, "[bt_socket_destroy_rfcomm] Succeeded. server_socket_fd = %d.", server_socket_fd);
+
+                                                                                                                          ^~~~~~~~~~~~~~~~
+
+                                                                                                                          client_socket_fd
+
+../src/client_network.c:75:8: note: 'client_socket_fd' declared here
+
+                        int client_socket_fd = 0;
+
+                            ^
+
+1 warning and 14 errors generated.
+
+ninja: build stopped: subcommand failed.
+13:16:33 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/2] Building src/client_network.o
+FAILED: clang.exe -MMD -MT src/client_network.o -MF src/client_network.o.d  -DTIZEN_DEPRECATION -DDEPRECATION_WARNING -I"../inc" -O0 -g3 -Wall -c -fmessage-length=0 -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/libxml2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/SDL2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appcore-agent" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appcore-watch" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appfw" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/badge" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/base" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/cairo" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/calendar-service2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/chromium-ewk" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ckm" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/contacts-svc" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/content" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/context-service" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/csr" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dali" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dali-toolkit" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dbus-1.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/device" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dlog" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-buffer-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-con-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-file-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-imf-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-imf-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-input-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-input-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-ipc-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ector-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/e_dbus-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/edje-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eet-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efl-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efl-extension" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efreet-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eina-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eina-1/eina" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eio-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eldbus-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/elementary-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/embryo-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/emile-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eo-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eom" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ethumb-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ethumb-client-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/feedback" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/fontconfig" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/freetype2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/gio-unix-2.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/glib-2.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/harfbuzz" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/iotcon" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/json-glib-1.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/location" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/maps" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/media" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/media-content" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/messaging" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/metadata-editor" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/minizip" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/network" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/notification" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/nsd/" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/phonenumber-utils" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/sensor" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/storage" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/system" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/telephony" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/tzsh" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ui" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/vulkan" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_service" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_viewer_dali" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_viewer_evas" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/yaca" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/lib/dbus-1.0/include" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/lib/glib-2.0/include" -target arm-tizen-linux-gnueabi -gcc-toolchain "C:\tizen-studio\tools\arm-linux-gnueabi-gcc-4.9/" -ccc-gcc-name arm-linux-gnueabi-g++ -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mtune=cortex-a8 -Wno-gnu  -fPIE --sysroot="C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core" -mthumb -Werror-implicit-function-declaration  -c ../src/client_network.c -o src/client_network.o
+../src/client_network.c:30:52: error: use of undeclared identifier 'socket_connection_state_changed'; did you mean 'bt_socket_set_connection_state_changed_cb'?
+
+        error = bt_socket_set_connection_state_changed_cb(socket_connection_state_changed, NULL);
+
+                                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                                                          bt_socket_set_connection_state_changed_cb
+
+C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/network\bluetooth.h:1976:5: note: 'bt_socket_set_connection_state_changed_cb' declared here
+
+int bt_socket_set_connection_state_changed_cb(bt_socket_connection_state_changed_cb callback, void *user_data);
+
+    ^
+
+../src/client_network.c:38:35: error: use of undeclared identifier 'bt_server_address'
+
+        error = bt_socket_connect_rfcomm(bt_server_address, UUID);
+
+                                         ^
+
+../src/client_network.c:73:4: error: use of undeclared identifier 'server_socket_fd'
+
+                        server_socket_fd = connection->socket_fd;
+
+                        ^
+
+../src/client_network.c:79:4: error: use of undeclared identifier 'ret'
+
+                        ret = bt_socket_send_data(client_socket_fd, begin, sizeof(begin));
+
+                        ^
+
+../src/client_network.c:80:8: error: use of undeclared identifier 'ret'
+
+                        if (ret != BT_ERROR_NONE)
+
+                            ^
+
+../src/client_network.c:86:4: error: use of undeclared identifier 'ret'
+
+                        ret = bt_socket_send_data(client_socket_fd, ad->tab_result, sizeof(ad->tab_result));
+
+                        ^
+
+../src/client_network.c:86:48: warning: incompatible pointer types passing 'float *' to parameter of type 'const char *' [-Wincompatible-pointer-types]
+
+                        ret = bt_socket_send_data(client_socket_fd, ad->tab_result, sizeof(ad->tab_result));
+
+                                                                    ^~~~~~~~~~~~~~
+
+C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/network\bluetooth.h:1879:52: note: passing argument to parameter 'data' here
+
+int bt_socket_send_data(int socket_fd, const char *data, int length);
+
+                                                   ^
+
+../src/client_network.c:87:8: error: use of undeclared identifier 'ret'
+
+                        if (ret != BT_ERROR_NONE)
+
+                            ^
+
+../src/client_network.c:95:4: error: use of undeclared identifier 'ret'
+
+                        ret = bt_socket_send_data(client_socket_fd, end, sizeof(end));
+
+                        ^
+
+../src/client_network.c:96:8: error: use of undeclared identifier 'ret'
+
+                        if (ret != BT_ERROR_NONE)
+
+                            ^
+
+../src/client_network.c:102:4: error: use of undeclared identifier 'ret'
+
+                        ret = bt_socket_disconnect_rfcomm(server_socket_fd);
+
+                        ^
+
+../src/client_network.c:102:38: error: use of undeclared identifier 'server_socket_fd'; did you mean 'client_socket_fd'?
+
+                        ret = bt_socket_disconnect_rfcomm(server_socket_fd);
+
+                                                          ^~~~~~~~~~~~~~~~
+
+                                                          client_socket_fd
+
+../src/client_network.c:76:8: note: 'client_socket_fd' declared here
+
+                        int client_socket_fd = 0;
+
+                            ^
+
+../src/client_network.c:103:8: error: use of undeclared identifier 'ret'
+
+                        if (ret != BT_ERROR_NONE)
+
+                            ^
+
+../src/client_network.c:105:100: error: use of undeclared identifier 'server_socket_fd'; did you mean 'client_socket_fd'?
+
+                           dlog_print(DLOG_ERROR, LOG_TAG, "[bt_socket_destroy_rfcomm] Failed. server_socket_fd = %d.", server_socket_fd);
+
+                                                                                                                        ^~~~~~~~~~~~~~~~
+
+                                                                                                                        client_socket_fd
+
+../src/client_network.c:76:8: note: 'client_socket_fd' declared here
+
+                        int client_socket_fd = 0;
+
+                            ^
+
+../src/client_network.c:109:102: error: use of undeclared identifier 'server_socket_fd'; did you mean 'client_socket_fd'?
+
+                           dlog_print(DLOG_INFO, LOG_TAG, "[bt_socket_destroy_rfcomm] Succeeded. server_socket_fd = %d.", server_socket_fd);
+
+                                                                                                                          ^~~~~~~~~~~~~~~~
+
+                                                                                                                          client_socket_fd
+
+../src/client_network.c:76:8: note: 'client_socket_fd' declared here
+
+                        int client_socket_fd = 0;
+
+                            ^
+
+1 warning and 14 errors generated.
+
+ninja: build stopped: subcommand failed.
+13:17:04 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/2] Building src/client_network.o
+FAILED: clang.exe -MMD -MT src/client_network.o -MF src/client_network.o.d  -DTIZEN_DEPRECATION -DDEPRECATION_WARNING -I"../inc" -O0 -g3 -Wall -c -fmessage-length=0 -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/libxml2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/SDL2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appcore-agent" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appcore-watch" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appfw" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/badge" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/base" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/cairo" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/calendar-service2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/chromium-ewk" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ckm" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/contacts-svc" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/content" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/context-service" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/csr" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dali" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dali-toolkit" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dbus-1.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/device" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dlog" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-buffer-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-con-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-file-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-imf-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-imf-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-input-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-input-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-ipc-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ector-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/e_dbus-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/edje-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eet-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efl-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efl-extension" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efreet-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eina-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eina-1/eina" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eio-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eldbus-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/elementary-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/embryo-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/emile-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eo-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eom" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ethumb-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ethumb-client-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/feedback" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/fontconfig" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/freetype2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/gio-unix-2.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/glib-2.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/harfbuzz" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/iotcon" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/json-glib-1.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/location" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/maps" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/media" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/media-content" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/messaging" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/metadata-editor" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/minizip" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/network" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/notification" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/nsd/" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/phonenumber-utils" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/sensor" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/storage" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/system" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/telephony" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/tzsh" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ui" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/vulkan" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_service" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_viewer_dali" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_viewer_evas" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/yaca" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/lib/dbus-1.0/include" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/lib/glib-2.0/include" -target arm-tizen-linux-gnueabi -gcc-toolchain "C:\tizen-studio\tools\arm-linux-gnueabi-gcc-4.9/" -ccc-gcc-name arm-linux-gnueabi-g++ -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mtune=cortex-a8 -Wno-gnu  -fPIE --sysroot="C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core" -mthumb -Werror-implicit-function-declaration  -c ../src/client_network.c -o src/client_network.o
+../src/client_network.c:36:4: error: use of undeclared identifier 'server_socket_fd'
+
+                        server_socket_fd = connection->socket_fd;
+
+                        ^
+
+../src/client_network.c:42:4: error: use of undeclared identifier 'ret'
+
+                        ret = bt_socket_send_data(client_socket_fd, begin, sizeof(begin));
+
+                        ^
+
+../src/client_network.c:43:8: error: use of undeclared identifier 'ret'
+
+                        if (ret != BT_ERROR_NONE)
+
+                            ^
+
+../src/client_network.c:49:4: error: use of undeclared identifier 'ret'
+
+                        ret = bt_socket_send_data(client_socket_fd, ad->tab_result, sizeof(ad->tab_result));
+
+                        ^
+
+../src/client_network.c:49:48: warning: incompatible pointer types passing 'float *' to parameter of type 'const char *' [-Wincompatible-pointer-types]
+
+                        ret = bt_socket_send_data(client_socket_fd, ad->tab_result, sizeof(ad->tab_result));
+
+                                                                    ^~~~~~~~~~~~~~
+
+C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/network\bluetooth.h:1879:52: note: passing argument to parameter 'data' here
+
+int bt_socket_send_data(int socket_fd, const char *data, int length);
+
+                                                   ^
+
+../src/client_network.c:50:8: error: use of undeclared identifier 'ret'
+
+                        if (ret != BT_ERROR_NONE)
+
+                            ^
+
+../src/client_network.c:58:4: error: use of undeclared identifier 'ret'
+
+                        ret = bt_socket_send_data(client_socket_fd, end, sizeof(end));
+
+                        ^
+
+../src/client_network.c:59:8: error: use of undeclared identifier 'ret'
+
+                        if (ret != BT_ERROR_NONE)
+
+                            ^
+
+../src/client_network.c:65:4: error: use of undeclared identifier 'ret'
+
+                        ret = bt_socket_disconnect_rfcomm(server_socket_fd);
+
+                        ^
+
+../src/client_network.c:65:38: error: use of undeclared identifier 'server_socket_fd'; did you mean 'client_socket_fd'?
+
+                        ret = bt_socket_disconnect_rfcomm(server_socket_fd);
+
+                                                          ^~~~~~~~~~~~~~~~
+
+                                                          client_socket_fd
+
+../src/client_network.c:39:8: note: 'client_socket_fd' declared here
+
+                        int client_socket_fd = 0;
+
+                            ^
+
+../src/client_network.c:66:8: error: use of undeclared identifier 'ret'
+
+                        if (ret != BT_ERROR_NONE)
+
+                            ^
+
+../src/client_network.c:68:100: error: use of undeclared identifier 'server_socket_fd'; did you mean 'client_socket_fd'?
+
+                           dlog_print(DLOG_ERROR, LOG_TAG, "[bt_socket_destroy_rfcomm] Failed. server_socket_fd = %d.", server_socket_fd);
+
+                                                                                                                        ^~~~~~~~~~~~~~~~
+
+                                                                                                                        client_socket_fd
+
+../src/client_network.c:39:8: note: 'client_socket_fd' declared here
+
+                        int client_socket_fd = 0;
+
+                            ^
+
+../src/client_network.c:72:102: error: use of undeclared identifier 'server_socket_fd'; did you mean 'client_socket_fd'?
+
+                           dlog_print(DLOG_INFO, LOG_TAG, "[bt_socket_destroy_rfcomm] Succeeded. server_socket_fd = %d.", server_socket_fd);
+
+                                                                                                                          ^~~~~~~~~~~~~~~~
+
+                                                                                                                          client_socket_fd
+
+../src/client_network.c:39:8: note: 'client_socket_fd' declared here
+
+                        int client_socket_fd = 0;
+
+                            ^
+
+../src/client_network.c:117:35: error: use of undeclared identifier 'bt_server_address'
+
+        error = bt_socket_connect_rfcomm(bt_server_address, UUID);
+
+                                         ^
+
+1 warning and 13 errors generated.
+
+ninja: build stopped: subcommand failed.
+13:18:12 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/2] Building src/client_network.o
+FAILED: clang.exe -MMD -MT src/client_network.o -MF src/client_network.o.d  -DTIZEN_DEPRECATION -DDEPRECATION_WARNING -I"../inc" -O0 -g3 -Wall -c -fmessage-length=0 -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/libxml2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/SDL2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appcore-agent" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appcore-watch" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appfw" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/badge" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/base" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/cairo" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/calendar-service2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/chromium-ewk" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ckm" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/contacts-svc" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/content" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/context-service" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/csr" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dali" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dali-toolkit" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dbus-1.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/device" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dlog" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-buffer-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-con-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-file-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-imf-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-imf-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-input-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-input-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-ipc-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ector-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/e_dbus-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/edje-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eet-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efl-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efl-extension" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efreet-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eina-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eina-1/eina" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eio-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eldbus-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/elementary-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/embryo-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/emile-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eo-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eom" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ethumb-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ethumb-client-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/feedback" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/fontconfig" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/freetype2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/gio-unix-2.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/glib-2.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/harfbuzz" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/iotcon" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/json-glib-1.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/location" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/maps" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/media" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/media-content" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/messaging" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/metadata-editor" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/minizip" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/network" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/notification" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/nsd/" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/phonenumber-utils" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/sensor" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/storage" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/system" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/telephony" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/tzsh" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ui" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/vulkan" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_service" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_viewer_dali" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_viewer_evas" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/yaca" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/lib/dbus-1.0/include" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/lib/glib-2.0/include" -target arm-tizen-linux-gnueabi -gcc-toolchain "C:\tizen-studio\tools\arm-linux-gnueabi-gcc-4.9/" -ccc-gcc-name arm-linux-gnueabi-g++ -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mtune=cortex-a8 -Wno-gnu  -fPIE --sysroot="C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core" -mthumb -Werror-implicit-function-declaration  -c ../src/client_network.c -o src/client_network.o
+../src/client_network.c:37:4: error: use of undeclared identifier 'server_socket_fd'
+
+                        server_socket_fd = connection->socket_fd;
+
+                        ^
+
+../src/client_network.c:50:50: warning: incompatible pointer types passing 'float *' to parameter of type 'const char *' [-Wincompatible-pointer-types]
+
+                        error = bt_socket_send_data(client_socket_fd, ad->tab_result, sizeof(ad->tab_result));
+
+                                                                      ^~~~~~~~~~~~~~
+
+C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/network\bluetooth.h:1879:52: note: passing argument to parameter 'data' here
+
+int bt_socket_send_data(int socket_fd, const char *data, int length);
+
+                                                   ^
+
+../src/client_network.c:66:40: error: use of undeclared identifier 'server_socket_fd'; did you mean 'client_socket_fd'?
+
+                        error = bt_socket_disconnect_rfcomm(server_socket_fd);
+
+                                                            ^~~~~~~~~~~~~~~~
+
+                                                            client_socket_fd
+
+../src/client_network.c:40:8: note: 'client_socket_fd' declared here
+
+                        int client_socket_fd = 0;
+
+                            ^
+
+../src/client_network.c:69:100: error: use of undeclared identifier 'server_socket_fd'; did you mean 'client_socket_fd'?
+
+                           dlog_print(DLOG_ERROR, LOG_TAG, "[bt_socket_destroy_rfcomm] Failed. server_socket_fd = %d.", server_socket_fd);
+
+                                                                                                                        ^~~~~~~~~~~~~~~~
+
+                                                                                                                        client_socket_fd
+
+../src/client_network.c:40:8: note: 'client_socket_fd' declared here
+
+                        int client_socket_fd = 0;
+
+                            ^
+
+../src/client_network.c:73:102: error: use of undeclared identifier 'server_socket_fd'; did you mean 'client_socket_fd'?
+
+                           dlog_print(DLOG_INFO, LOG_TAG, "[bt_socket_destroy_rfcomm] Succeeded. server_socket_fd = %d.", server_socket_fd);
+
+                                                                                                                          ^~~~~~~~~~~~~~~~
+
+                                                                                                                          client_socket_fd
+
+../src/client_network.c:40:8: note: 'client_socket_fd' declared here
+
+                        int client_socket_fd = 0;
+
+                            ^
+
+../src/client_network.c:118:35: error: use of undeclared identifier 'bt_server_address'
+
+        error = bt_socket_connect_rfcomm(bt_server_address, UUID);
+
+                                         ^
+
+1 warning and 5 errors generated.
+
+ninja: build stopped: subcommand failed.
+13:20:51 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/2] Building src/client_network.o
+FAILED: clang.exe -MMD -MT src/client_network.o -MF src/client_network.o.d  -DTIZEN_DEPRECATION -DDEPRECATION_WARNING -I"../inc" -O0 -g3 -Wall -c -fmessage-length=0 -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/libxml2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/SDL2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appcore-agent" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appcore-watch" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appfw" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/badge" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/base" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/cairo" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/calendar-service2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/chromium-ewk" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ckm" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/contacts-svc" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/content" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/context-service" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/csr" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dali" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dali-toolkit" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dbus-1.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/device" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dlog" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-buffer-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-con-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-file-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-imf-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-imf-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-input-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-input-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-ipc-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ector-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/e_dbus-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/edje-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eet-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efl-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efl-extension" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efreet-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eina-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eina-1/eina" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eio-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eldbus-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/elementary-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/embryo-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/emile-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eo-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eom" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ethumb-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ethumb-client-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/feedback" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/fontconfig" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/freetype2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/gio-unix-2.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/glib-2.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/harfbuzz" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/iotcon" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/json-glib-1.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/location" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/maps" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/media" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/media-content" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/messaging" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/metadata-editor" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/minizip" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/network" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/notification" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/nsd/" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/phonenumber-utils" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/sensor" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/storage" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/system" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/telephony" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/tzsh" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ui" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/vulkan" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_service" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_viewer_dali" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_viewer_evas" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/yaca" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/lib/dbus-1.0/include" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/lib/glib-2.0/include" -target arm-tizen-linux-gnueabi -gcc-toolchain "C:\tizen-studio\tools\arm-linux-gnueabi-gcc-4.9/" -ccc-gcc-name arm-linux-gnueabi-g++ -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mtune=cortex-a8 -Wno-gnu  -fPIE --sysroot="C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core" -mthumb -Werror-implicit-function-declaration  -c ../src/client_network.c -o src/client_network.o
+../src/client_network.c:37:4: error: use of undeclared identifier 'server_socket_fd'
+
+                        server_socket_fd = connection->socket_fd;
+
+                        ^
+
+../src/client_network.c:50:50: warning: incompatible pointer types passing 'float *' to parameter of type 'const char *' [-Wincompatible-pointer-types]
+
+                        error = bt_socket_send_data(client_socket_fd, ad->tab_result, sizeof(ad->tab_result));
+
+                                                                      ^~~~~~~~~~~~~~
+
+C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/network\bluetooth.h:1879:52: note: passing argument to parameter 'data' here
+
+int bt_socket_send_data(int socket_fd, const char *data, int length);
+
+                                                   ^
+
+../src/client_network.c:69:100: error: use of undeclared identifier 'server_socket_fd'; did you mean 'client_socket_fd'?
+
+                           dlog_print(DLOG_ERROR, LOG_TAG, "[bt_socket_destroy_rfcomm] Failed. server_socket_fd = %d.", server_socket_fd);
+
+                                                                                                                        ^~~~~~~~~~~~~~~~
+
+                                                                                                                        client_socket_fd
+
+../src/client_network.c:40:8: note: 'client_socket_fd' declared here
+
+                        int client_socket_fd = 0;
+
+                            ^
+
+../src/client_network.c:73:102: error: use of undeclared identifier 'server_socket_fd'; did you mean 'client_socket_fd'?
+
+                           dlog_print(DLOG_INFO, LOG_TAG, "[bt_socket_destroy_rfcomm] Succeeded. server_socket_fd = %d.", server_socket_fd);
+
+                                                                                                                          ^~~~~~~~~~~~~~~~
+
+                                                                                                                          client_socket_fd
+
+../src/client_network.c:40:8: note: 'client_socket_fd' declared here
+
+                        int client_socket_fd = 0;
+
+                            ^
+
+../src/client_network.c:118:35: error: use of undeclared identifier 'bt_server_address'
+
+        error = bt_socket_connect_rfcomm(bt_server_address, UUID);
+
+                                         ^
+
+1 warning and 4 errors generated.
+
+ninja: build stopped: subcommand failed.
+13:22:31 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/2] Building src/client_network.o
+FAILED: clang.exe -MMD -MT src/client_network.o -MF src/client_network.o.d  -DTIZEN_DEPRECATION -DDEPRECATION_WARNING -I"../inc" -O0 -g3 -Wall -c -fmessage-length=0 -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/libxml2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/SDL2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appcore-agent" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appcore-watch" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appfw" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/badge" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/base" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/cairo" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/calendar-service2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/chromium-ewk" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ckm" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/contacts-svc" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/content" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/context-service" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/csr" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dali" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dali-toolkit" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dbus-1.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/device" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dlog" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-buffer-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-con-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-file-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-imf-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-imf-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-input-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-input-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-ipc-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ector-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/e_dbus-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/edje-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eet-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efl-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efl-extension" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efreet-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eina-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eina-1/eina" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eio-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eldbus-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/elementary-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/embryo-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/emile-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eo-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eom" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ethumb-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ethumb-client-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/feedback" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/fontconfig" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/freetype2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/gio-unix-2.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/glib-2.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/harfbuzz" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/iotcon" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/json-glib-1.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/location" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/maps" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/media" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/media-content" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/messaging" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/metadata-editor" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/minizip" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/network" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/notification" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/nsd/" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/phonenumber-utils" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/sensor" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/storage" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/system" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/telephony" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/tzsh" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ui" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/vulkan" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_service" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_viewer_dali" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_viewer_evas" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/yaca" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/lib/dbus-1.0/include" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/lib/glib-2.0/include" -target arm-tizen-linux-gnueabi -gcc-toolchain "C:\tizen-studio\tools\arm-linux-gnueabi-gcc-4.9/" -ccc-gcc-name arm-linux-gnueabi-g++ -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mtune=cortex-a8 -Wno-gnu  -fPIE --sysroot="C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core" -mthumb -Werror-implicit-function-declaration  -c ../src/client_network.c -o src/client_network.o
+../src/client_network.c:50:50: warning: incompatible pointer types passing 'float *' to parameter of type 'const char *' [-Wincompatible-pointer-types]
+
+                        error = bt_socket_send_data(client_socket_fd, ad->tab_result, sizeof(ad->tab_result));
+
+                                                                      ^~~~~~~~~~~~~~
+
+C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/network\bluetooth.h:1879:52: note: passing argument to parameter 'data' here
+
+int bt_socket_send_data(int socket_fd, const char *data, int length);
+
+                                                   ^
+
+../src/client_network.c:118:35: error: use of undeclared identifier 'bt_server_address'
+
+        error = bt_socket_connect_rfcomm(bt_server_address, UUID);
+
+                                         ^
+
+1 warning and 1 error generated.
+
+ninja: build stopped: subcommand failed.
+13:34:29 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/2] Building src/client_network.o
+FAILED: clang.exe -MMD -MT src/client_network.o -MF src/client_network.o.d  -DTIZEN_DEPRECATION -DDEPRECATION_WARNING -I"../inc" -O0 -g3 -Wall -c -fmessage-length=0 -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/libxml2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/SDL2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appcore-agent" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appcore-watch" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appfw" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/badge" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/base" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/cairo" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/calendar-service2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/chromium-ewk" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ckm" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/contacts-svc" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/content" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/context-service" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/csr" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dali" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dali-toolkit" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dbus-1.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/device" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dlog" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-buffer-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-con-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-file-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-imf-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-imf-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-input-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-input-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-ipc-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ector-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/e_dbus-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/edje-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eet-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efl-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efl-extension" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efreet-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eina-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eina-1/eina" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eio-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eldbus-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/elementary-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/embryo-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/emile-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eo-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eom" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ethumb-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ethumb-client-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/feedback" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/fontconfig" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/freetype2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/gio-unix-2.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/glib-2.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/harfbuzz" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/iotcon" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/json-glib-1.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/location" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/maps" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/media" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/media-content" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/messaging" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/metadata-editor" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/minizip" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/network" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/notification" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/nsd/" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/phonenumber-utils" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/sensor" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/storage" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/system" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/telephony" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/tzsh" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ui" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/vulkan" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_service" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_viewer_dali" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_viewer_evas" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/yaca" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/lib/dbus-1.0/include" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/lib/glib-2.0/include" -target arm-tizen-linux-gnueabi -gcc-toolchain "C:\tizen-studio\tools\arm-linux-gnueabi-gcc-4.9/" -ccc-gcc-name arm-linux-gnueabi-g++ -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mtune=cortex-a8 -Wno-gnu  -fPIE --sysroot="C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core" -mthumb -Werror-implicit-function-declaration  -c ../src/client_network.c -o src/client_network.o
+../src/client_network.c:55:27: error: passing 'float' to parameter of incompatible type 'char *'
+
+                                tab[counter] = strcat(ad->tab_result[counter], "\t");
+
+                                                      ^~~~~~~~~~~~~~~~~~~~~~~
+
+C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include\string.h:137:39: note: passing argument to parameter '__dest' here
+
+extern char *strcat (char *__restrict __dest, const char *__restrict __src)
+
+                                      ^
+
+../src/client_network.c:59:50: warning: incompatible pointer types passing 'float *' to parameter of type 'const char *' [-Wincompatible-pointer-types]
+
+                        error = bt_socket_send_data(client_socket_fd, ad->tab_result, sizeof(ad->tab_result));
+
+                                                                      ^~~~~~~~~~~~~~
+
+C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/network\bluetooth.h:1879:52: note: passing argument to parameter 'data' here
+
+int bt_socket_send_data(int socket_fd, const char *data, int length);
+
+                                                   ^
+
+../src/client_network.c:127:35: error: use of undeclared identifier 'bt_server_address'
+
+        error = bt_socket_connect_rfcomm(bt_server_address, UUID);
+
+                                         ^
+
+1 warning and 2 errors generated.
+
+ninja: build stopped: subcommand failed.
+13:41:31 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/2] Building src/client_network.o
+FAILED: clang.exe -MMD -MT src/client_network.o -MF src/client_network.o.d  -DTIZEN_DEPRECATION -DDEPRECATION_WARNING -I"../inc" -O0 -g3 -Wall -c -fmessage-length=0 -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/libxml2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/SDL2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appcore-agent" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appcore-watch" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appfw" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/badge" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/base" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/cairo" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/calendar-service2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/chromium-ewk" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ckm" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/contacts-svc" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/content" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/context-service" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/csr" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dali" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dali-toolkit" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dbus-1.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/device" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dlog" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-buffer-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-con-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-file-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-imf-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-imf-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-input-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-input-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-ipc-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ector-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/e_dbus-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/edje-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eet-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efl-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efl-extension" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efreet-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eina-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eina-1/eina" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eio-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eldbus-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/elementary-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/embryo-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/emile-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eo-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eom" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ethumb-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ethumb-client-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/feedback" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/fontconfig" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/freetype2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/gio-unix-2.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/glib-2.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/harfbuzz" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/iotcon" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/json-glib-1.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/location" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/maps" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/media" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/media-content" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/messaging" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/metadata-editor" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/minizip" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/network" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/notification" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/nsd/" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/phonenumber-utils" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/sensor" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/storage" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/system" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/telephony" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/tzsh" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ui" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/vulkan" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_service" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_viewer_dali" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_viewer_evas" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/yaca" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/lib/dbus-1.0/include" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/lib/glib-2.0/include" -target arm-tizen-linux-gnueabi -gcc-toolchain "C:\tizen-studio\tools\arm-linux-gnueabi-gcc-4.9/" -ccc-gcc-name arm-linux-gnueabi-g++ -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mtune=cortex-a8 -Wno-gnu  -fPIE --sysroot="C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core" -mthumb -Werror-implicit-function-declaration  -c ../src/client_network.c -o src/client_network.o
+../src/client_network.c:131:35: error: use of undeclared identifier 'bt_server_address'
+
+        error = bt_socket_connect_rfcomm(bt_server_address, UUID);
+
+                                         ^
+
+1 error generated.
+
+ninja: build stopped: subcommand failed.
+13:41:39 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/2] Building src/client_network.o
+FAILED: clang.exe -MMD -MT src/client_network.o -MF src/client_network.o.d  -DTIZEN_DEPRECATION -DDEPRECATION_WARNING -I"../inc" -O0 -g3 -Wall -c -fmessage-length=0 -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/libxml2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/SDL2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appcore-agent" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appcore-watch" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appfw" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/badge" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/base" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/cairo" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/calendar-service2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/chromium-ewk" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ckm" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/contacts-svc" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/content" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/context-service" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/csr" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dali" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dali-toolkit" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dbus-1.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/device" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dlog" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-buffer-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-con-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-file-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-imf-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-imf-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-input-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-input-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-ipc-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ector-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/e_dbus-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/edje-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eet-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efl-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efl-extension" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efreet-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eina-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eina-1/eina" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eio-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eldbus-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/elementary-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/embryo-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/emile-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eo-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eom" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ethumb-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ethumb-client-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/feedback" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/fontconfig" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/freetype2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/gio-unix-2.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/glib-2.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/harfbuzz" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/iotcon" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/json-glib-1.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/location" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/maps" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/media" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/media-content" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/messaging" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/metadata-editor" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/minizip" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/network" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/notification" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/nsd/" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/phonenumber-utils" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/sensor" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/storage" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/system" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/telephony" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/tzsh" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ui" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/vulkan" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_service" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_viewer_dali" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_viewer_evas" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/yaca" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/lib/dbus-1.0/include" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/lib/glib-2.0/include" -target arm-tizen-linux-gnueabi -gcc-toolchain "C:\tizen-studio\tools\arm-linux-gnueabi-gcc-4.9/" -ccc-gcc-name arm-linux-gnueabi-g++ -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mtune=cortex-a8 -Wno-gnu  -fPIE --sysroot="C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core" -mthumb -Werror-implicit-function-declaration  -c ../src/client_network.c -o src/client_network.o
+../src/client_network.c:131:35: error: use of undeclared identifier 'bt_server_address'
+
+        error = bt_socket_connect_rfcomm(bt_server_address, UUID);
+
+                                         ^
+
+1 error generated.
+
+ninja: build stopped: subcommand failed.
+13:44:59 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/2] Building src/client_network.o
+[2/2] Linking dataextraction
+13:46:47 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/2] Building src/client_network.o
+[2/2] Linking dataextraction
+13:55:03 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/2] Building src/client_network.o
+FAILED: clang.exe -MMD -MT src/client_network.o -MF src/client_network.o.d  -DTIZEN_DEPRECATION -DDEPRECATION_WARNING -I"../inc" -O0 -g3 -Wall -c -fmessage-length=0 -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/libxml2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/SDL2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appcore-agent" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appcore-watch" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appfw" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/badge" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/base" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/cairo" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/calendar-service2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/chromium-ewk" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ckm" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/contacts-svc" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/content" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/context-service" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/csr" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dali" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dali-toolkit" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dbus-1.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/device" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dlog" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-buffer-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-con-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-file-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-imf-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-imf-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-input-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-input-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-ipc-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ector-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/e_dbus-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/edje-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eet-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efl-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efl-extension" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efreet-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eina-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eina-1/eina" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eio-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eldbus-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/elementary-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/embryo-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/emile-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eo-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eom" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ethumb-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ethumb-client-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/feedback" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/fontconfig" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/freetype2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/gio-unix-2.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/glib-2.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/harfbuzz" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/iotcon" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/json-glib-1.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/location" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/maps" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/media" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/media-content" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/messaging" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/metadata-editor" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/minizip" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/network" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/notification" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/nsd/" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/phonenumber-utils" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/sensor" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/storage" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/system" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/telephony" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/tzsh" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ui" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/vulkan" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_service" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_viewer_dali" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_viewer_evas" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/yaca" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/lib/dbus-1.0/include" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/lib/glib-2.0/include" -target arm-tizen-linux-gnueabi -gcc-toolchain "C:\tizen-studio\tools\arm-linux-gnueabi-gcc-4.9/" -ccc-gcc-name arm-linux-gnueabi-g++ -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mtune=cortex-a8 -Wno-gnu  -fPIE --sysroot="C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core" -mthumb -Werror-implicit-function-declaration  -c ../src/client_network.c -o src/client_network.o
+In file included from ../src/client_network.c:8:
+
+../inc\client_network.h:11:50: error: unknown type name 'bt_socket_connection_state_e'
+
+void socket_connection_state_changed(int result, bt_socket_connection_state_e connection_state, bt_socket_connection_s *connection, void *user_data)
+
+                                                 ^
+
+../inc\client_network.h:11:97: error: unknown type name 'bt_socket_connection_s'
+
+void socket_connection_state_changed(int result, bt_socket_connection_state_e connection_state, bt_socket_connection_s *connection, void *user_data)
+
+                                                                                                ^
+
+../inc\client_network.h:11:149: error: expected ';' after top level declarator
+
+void socket_connection_state_changed(int result, bt_socket_connection_state_e connection_state, bt_socket_connection_s *connection, void *user_data)
+
+                                                                                                                                                    ^
+
+                                                                                                                                                    ;
+
+3 errors generated.
+
+ninja: build stopped: subcommand failed.
+13:55:25 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/2] Building src/client_network.o
+FAILED: clang.exe -MMD -MT src/client_network.o -MF src/client_network.o.d  -DTIZEN_DEPRECATION -DDEPRECATION_WARNING -I"../inc" -O0 -g3 -Wall -c -fmessage-length=0 -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/libxml2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/SDL2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appcore-agent" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appcore-watch" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/appfw" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/badge" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/base" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/cairo" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/calendar-service2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/chromium-ewk" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ckm" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/contacts-svc" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/content" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/context-service" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/csr" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dali" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dali-toolkit" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dbus-1.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/device" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/dlog" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-buffer-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-con-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-file-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-imf-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-imf-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-input-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-input-evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ecore-ipc-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ector-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/e_dbus-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/edje-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eet-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efl-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efl-extension" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/efreet-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eina-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eina-1/eina" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eio-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eldbus-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/elementary-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/embryo-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/emile-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eo-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/eom" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ethumb-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ethumb-client-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/evas-1" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/feedback" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/fontconfig" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/freetype2" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/gio-unix-2.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/glib-2.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/harfbuzz" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/iotcon" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/json-glib-1.0" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/location" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/maps" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/media" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/media-content" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/messaging" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/metadata-editor" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/minizip" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/network" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/notification" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/nsd/" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/phonenumber-utils" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/sensor" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/storage" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/system" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/telephony" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/tzsh" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/ui" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/vulkan" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_service" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_viewer_dali" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/widget_viewer_evas" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/include/yaca" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/lib/dbus-1.0/include" -I"C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core/usr/lib/glib-2.0/include" -target arm-tizen-linux-gnueabi -gcc-toolchain "C:\tizen-studio\tools\arm-linux-gnueabi-gcc-4.9/" -ccc-gcc-name arm-linux-gnueabi-g++ -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mtune=cortex-a8 -Wno-gnu  -fPIE --sysroot="C:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-3.0/wearable\rootstraps/wearable-3.0-device.core" -mthumb -Werror-implicit-function-declaration  -c ../src/client_network.c -o src/client_network.o
+In file included from ../src/client_network.c:8:
+
+../inc\client_network.h:13:149: error: expected ';' after top level declarator
+
+void socket_connection_state_changed(int result, bt_socket_connection_state_e connection_state, bt_socket_connection_s *connection, void *user_data)
+
+                                                                                                                                                    ^
+
+                                                                                                                                                    ;
+
+1 error generated.
+
+ninja: build stopped: subcommand failed.
+13:55:34 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/2] Building src/client_network.o
+[2/2] Linking dataextraction
+13:56:06 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/2] Building src/bluetooth_screen.o
+[2/2] Linking dataextraction
+13:56:16 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/2] Building src/bluetooth_screen.o
+[2/2] Linking dataextraction
+17:03:48 **** Incremental Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+17:03:52 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+17:03:53 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+17:03:55 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+17:03:58 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+17:04:05 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+17:05:47 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+[1/2] Building src/client_network.o
+[2/2] Linking dataextraction
+17:05:56 **** Incremental Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+17:06:00 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+17:06:02 **** Auto Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.
+17:06:13 **** Incremental Build of configuration Debug for project dataextraction ****
+ninja all 
+ninja: no work to do.

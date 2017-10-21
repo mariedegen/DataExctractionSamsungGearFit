@@ -11,8 +11,8 @@
 //Style for label
 #define STYLE_BEGIN_HEADER "<font=Tizen:style=condensed font_size=30>"
 #define STYLE_END_HEADER "</font/>"
-#define STYLE_TEXT_BEGIN "<align=center><font=Tizen:style=regular font_size=25>"
-#define STYLE_TEXT_END "</font/></align>"
+#define STYLE_TEXT_BEGIN "<align=center>"
+#define STYLE_TEXT_END "</align>"
 
 //Constants
 #define HEART_RECORDING "Heart Recording"
@@ -24,6 +24,9 @@
 #define STOP_BUTTON "STOP"
 #define START_BUTTON_LABEL "Press the start button to begin the heart rate recording."
 #define START_BUTTON "START"
+
+//Bluetooth constants
+#define UUID "00000000-0000-0000-0000-4CCC6A7E664C"
 
 //Macro for the header style
 #define style_header(x) STYLE_BEGIN_HEADER x STYLE_END_HEADER

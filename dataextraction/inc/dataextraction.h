@@ -23,13 +23,13 @@ typedef struct appdata {
 	Evas_Object *box;
 	Evas_Object *box_recording;
 	Evas_Object *box_bluetooth;
-	Evas_Object *box_heart_rate;
+	Evas_Object *box_heart;
 	Evas_Object *progress_bar;
 	Evas_Object *label;
 	Evas_Object *label2;
 	Evas_Object *label3;
 	Evas_Object *label4;
-	Evas_Object *label_heart_rate;
+	Evas_Object *label_heart;
 	Evas_Object *label_bluetooth;
 	float *tab_result;
 	unsigned int tab_result_counter;

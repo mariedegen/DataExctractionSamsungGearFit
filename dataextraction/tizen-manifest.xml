@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <manifest xmlns="http://tizen.org/ns/packages" api-version="3.0" package="org.example.dataextraction" version="1.0.0">
     <author>Marie Degen &amp; Pauline Lauron</author>
+    <description>Logo fait par Marie Paulon (étudiante en 4ème année à Brassart)</description>
     <profile name="wearable"/>
     <ui-application appid="org.example.dataextraction" exec="dataextraction" multiple="false" nodisplay="false" taskmanage="true" type="capp">
         <label>Health Reacording</label>
-        <icon>logo.png</icon>
+        <icon>heart.png</icon>
     </ui-application>
     <privileges>
         <privilege>http://tizen.org/privilege/healthinfo</privilege>

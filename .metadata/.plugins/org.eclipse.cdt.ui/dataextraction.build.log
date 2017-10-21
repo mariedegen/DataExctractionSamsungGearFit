@@ -1,6 +1,6 @@
-19:18:20 **** Auto Build of configuration Debug for project dataextraction ****
+17:06:13 **** Incremental Build of configuration Debug for project dataextraction ****
 ninja all 
 ninja: no work to do.
 
-19:18:20 Build Finished (took 84ms)
+17:06:13 Build Finished (took 84ms)
 

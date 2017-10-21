@@ -62,10 +62,10 @@ static void create_base_gui(appdata_s *ad)
     elm_object_content_set(ad->conform, ad->nf);
 
     //Add the different box into the naviframe
-    heart_rate_waiting(ad);
-    start_button_screen(ad);
-    stop_button_screen(ad);
     bluetooth_screen(ad);
+    stop_button_screen(ad);
+    start_button_screen(ad);
+    heart_rate_waiting(ad);
 
 	//Show window after base gui is set up
 	evas_object_show(ad->win);
