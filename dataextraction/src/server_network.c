@@ -258,15 +258,6 @@ void stop_advertising(bt_advertiser_h advertizer)
 	checkBtError(error, "bt_adapter_le_stop_advertising");
 }
 
-/*
- * @brief: Function clears all the advertiser's settings and data.
- * This is a wrapper function for the bt_adapter_le_clear_advertising_data() function.
- * @param[adv_h]: the handle of the prior created advertiser.
- * @param[pkt_type]: the type of the packet to be affected. The available packet types are: BT_ADAPTER_LE_PACKET_ADVERTISING,
- * BT_ADAPTER_LE_PACKET_SCAN_RESPONSE.
- * @return: the function returns 'true' if the advertiser was cleared successfully, otherwise 'false' is returned.
- */
-
 /**
 * @brief Clear all the advertizer's settings and data
 * @param advertizer
