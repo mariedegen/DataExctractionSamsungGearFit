@@ -6,6 +6,7 @@
 
 #include <sensor.h>
 #include <dlog.h>
+#include <server_network.h>
 #include "recording.h"
 #include "dataextraction.h"
 #include "timer.h"

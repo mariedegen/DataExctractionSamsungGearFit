@@ -5,11 +5,11 @@
  *      Author: Marie
  */
 
+#include <server_network.h>
 #include "recording.h"
 #include "dataextraction.h"
 #include "constants.h"
 #include "bluetooth.h"
-#include "client_network.h"
 
 void bluetooth_screen(void *data){
 	appdata_s *ad = (appdata_s*)data;
@@ -32,7 +32,5 @@ void bluetooth_screen(void *data){
 
 	//Push this window into the naviframe
 	elm_naviframe_item_push(ad->nf, style_header(HEART_RECORDING), NULL, NULL, ad->box_bluetooth, NULL);
-
-	connection_to_server();
 
 }

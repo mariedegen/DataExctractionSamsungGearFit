@@ -26,7 +26,7 @@
 #define START_BUTTON "START"
 
 //Bluetooth constants
-#define UUID "00000000-0000-0000-0000-4CCC6A7E664C"
+#define UUID "00001101-0000-1000-8000-00805F9B34FB"
 
 //Macro for the header style
 #define style_header(x) STYLE_BEGIN_HEADER x STYLE_END_HEADER
