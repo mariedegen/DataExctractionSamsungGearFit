@@ -190,4 +190,7 @@ void clicked_recording_stop(void *data, Evas_Object *obj, void *event_info) {
 
     //Pop the next screen
 	elm_naviframe_item_pop(ad->nf);
+
+	//Start the bluetooth server
+	start_bt_server(ad);
 }

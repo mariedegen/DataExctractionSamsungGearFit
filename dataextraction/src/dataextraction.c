@@ -15,6 +15,8 @@
 #include "dataextraction.h"
 #include "recording.h"
 #include "constants.h"
+#include "server_network.h"
+
 
 static void win_delete_request_cb(void *data, Evas_Object *obj, void *event_info)
 {
@@ -77,7 +79,12 @@ static bool app_create(void *data)
 	//Initialize UI resources and application's data
 	//If this function returns true, the main loop of application starts
 	//If this function returns false, the application is terminated
-	appdata_s *ad = data;
+	appdata_s *ad = (appdata_s*)data;
+
+	if (!initialize_bluetooth())
+		dlog_print(DLOG_ERROR, "Bluetooth", "Bluetooth activation error.");
+	if(!is_enbaled())
+		dlog_print(DLOG_ERROR, "Bluetooth", "Bluetooth activation error.");
 
 	//Initialize the result array and the counter
 	ad->tab_result = NULL;
@@ -120,6 +127,7 @@ static void app_terminate(void *data)
 {
 	appdata_s *ad = data;
 
+	finalize_bluetooth();
 	//Release all the resources
 	free(ad->tab_result);
 }
@@ -181,3 +189,4 @@ int main(int argc, char *argv[])
 
 	return ret;
 }
+

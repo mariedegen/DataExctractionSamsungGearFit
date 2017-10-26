@@ -4,7 +4,6 @@
 #include <Elementary.h>
 #include <sensor.h>
 
-
 #ifdef  LOG_TAG
 #undef  LOG_TAG
 #endif
@@ -13,6 +12,9 @@
 #if !defined(PACKAGE)
 #define PACKAGE "org.example.dataextraction"
 #endif
+
+struct bt_server_s;
+typedef struct bt_server bt_server_s;
 
 typedef struct appdata {
 	Evas_Object *win;
@@ -36,6 +38,7 @@ typedef struct appdata {
 	sensor_listener_h listener;
 	sensor_h sensor;
 	unsigned int start;
+	bt_server_s* server;
 } appdata_s;
 
 void _add_entry_text(const char *text);

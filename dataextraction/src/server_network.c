@@ -4,129 +4,129 @@
 #include "dataextraction.h"
 #include <dlog.h>
 #include "constants.h"
+#include "server_network.h"
 
 int error;
-bt_advertiser_h advertiser;
 
 /**
 * @brief Check the different type of error you can have for a given function
 * @param int error
 * @param functionName the function we are trying
 **/
-void checkBtError(int error, const char* functionName)
+bool checkBtError(int error, const char* functionName)
 {
 	switch(error)
 	{
 		case BT_ERROR_CANCELLED:
 			dlog_print(DLOG_ERROR, "Bluetooth", "[%s] CANCELLED", functionName);
-			break;
+			return false;
 		case BT_ERROR_OUT_OF_MEMORY:
 			dlog_print(DLOG_ERROR, "Bluetooth", "[%s] BT_ERROR_OUT_OF_MEMORY", functionName);
-			break;
+			return false;
 		case BT_ERROR_RESOURCE_BUSY :
 			dlog_print(DLOG_ERROR, "Bluetooth", "[%s] BT_ERROR_RESOURCE_BUSY ", functionName);
-			break;
+			return false;
 		case BT_ERROR_TIMED_OUT :
 			dlog_print(DLOG_ERROR, "Bluetooth", "[%s] BT_ERROR_TIMED_OUT", functionName);
-			break;
+			return false;
 		case BT_ERROR_NOW_IN_PROGRESS :
 			dlog_print(DLOG_ERROR, "Bluetooth", "[%s] BT_ERROR_NOW_IN_PROGRESS ", functionName);
-			break;
+			return false;
 		case BT_ERROR_NOT_SUPPORTED :
 			dlog_print(DLOG_ERROR, "Bluetooth", "[%s] BT_ERROR_NOT_SUPPORTED ", functionName);
-			break;
+			return false;
 		case BT_ERROR_PERMISSION_DENIED :
 			dlog_print(DLOG_ERROR, "Bluetooth", "[%s] BT_ERROR_PERMISSION_DENIED ", functionName);
-			break;
+			return false;
 		case BT_ERROR_QUOTA_EXCEEDED :
 			dlog_print(DLOG_ERROR, "Bluetooth", "[%s] BT_ERROR_QUOTA_EXCEEDED ", functionName);
-			break;
+			return false;
 		case BT_ERROR_NO_DATA:
 			dlog_print(DLOG_ERROR, "Bluetooth", "[%s] BT_ERROR_NO_DATA", functionName);
-			break;
+			return false;;
 		case BT_ERROR_NOT_INITIALIZED :
 			dlog_print(DLOG_ERROR, "Bluetooth", "[%s] BT_ERROR_NOT_INITIALIZED ", functionName);
-			break;
+			return false;
 		case BT_ERROR_NOT_ENABLED :
 			dlog_print(DLOG_ERROR, "Bluetooth", "[%s] BT_ERROR_NOT_ENABLED ", functionName);
-			break;
+			return false;
 		case BT_ERROR_ALREADY_DONE :
 			dlog_print(DLOG_ERROR, "Bluetooth", "[%s] BT_ERROR_ALREADY_DONE ", functionName);
-			break;
+			return false;
 		case BT_ERROR_NOT_IN_PROGRESS :
 			dlog_print(DLOG_ERROR, "Bluetooth", "[%s] BT_ERROR_NOT_IN_PROGRESS ", functionName);
-			break;
+			return false;
 		case BT_ERROR_REMOTE_DEVICE_NOT_BONDED :
 			dlog_print(DLOG_ERROR, "Bluetooth", "[%s] BT_ERROR_REMOTE_DEVICE_NOT_BONDED ", functionName);
-			break;
+			return false;
 		case BT_ERROR_AUTH_REJECTED :
 			dlog_print(DLOG_ERROR, "Bluetooth", "[%s] BT_ERROR_AUTH_REJECTED ", functionName);
-			break;
+			return false;
 		case BT_ERROR_AUTH_FAILED :
 			dlog_print(DLOG_ERROR, "Bluetooth", "[%s] BT_ERROR_AUTH_FAILED ", functionName);
-			break;
+			return false;
 		case BT_ERROR_INVALID_PARAMETER:
 			dlog_print(DLOG_ERROR, "Bluetooth", "[%s] INVALIDE PARAM", functionName);
-			break;
+			return false;
 		case BT_ERROR_OPERATION_FAILED:
 			dlog_print(DLOG_ERROR, "Bluetooth", "[%s] OPERATION FAILED", functionName);
-			break;
+			return false;
 		case BT_ERROR_REMOTE_DEVICE_NOT_FOUND :
 			dlog_print(DLOG_ERROR, "Bluetooth", "[%s] BT_ERROR_REMOTE_DEVICE_NOT_FOUND ", functionName);
-			break;
+			return false;
 		case BT_ERROR_SERVICE_SEARCH_FAILED :
 			dlog_print(DLOG_ERROR, "Bluetooth", "[%s] BT_ERROR_SERVICE_SEARCH_FAILED ", functionName);
-			break;
+			return false;
 		case BT_ERROR_REMOTE_DEVICE_NOT_CONNECTED :
 			dlog_print(DLOG_ERROR, "Bluetooth", "[%s] BT_ERROR_REMOTE_DEVICE_NOT_CONNECTED ", functionName);
-			break;
+			return false;
 		case BT_ERROR_AGAIN :
 			dlog_print(DLOG_ERROR, "Bluetooth", "[%s] BT_ERROR_AGAIN ", functionName);
-			break;
+			return false;
 		case BT_ERROR_SERVICE_NOT_FOUND :
 			dlog_print(DLOG_ERROR, "Bluetooth", "[%s] BT_ERROR_SERVICE_NOT_FOUND ", functionName);
-			break;
+			return false;
 		case BT_ERROR_NONE:
 			dlog_print(DLOG_INFO, "Bluetooth", "[%s] success.", functionName);
-			break;
+			return true;
 		default:
 			dlog_print(DLOG_ERROR, "Bluetooth", "[%s] unknown error code : %d.", functionName, error);
-			break;
+			return false;
 	}
 }
 
 /**
 * @brief initialize the bluetooth
 **/
-void initialize_bluetooth()
+bool initialize_bluetooth()
 {
 	//Initialize the bluetooth
 	error = bt_initialize();
-	checkBtError(error, "bt_initialize");
+	return checkBtError(error, "bt_initialize");
 }
 
 
 /**
 * @brief detinitialize the bluetooth
 **/
-void bt_common_finalize()
+bool finalize_bluetooth()
 {
 	error = bt_deinitialize();
-	checkBtError(error, "bt_deinitialize");
+	return checkBtError(error, "bt_deinitialize");
 }
 
 /**
 * @brief Check wether the bluetooth of the device is activated or not
 * @return true if the bluetooth is enable, false otherwise
 **/
-void is_enbaled()
+bool is_enbaled()
 {
 	//Check if the bluetooth is enabled or not
 	bt_adapter_state_e adapter_state;
 
 	//Bluetooth adapter is enabled
 	error = bt_adapter_get_state(&adapter_state);
-	checkBtError(error, "bt_adapter_get_state");
+	return checkBtError(error, "bt_adapter_get_state");
 
 	//Bluetooth adapter is not enabled
 	if (adapter_state != BT_ADAPTER_ENABLED)
@@ -135,174 +135,140 @@ void is_enbaled()
 	}
 }
 
-/**
-* @brief Callback function to monitor the state of the bluetooth
-* @param state_cb the state of the bluetooth adapter
-**/
-void set_state_change_callback(bt_adapter_state_changed_cb state_cb)
+/* Bluetooth server management. */
+bt_server_s* start_bt_server(appdata_s *ad)
 {
-	error = bt_adapter_set_state_changed_cb(state_cb, NULL);
-	checkBtError(error, "bt_adapter_set_state_changed_cb");
-}
+	// Create a server and initializes it.
+	ad->server = malloc(sizeof(bt_server_s));
+	ad->server->uuid = "00001101-0000-1000-8000-00805F9B34FB";
+	ad->server->server_socket_fd = -1;
 
-/**
-* @brief Callback function unset the function on the bluetooth adapter
-**/
-void unset_state_cb()
-{
-	error = bt_adapter_unset_state_changed_cb();
-	checkBtError(error, "bt_adapter_unset_state_changed_cb");
-}
-
-/**
-* @brief Create the advertizer for the Low Energy Bluetooth
-* @param advertizer
-**/
-void create_advertizer(bt_advertiser_h *advertizer)
-{
-	error = bt_adapter_le_create_advertiser(advertizer);
-	checkBtError(error, "bt_adapter_le_create_advertiser");
-}
-
-/**
-* @brief Destroy the advertizer for the Low Energy Bluetooth
-* @param advertizer
-**/
-void delete_advertizer(bt_advertiser_h advertizer)
-{
-	error = bt_adapter_le_destroy_advertiser(advertizer);
-	checkBtError(error, "bt_adapter_le_destroy_advertiser");
-}
-
- /**
-* @brief Set the bluetooth LE advertizer mode
-* @param advertizer
-* @param the advertizer's mode
-			Available modes are:
-			- BT_ADAPTER_LE_ADVERTISING_MODE_BALANCED,
-			- BT_ADAPTER_LE_ADVERTISING_MODE_LOW_LATENCY,
-			- BT_ADAPTER_LE_ADVERTISING_MODE_LOW_ENERGY.
-**/
-void advertizer_mode(bt_advertiser_h advertizer, bt_adapter_le_advertising_mode_e mode)
-{
-	error = bt_adapter_le_set_advertising_mode(advertizer, mode);
-	checkBtError(error, "bt_adapter_le_set_advertising_mode");
-}
-
- /**
-* @brief Set the Bluetooth LE advertiser connectable
-* @param advertizer
-**/
-void set_connection_advertizer(bt_advertiser_h advertizer)
-{
-	error = bt_adapter_le_set_advertising_connectable(advertizer, true);
-	checkBtError(error, "bt_adapter_le_set_advertising_connectable");
-}
-
-/**
-* @brief whether the bluetooth ad'name should be included or not into the transmitted packets.
-* @param advertizer
-* @param pkt_type
-* @param flag true is you want to include the device name into the packets false otherwise
-**/
-void device_name(bt_advertiser_h advertizer, bt_adapter_le_packet_type_e pkt_type, bool flag)
-{
-	error = bt_adapter_le_set_advertising_device_name(advertizer, pkt_type, flag);
-	checkBtError(error, "bt_adapter_le_set_advertising_device_name");
-}
-
-/**
-* @brief Identifie the data that is carried by the packet
-* @param advertizer
-* @param pkt_type
-* @param uuid identifier of the data
-**/
-void uuid_service(bt_advertiser_h advertizer, bt_adapter_le_packet_type_e pkt_type, const char *uuid)
-{
-	error = bt_adapter_le_add_advertising_service_solicitation_uuid(advertizer, pkt_type, uuid);
-	checkBtError(error, "bt_adapter_le_add_advertising_service_solicitation_uuid");
-}
-
-/**
-* @brief Check if the data in relation with the previous UUID was successfully set
-* @param advertizer
-* @param pkt_type
-* @param uuid identifier of the data
-* @param service_data
-* @param service_data_len
-**/
-void set_data_service(bt_advertiser_h advertiser, bt_adapter_le_packet_type_e pkt_type, const char *uuid, const char *service_data, int service_data_len)
-{
-	error = bt_adapter_le_add_advertising_service_data(advertiser, pkt_type, uuid, service_data, service_data_len);
-	checkBtError(error, "bt_adapter_le_add_advertising_service_data");
-}
-
-/**
-* @brief Start the sevice's data broadcastinf by the BLE advertizer
-* @param advertizer
-* @param state_cb
-**/
-void start_advertising(bt_advertiser_h advertizer, bt_adapter_le_advertising_state_changed_cb state_cb)
-{
-	error = bt_adapter_le_start_advertising_new(advertizer, state_cb, NULL);
-	checkBtError(error, "bt_adapter_le_start_advertising_new");
-}
-
- /**
-* @brief Stop the sevice's data broadcastinf by the BLE advertizer
-* @param advertizer
-**/
-void stop_advertising(bt_advertiser_h advertizer)
-{
-	error = bt_adapter_le_stop_advertising(advertizer);
-	checkBtError(error, "bt_adapter_le_stop_advertising");
-}
-
-/**
-* @brief Clear all the advertizer's settings and data
-* @param advertizer
-* @param pkt_type
-**/
-void clear_advertizer(bt_advertiser_h advertizer, bt_adapter_le_packet_type_e pkt_type)
-{
-	error = bt_adapter_le_clear_advertising_data(advertizer, pkt_type);
-	checkBtError(error, "bt_adapter_le_clear_advertising_data");
-}
-
-/**
-* @brief Take all the Heart data (float) and put them into a const char
-* @param tab_result a tab of float
-* @param tab_result_length size of tab_result
-* @return const char* with the heart data
-**/
-void configure_data(float *tab_result, int tab_result_length)
-{
-	//Then send the data from the tab
-	int counter = 0;
-
-	char *tab = malloc(counter + sizeof(char));
-	if(tab == NULL)
+	// We have no client, so we set the clients pointers to NULL.
+	for(int i = 0 ; i < 5 ; ++i)
 	{
-		//Deal with the memory error
-		dlog_print(DLOG_ERROR, LOG_TAG, "Out of memory for tab->result");
+		ad->server->clients[i] = NULL;
 	}
-	while(counter != tab_result_length)
+
+	// Create a RFCOMM socket for the server and check for error.
+	bt_error_e error;
+	error = bt_socket_create_rfcomm(ad->server->uuid, &ad->server->server_socket_fd);
+	checkBtError(error, "bt_socket_create_rfcomm");
+
+	// Set the callback function.
+	// This function is called when a client connects to the server.
+	bt_socket_set_connection_state_changed_cb(bt_server_new_client_connected, (void*)ad);
+
+	// Launch the server => ask the server to listen and accept any new client.
+	// We can accept a maximum of 5 client at once.
+	error = bt_socket_listen_and_accept_rfcomm(ad->server->server_socket_fd, 5);
+	if (error != BT_ERROR_NONE)
 	{
-		counter++;
-
-		//Put the float into a string
-		char a[128];
-		sprintf(a, "%f ",tab_result[counter]);
-
-		//Realloc the tab from the init size + a size
-		tab = realloc(tab, (strlen(tab) + strlen(a)) * sizeof(char));
-
-		//Concatenate tab and a
-		strcat(tab, a);
-
+	    checkBtError(error, "bt_socket_listen_and_accept_rfcomm");
 	}
-	//Function not done yet
-	set_data_service(&advertiser, UUID, tab, sizeof(tab));
+	else
+	{
+	    dlog_print(DLOG_INFO, "BluetoothServer", "[bt_socket_listen_and_accept_rfcomm] Succeeded. bt_socket_connection_state_changed_cb will be called.");
+	}
+
+	// Return the newly created server.
+	return ad->server;
 }
 
+void bt_server_new_client_connected(int result, bt_socket_connection_state_e connection_state, bt_socket_connection_s *connection, void *user_data)
+{
+	appdata_s *ad = (void*)user_data;
+
+	// In case of error, we check the error.
+	if (result != BT_ERROR_NONE)
+		checkBtError(result, "bt_server_new_client_connected");
+
+	// A new client is connected !
+	if(connection_state == BT_SOCKET_CONNECTED)
+	{
+		dlog_print(DLOG_INFO, "BluetoothServer", "Callback: Connected.");
+
+		if(connection != NULL)
+		{
+			dlog_print(DLOG_INFO, "BluetoothServer", "Callback: Socket of connection - %d.", connection->socket_fd);
+			dlog_print(DLOG_INFO, "BluetoothServer", "Callback: Role of connection - %d.", connection->local_role);
+			dlog_print(DLOG_INFO, "BluetoothServer", "Callback: Address of connection - %s.", connection->remote_address);
+
+			/* socket_fd is used for sending data and disconnecting a device */
+			// We want to store the client data into a client struct.
+
+			bt_server_client_s* client = malloc(sizeof(bt_server_client_s));
+			client->client_socket_fd = connection->socket_fd;
+			client->remote_address = connection->remote_address;
+
+			// Find a free client slot and store the client data in it.
+			for(int i = 0 ; i < 5 ; ++i)
+			{
+				// We found a free client slot in our server, so we store our new client in it.
+				if(ad->server->clients[i] == NULL)
+				{
+					ad->server->clients[i] = client;
+				}
+			}
+
+			//Then send the data from the tab
+			int counter = 0;
+
+			char *arrayOfFloatsAsStrings = malloc(counter * sizeof(char));
+			if(arrayOfFloatsAsStrings == NULL)
+			{
+				//Deal with the memory error
+				dlog_print(DLOG_ERROR, "BluetoothServer", "Out of memory for tab->result");
+			}
+
+			while(counter != ad->tab_result_counter)
+			{
+				counter++;
+
+				//Put the float into a string
+				char tempBuffer[128];
+				sprintf(tempBuffer, "%f ",ad->tab_result[counter]);
+
+				//Realloc the tab from the init size + a size
+				arrayOfFloatsAsStrings = realloc(arrayOfFloatsAsStrings, (strlen(arrayOfFloatsAsStrings) + strlen(tempBuffer)) * sizeof(char));
+
+				//Concatenate tab and a
+				strcat(arrayOfFloatsAsStrings, tempBuffer);
+			}
+
+			dlog_print(DLOG_INFO, "BluetoothServer", "Sent: '%s'", arrayOfFloatsAsStrings);
+			error = bt_socket_send_data(client->client_socket_fd, arrayOfFloatsAsStrings, strlen(arrayOfFloatsAsStrings) * sizeof(char));
+			dlog_print(DLOG_INFO, "BluetoothServer", "All data sent");
+		}
+
+		else
+		{
+			dlog_print(DLOG_INFO, "BluetoothServer", "Callback: No connection data");
+		}
+	}
+	// A client disconnected itself from the server.
+	else
+	{
+		dlog_print(DLOG_INFO, "BluetoothServer", "Callback: Disconnected.");
+
+		if(connection != NULL)
+		{
+			dlog_print(DLOG_INFO, "BluetoothServer", "Callback: Socket of disconnection - %d.", connection->socket_fd);
+			dlog_print(DLOG_INFO, "BluetoothServer", "Callback: Address of connection - %s.", connection->remote_address);
+
+			// Find the client who disconnected, delete its data and free its slot.
+			for(int i = 0 ; i < 5 ; ++i)
+			{
+				// if the client pointer is not NULL, we compare its remote address to the remote address of the client who just disconnected.
+				if(ad->server->clients[i] != NULL && strcmp(ad->server->clients[i]->remote_address, connection->remote_address) == 0)
+				{
+					free(ad->server->clients[i]); // free the client
+					ad->server->clients[i] = NULL; // free the client slot
+				}
+			}
+		}
+		else
+		{
+			dlog_print(DLOG_INFO, LOG_TAG, "Callback: No connection data");
+		}
+	}
 }
