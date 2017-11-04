@@ -5,6 +5,7 @@
 #include <dlog.h>
 #include "constants.h"
 #include "server_network.h"
+#include "exit_screen.h"
 
 int error;
 
@@ -225,8 +226,8 @@ void bt_server_new_client_connected(int result, bt_socket_connection_state_e con
 				counter++;
 
 				//Put the float into a string
-				char tempBuffer[128];
-				sprintf(tempBuffer, "%f ",ad->tab_result[counter]);
+				char tempBuffer[128] = {0,};
+				sprintf(tempBuffer, "%f ", ad->tab_result[counter]);
 
 				//Realloc the tab from the init size + a size
 				arrayOfFloatsAsStrings = realloc(arrayOfFloatsAsStrings, (strlen(arrayOfFloatsAsStrings) + strlen(tempBuffer)) * sizeof(char));
@@ -236,8 +237,20 @@ void bt_server_new_client_connected(int result, bt_socket_connection_state_e con
 			}
 
 			dlog_print(DLOG_INFO, "BluetoothServer", "Sent: '%s'", arrayOfFloatsAsStrings);
+
+			//Sending the tab
 			error = bt_socket_send_data(client->client_socket_fd, arrayOfFloatsAsStrings, strlen(arrayOfFloatsAsStrings) * sizeof(char));
+			checkBtError(error, "bt_socket_send_data");
+
+			//Sent the end of the process
+			char end[] = "END";
+			error = bt_socket_send_data(client->client_socket_fd, end, strlen(end) * sizeof(char));
+			checkBtError(error, "bt_socket_send_data");
+
 			dlog_print(DLOG_INFO, "BluetoothServer", "All data sent");
+
+			elm_naviframe_item_pop(ad->nf);
+
 		}
 
 		else

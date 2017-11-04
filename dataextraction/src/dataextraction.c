@@ -16,6 +16,7 @@
 #include "recording.h"
 #include "constants.h"
 #include "server_network.h"
+#include "exit_screen.h"
 
 
 static void win_delete_request_cb(void *data, Evas_Object *obj, void *event_info)
@@ -64,6 +65,7 @@ static void create_base_gui(appdata_s *ad)
     elm_object_content_set(ad->conform, ad->nf);
 
     //Add the different box into the naviframe
+    end_choice(ad);
     bluetooth_screen(ad);
     stop_button_screen(ad);
     start_button_screen(ad);

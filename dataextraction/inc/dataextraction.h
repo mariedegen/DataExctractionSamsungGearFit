@@ -39,6 +39,10 @@ typedef struct appdata {
 	sensor_h sensor;
 	unsigned int start;
 	bt_server_s* server;
+	Evas_Object *end_button;
+	Evas_Object *redo_button;
+	Evas_Object *box_end;
+	Evas_Object *label_end;
 } appdata_s;
 
 void _add_entry_text(const char *text);

@@ -24,9 +24,11 @@
 #define STOP_BUTTON "STOP"
 #define START_BUTTON_LABEL "Press the start button to begin the heart rate recording."
 #define START_BUTTON "START"
+#define END_SCREEN_MESSAGE = "It's done. Do you want to record a heart rate again ?"
 
 //Bluetooth constants
 #define UUID "00001101-0000-1000-8000-00805F9B34FB"
+
 
 //Macro for the header style
 #define style_header(x) STYLE_BEGIN_HEADER x STYLE_END_HEADER
