@@ -251,6 +251,10 @@ void bt_server_new_client_connected(int result, bt_socket_connection_state_e con
 
 			elm_naviframe_item_pop(ad->nf);
 
+			//disconnect the serveur
+			error = bt_socket_destroy_rfcomm(client->client_socket_fd);
+			checkBtError(error, "bt_socket_destroy_rfcomm");
+
 		}
 
 		else

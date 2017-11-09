@@ -9,6 +9,17 @@
 #include "dataextraction.h"
 #include "constants.h"
 
+void clicked_end_app()
+{
+	elm_exit();
+}
+
+void clicked_redo_app(void *data)
+{
+	appdata_s *ad = (appdata_s*)data;
+	app_create(ad);
+}
+
 void end_choice(void *data)
 {
 	appdata_s *ad = (appdata_s*)data;
@@ -47,4 +58,16 @@ void end_choice(void *data)
 
 	//Push this window into the naviframe
 	elm_naviframe_item_push(ad->nf, style_header(HEART_RECORDING), NULL, NULL, ad->box_end, NULL);
+
+	//Disable the autorepeat feature
+	elm_button_autorepeat_set(ad->redo_button, EINA_FALSE);
+
+	//clicked_button function callback when click on the button
+	evas_object_smart_callback_add(ad->redo_button, "clicked", clicked_redo_app, (void*)ad);
+
+	//Disable the autorepeat feature
+	elm_button_autorepeat_set(ad->end_button, EINA_FALSE);
+
+	//clicked_button function callback when click on the button
+	evas_object_smart_callback_add(ad->end_button, "clicked", clicked_end_app, (void*)ad);
 }

@@ -75,7 +75,7 @@ static void create_base_gui(appdata_s *ad)
 	evas_object_show(ad->win);
 }
 
-static bool app_create(void *data)
+bool app_create(void *data)
 {
 	//Hook to take necessary actions before main event loop starts
 	//Initialize UI resources and application's data
@@ -134,55 +134,18 @@ static void app_terminate(void *data)
 	free(ad->tab_result);
 }
 
-static void ui_app_lang_changed(app_event_info_h event_info, void *user_data)
-{
-	/*APP_EVENT_LANGUAGE_CHANGED*/
-	char *locale = NULL;
-	system_settings_get_value_string(SYSTEM_SETTINGS_KEY_LOCALE_LANGUAGE, &locale);
-	elm_language_set(locale);
-	free(locale);
-	return;
-}
-
-static void ui_app_orient_changed(app_event_info_h event_info, void *user_data)
-{
-	/*APP_EVENT_DEVICE_ORIENTATION_CHANGED*/
-}
-
-static void ui_app_region_changed(app_event_info_h event_info, void *user_data)
-{
-	/*APP_EVENT_REGION_FORMAT_CHANGED*/
-}
-
-static void ui_app_low_battery(app_event_info_h event_info, void *user_data)
-{
-	/*APP_EVENT_LOW_BATTERY*/
-}
-
-static void ui_app_low_memory(app_event_info_h event_info, void *user_data)
-{
-	/*APP_EVENT_LOW_MEMORY*/
-}
-
 int main(int argc, char *argv[])
 {
-	appdata_s ad = {0,};
 	int ret = 0;
+	appdata_s ad = {0,};
 
 	ui_app_lifecycle_callback_s event_callback = {0,};
-	app_event_handler_h handlers[5] = {NULL, };
 
 	event_callback.create = app_create;
 	event_callback.terminate = app_terminate;
 	event_callback.pause = app_pause;
 	event_callback.resume = app_resume;
 	event_callback.app_control = app_control;
-
-	ui_app_add_event_handler(&handlers[APP_EVENT_LOW_BATTERY], APP_EVENT_LOW_BATTERY, ui_app_low_battery, &ad);
-	ui_app_add_event_handler(&handlers[APP_EVENT_LOW_MEMORY], APP_EVENT_LOW_MEMORY, ui_app_low_memory, &ad);
-	ui_app_add_event_handler(&handlers[APP_EVENT_DEVICE_ORIENTATION_CHANGED], APP_EVENT_DEVICE_ORIENTATION_CHANGED, ui_app_orient_changed, &ad);
-	ui_app_add_event_handler(&handlers[APP_EVENT_LANGUAGE_CHANGED], APP_EVENT_LANGUAGE_CHANGED, ui_app_lang_changed, &ad);
-	ui_app_add_event_handler(&handlers[APP_EVENT_REGION_FORMAT_CHANGED], APP_EVENT_REGION_FORMAT_CHANGED, ui_app_region_changed, &ad);
 
 	ret = ui_app_main(argc, argv, &event_callback, &ad);
 	if (ret != APP_ERROR_NONE) {

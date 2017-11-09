@@ -45,9 +45,6 @@ typedef struct appdata {
 	Evas_Object *label_end;
 } appdata_s;
 
-void _add_entry_text(const char *text);
-Evas_Object *_new_button(appdata_s *ad, Evas_Object *display, char *name, void *cb);
-void _create_new_cd_display(appdata_s *ad, char *name, void *cb);
-Eina_Bool _pop_cb(void *data, Elm_Object_Item *item);
+bool app_create(void *data);
 
 #endif /* __dataextraction_H__ */
