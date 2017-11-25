@@ -81,7 +81,7 @@ class ImageViewer(QtWidgets.QMainWindow, interface.Ui_MainWindow):
             with open(fname[0], 'r') as fichier:
                 data = json.load(fichier)
 
-        nameGraphic = self.functionGraph.GetGraphHeartSamsung(self.data)
+        nameGraphic = self.functionGraph.GetGraphHeartSamsung(data)
         self.setGraphicPhoto(nameGraphic)
 
     def closeIt(self, q):
