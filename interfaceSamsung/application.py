@@ -1,0 +1,3 @@
+import imageViewer
+
+imageViewer.mainInterface()
