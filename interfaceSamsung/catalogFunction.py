@@ -14,7 +14,7 @@ class CatalogFunction():
 
     def WriteFileSamsung(self, data):
         """
-            Write in a file data of the day
+            Write in a file data 
             :param self: the object
             :param userName: the name of the user
         """
@@ -30,7 +30,7 @@ class CatalogFunction():
             
     def GetGraphHeartSamsung(self, data):
         """
-            To get the graph of the minutes
+            To get the graph of the heartbeat
             :param self: the object
             :param userName: the name of the user
             :return nameGraph: the name of the graph
@@ -43,6 +43,11 @@ class CatalogFunction():
 
 
     def ExtractData(self, data):
+        """
+            To convert data
+            :param self: the current object
+            :param data: the data
+        """
         
         t = []
         for n in range (0, len(data),1):
@@ -52,6 +57,11 @@ class CatalogFunction():
     
     
     def SaveGraphSamsung(self, dataHeart):
+        """
+            To create and save the graphic
+            :param self: the current object
+            :param dataHeart: the data
+        """
 
         debut = 0
         fin = len(dataHeart)

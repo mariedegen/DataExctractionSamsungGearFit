@@ -9,6 +9,10 @@ import time
 
 
 def clientNetwork(imageViewer):
+    """
+        To connect client and server via bluetooth
+        :param imageViewer: the controller
+    """
 
     tabData = []
     address="BC:76:5E:96:EE:6C"

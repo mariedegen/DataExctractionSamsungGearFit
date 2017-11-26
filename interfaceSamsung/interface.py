@@ -6,10 +6,23 @@
 #
 # WARNING! All changes made in this file will be lost!
 
+"""
+The samsung view
+"""
+
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_MainWindow(object):
+    """
+        The view class of the samsung view
+        :param object: the object
+    """
     def setupUi(self, MainWindow):
+        """
+        To initialize the window
+        :param self: the current object
+        :param MainWindow: the window to display 
+        """
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(876, 353)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
@@ -45,23 +58,16 @@ class Ui_MainWindow(object):
         self.emotionChoice.addItem("")
         self.emotionChoice.addItem("")
         self.emotionChoice.addItem("")
+        self.emotionChoice.addItem("")
         self.emotionLayout.addWidget(self.emotionChoice, 1, 0, 1, 1)
         self.emotionTitle = QtWidgets.QLabel(self.centralwidget)
         self.emotionTitle.setStyleSheet("font: 14pt \"OCR A Std\";\n"
 "background-color: rgb(255, 255, 127);")
         self.emotionTitle.setObjectName("emotionTitle")
         self.emotionLayout.addWidget(self.emotionTitle, 0, 0, 1, 2)
-        self.emotionMain = QtWidgets.QLabel(self.centralwidget)
-        self.emotionMain.setStyleSheet("font: 14pt \"OCR A Std\";\n"
-"background-color: rgb(255, 170, 127);")
-        self.emotionMain.setObjectName("emotionMain")
-        self.emotionLayout.addWidget(self.emotionMain, 2, 0, 1, 2)
         self.emotionGo = QtWidgets.QPushButton(self.centralwidget)
         self.emotionGo.setObjectName("emotionGo")
         self.emotionLayout.addWidget(self.emotionGo, 1, 1, 1, 1)
-        self.emotionPhoto = QtWidgets.QLabel(self.centralwidget)
-        self.emotionPhoto.setObjectName("emotionPhoto")
-        self.emotionLayout.addWidget(self.emotionPhoto, 3, 0, 1, 2)
         self.emotionLayout.setColumnStretch(0, 1)
         self.emotionLayout.setRowStretch(0, 2)
         self.emotionLayout.setRowStretch(2, 1)
@@ -98,8 +104,17 @@ class Ui_MainWindow(object):
         self.menubar.addAction(self.menuData.menuAction())
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        self.emotionMain = QtWidgets.QLabel(self.centralwidget)
+        self.emotionMain.setObjectName("emotionMain")
+        self.emotionPhoto = QtWidgets.QLabel(self.centralwidget)
+        self.emotionPhoto.setObjectName("emotionPhoto")
 
     def retranslateUi(self, MainWindow):
+        """
+        To translate the text display in the window
+        :param self: the current object
+        :param MainWindow: the window to display 
+        """
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.graphicLegend.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:8pt;\">HEARTBEAT DURING THE RECORDED PERIOD</span></p></body></html>"))
@@ -107,10 +122,9 @@ class Ui_MainWindow(object):
         self.emotionChoice.setItemText(0, _translate("MainWindow", "Choose your algorithm"))
         self.emotionChoice.setItemText(1, _translate("MainWindow", "Algo1"))
         self.emotionChoice.setItemText(2, _translate("MainWindow", "Algo2"))
+        self.emotionChoice.setItemText(3, _translate("MainWindow", "Algo3"))
         self.emotionTitle.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">EMOTIONS</p></body></html>"))
-        self.emotionMain.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:8pt;\">MAIN EMOTION</span></p></body></html>"))
         self.emotionGo.setText(_translate("MainWindow", "GO"))
-        self.emotionPhoto.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">photo emotion</p></body></html>"))
         self.bar.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#c8c8c8;\">T</span></p></body></html>"))
         self.menuData.setTitle(_translate("MainWindow", "Data"))
         self.menuHome.setTitle(_translate("MainWindow", "Home"))
@@ -119,10 +133,64 @@ class Ui_MainWindow(object):
         self.actionExit.setText(_translate("MainWindow", "Exit"))
 
     def setGraphicPhoto(self, nameGraphic):
+        """
+        To display the graphic of data
+        :param self: the current object
+        :param nameGraphic: the name of the graphic
+        """
         self.graphicPhoto.setStyleSheet("border-image: url("+nameGraphic+");\n"
 "border-color: rgb(0, 0, 0);")
 
+    def displayMainEmotion(self, nameEmotion):
+        """
+        To display the main emotion
+        :param self: the current object
+        :param nameGraphic: the name of the emotion
+        """
+        self.emotionMain.setStyleSheet("font: 14pt \"OCR A Std\";\n"
+"background-color: rgb(255, 170, 127);")
+        self.emotionLayout.addWidget(self.emotionMain, 2, 0, 1, 2)
+        self.emotionMain.setText("<html><head/><body><p align=\"center\"><span style=\" font-size:8pt;\">MAIN EMOTION</span></p></body></html>")
 
+        self.emotionPhoto.setStyleSheet("border-image: url("+nameEmotion+");\n"
+"border-color: rgb(0, 0, 0);")
+        self.emotionPhoto.setText("")
+        self.emotionLayout.addWidget(self.emotionPhoto, 3, 0, 1, 2)
+        
+                
+    def displayDetailsEmotion(self, text):
+        """
+        To display the details emotion
+        :param self: the current object
+        :param text: the details
+        """
+        self.emotionMain.setStyleSheet("font: 14pt \"OCR A Std\";\n"
+"background-color: rgb(255, 170, 127);")
+        self.emotionLayout.addWidget(self.emotionMain, 2, 0, 1, 2)
+        self.emotionMain.setText("<html><head/><body><p align=\"center\"><span style=\" font-size:8pt;\">DETAILS EMOTION</span></p></body></html>")
+
+        self.emotionPhoto.setStyleSheet("font: 14pt \"OCR A Std\";\n")
+        self.emotionPhoto.setText("<html><head/><body><p align=\"center\"><span style=\" font-size:8pt;\">"+text+"</span></p></body></html>")
+
+        self.emotionLayout.addWidget(self.emotionPhoto, 3, 0, 1, 2)
+
+        
+    def displayGraphicEmotion(self, nameGraphic):
+        """
+        To display the graphic of emotion
+        :param self: the current object
+        :param nameGraphic: the name of the graphic
+        """
+        self.emotionMain.setStyleSheet("font: 14pt \"OCR A Std\";\n"
+"background-color: rgb(255, 170, 127);")
+        self.emotionLayout.addWidget(self.emotionMain, 2, 0, 1, 2)
+        self.emotionMain.setText("<html><head/><body><p align=\"center\"><span style=\" font-size:8pt;\">GRAPHIC EMOTION</span></p></body></html>")
+
+        self.emotionPhoto.setStyleSheet("border-image: url("+nameGraphic+");\n"
+"border-color: rgb(0, 0, 0);")
+        self.emotionPhoto.setText("")
+        self.emotionLayout.addWidget(self.emotionPhoto, 3, 0, 1, 2)
+    
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
