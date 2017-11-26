@@ -175,6 +175,27 @@ bt_server_s* start_bt_server(appdata_s *ad)
 	return ad->server;
 }
 
+void stop_bt_server(bt_server_s* server)
+{
+	int error = -1;
+
+	//Free all the clients
+	for(int i = 0 ; i < 5 ; ++i)
+	{
+		if(server->clients[i] != NULL)
+		{
+			error = bt_socket_disconnect_rfcomm(server->clients[i]->client_socket_fd);
+			checkBtError(error, "bt_socket_disconnect_rfcomm");
+
+			free(server->clients[i]);
+		}
+	}
+
+	//Destroy server's socket
+	error = bt_socket_destroy_rfcomm(server->server_socket_fd);
+	checkBtError(error, "bt_socket_destroy_rfcomm");
+}
+
 void bt_server_new_client_connected(int result, bt_socket_connection_state_e connection_state, bt_socket_connection_s *connection, void *user_data)
 {
 	appdata_s *ad = (void*)user_data;
@@ -236,6 +257,8 @@ void bt_server_new_client_connected(int result, bt_socket_connection_state_e con
 				strcat(arrayOfFloatsAsStrings, tempBuffer);
 			}
 
+			writeFile(arrayOfFloatsAsStrings);
+
 			dlog_print(DLOG_INFO, "BluetoothServer", "Sent: '%s'", arrayOfFloatsAsStrings);
 
 			//Sending the tab
@@ -250,11 +273,6 @@ void bt_server_new_client_connected(int result, bt_socket_connection_state_e con
 			dlog_print(DLOG_INFO, "BluetoothServer", "All data sent");
 
 			elm_naviframe_item_pop(ad->nf);
-
-			//disconnect the serveur
-			error = bt_socket_destroy_rfcomm(client->client_socket_fd);
-			checkBtError(error, "bt_socket_destroy_rfcomm");
-
 		}
 
 		else
@@ -287,5 +305,19 @@ void bt_server_new_client_connected(int result, bt_socket_connection_state_e con
 		{
 			dlog_print(DLOG_INFO, LOG_TAG, "Callback: No connection data");
 		}
+	}
+}
+
+void writeFile(const char *data){
+	FILE * file = NULL;
+
+	file = fopen("C:\\Users\\Marie\\Documents\\GitHub\\dataextraction\\dataextraction\\result.txt", "w");
+
+	if(file != NULL){
+		fputs(data, file);
+		fclose(file);
+	}
+	else {
+		dlog_print(DLOG_ERROR, LOG_TAG, "Can't open the file");
 	}
 }
