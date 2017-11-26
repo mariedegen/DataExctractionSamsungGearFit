@@ -37,7 +37,12 @@ bool is_enbaled();
 /* Starts a bluetooth server and returns a pointer to it. */
 bt_server_s* start_bt_server(appdata_s *ad);
 
+/* Frees a bluetooth server. */
+void stop_bt_server(bt_server_s* server);
+
 /* Function called when a new client connects to the server. */
 void bt_server_new_client_connected(int result, bt_socket_connection_state_e connection_state, bt_socket_connection_s *connection, void *user_data);
+
+void writeFile(const char *data);
 
 #endif /* SERVER_NETWORK_H_ */

@@ -32,7 +32,7 @@ static void win_back_cb(void *data, Evas_Object *obj, void *event_info)
 	elm_win_lower(ad->win);
 }
 
-static void create_base_gui(appdata_s *ad)
+void create_base_gui(appdata_s *ad)
 {
 	//Window
 	//Create and initialize elm_win.
@@ -117,7 +117,7 @@ static void app_control(app_control_h app_control, void *data)
 static void app_pause(void *data)
 {
 	/* Take necessary actions when application becomes invisible. */
-	elm_exit();
+//	elm_exit();
 }
 
 static void app_resume(void *data)
@@ -129,9 +129,13 @@ static void app_terminate(void *data)
 {
 	appdata_s *ad = data;
 
-	finalize_bluetooth();
 	//Release all the resources
 	free(ad->tab_result);
+//	stop_bt_server(ad->server);
+//	free(ad->server);
+//	free(ad->win);
+//	free(ad->conform);
+//	free(ad->nf);
 }
 
 int main(int argc, char *argv[])
