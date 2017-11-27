@@ -95,10 +95,11 @@ class ImageViewer(QtWidgets.QMainWindow, interface.Ui_MainWindow):
             :param self: the current object
             :param q: the action triggered
         """
-        self.functionGraph.WriteFileSamsung(self.data)
-        
-        #to display a message
-        QMessageBox.about(self, "Data export", "Data exported !")
+        name = QFileDialog.getSaveFileName(self, 'Save File', ".json")
+
+        if(name[0] != ""):
+            self.functionGraph.WriteFileSamsung(name, self.data)
+            QMessageBox.about(self, "Data export", "Data exported !")
 
     def importData(self,q):
         """
@@ -133,16 +134,17 @@ class ImageViewer(QtWidgets.QMainWindow, interface.Ui_MainWindow):
         self.stopped = True
         
 
-def mainInterface():
-    """
-       To run the samusung application
-    """
-    app = QtWidgets.QApplication([])
-    imageViewer = ImageViewer()
+#def mainInterface():
+"""
+   To run the samusung application
+"""
+app = QtWidgets.QApplication([])
+imageViewer = ImageViewer()
 
-    my_queue = Queue()
-    thread1 = threading.Thread(target = client_network.clientNetwork, args = (imageViewer,))
-    thread1.start()
-            
-    imageViewer.main()
-    sys.exit(app.exec_())
+my_queue = Queue()
+thread1 = threading.Thread(target = client_network.clientNetwork, args = (imageViewer,))
+thread1.start()
+        
+imageViewer.main()
+sys.exit(app.exec_())
+

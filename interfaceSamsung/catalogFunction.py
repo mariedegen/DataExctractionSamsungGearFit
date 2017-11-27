@@ -3,6 +3,11 @@ The catalog of graph and data functions
 """
 
 import os, base64, requests, urllib, time, json, numpy as np, pylab as pl, datetime
+from PyQt5 import QtGui, QtCore, QtWidgets
+from PyQt5.QtGui import *
+from PyQt5.QtCore import *
+from PyQt5.QtWidgets import *
+
 
 class CatalogFunction():
     """
@@ -12,21 +17,17 @@ class CatalogFunction():
          - exports data
     """
 
-    def WriteFileSamsung(self, data):
+    def WriteFileSamsung(self, nameFile, donnee):
         """
             Write in a file data 
             :param self: the object
             :param userName: the name of the user
         """
+        dataHeart = self.ExtractData(donnee)
 
-        dataHeart = self.ExtractData(data)
-        
-        date = time.localtime()
-        date2 = str(date.tm_mday)+"-"+str(date.tm_mon)+"-"+str(date.tm_year)
-        nomFichier = "Heart"+"_"+date2+".json"
-
-        with open(nomFichier, 'w') as f:
-            json.dump(dataHeart, f, indent=4) 
+        with open(nameFile[0], 'w') as f:
+            json.dump(dataHeart, f, indent=4)
+    
             
     def GetGraphHeartSamsung(self, data):
         """
@@ -35,11 +36,8 @@ class CatalogFunction():
             :param userName: the name of the user
             :return nameGraph: the name of the graph
         """
-        print("data",data)
         dataHeart = self.ExtractData(data)
-        print("dataHeart",dataHeart)
         nameGraph = self.SaveGraphSamsung(dataHeart)
-        print("nameGraph",nameGraph)
 
         return nameGraph
 
