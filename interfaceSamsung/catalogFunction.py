@@ -28,9 +28,9 @@ class CatalogFunction():
         #date2 = str(date.tm_mday)+"-"+str(date.tm_mon)+"-"+str(date.tm_year)
         fileName = QFileDialog.getSaveFileName(None,'Save the file')
         #nomFichier = "Heart"+"_"+date2+".json"
-        print('dataheart:', dataHeart)
+        
         print(fileName)
-        if fileName[0]:
+        if fileName[0]:      
             with open(fileName[0], 'w') as f:
                 json.dump(dataHeart, f, indent=4)
             
