@@ -35,9 +35,11 @@ class CatalogFunction():
             :param userName: the name of the user
             :return nameGraph: the name of the graph
         """
-
+        print("data",data)
         dataHeart = self.ExtractData(data)
+        print("dataHeart",dataHeart)
         nameGraph = self.SaveGraphSamsung(dataHeart)
+        print("nameGraph",nameGraph)
 
         return nameGraph
 
@@ -62,7 +64,6 @@ class CatalogFunction():
             :param self: the current object
             :param dataHeart: the data
         """
-
         debut = 0
         fin = len(dataHeart)
         pas = int((fin-debut)/5)
@@ -79,8 +80,10 @@ class CatalogFunction():
         pl.xticks(pl.arange(len(axeX)), axeX)
         pl.plot(x, dataHeart)
         date = time.localtime()
-        date2 = str(date.tm_mday)+"-"+str(date.tm_mon)+"-"+str(date.tm_year)
+        date2 = str(date.tm_mday)+"-"+str(date.tm_mon)+"-"+str(date.tm_year)+'_'+str(date.tm_hour)+'-'+str(date.tm_min)+'-'+str(date.tm_sec)
         nomFichier = date2+"_Heart"+".png"
         pl.savefig(nomFichier)
+        pl.close()
 
         return nomFichier
+

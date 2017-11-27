@@ -45,11 +45,7 @@ class ImageViewer(QtWidgets.QMainWindow, interface.Ui_MainWindow):
         self.actionImport.triggered.connect(self.importData)
         self.emotionChoice.currentIndexChanged.connect(self.emotionChoiceIndex)
 
-        my_queue = Queue()
-        thread2 = threading.Thread(target = self.actualizeGraphic, args = (self.data,))
-        thread2.start()
-
-    def actualizeGraphic(self, data):
+    def actualizeGraphic(self):
         """
             To show the graphic with data 
             :param self: the object
@@ -112,14 +108,12 @@ class ImageViewer(QtWidgets.QMainWindow, interface.Ui_MainWindow):
         """
         
         fname = QFileDialog.getOpenFileName(self, 'Open file', '/home')
-        print(fname)
         if fname[0]:
-
             with open(fname[0], 'r') as fichier:
-                data = json.load(fichier)
-
-        nameGraphic = self.functionGraph.GetGraphHeartSamsung(data)
-        self.setGraphicPhoto(nameGraphic)
+                donnee = json.load(fichier)
+                
+        nameGraph = self.functionGraph.SaveGraphSamsung(donnee)
+        self.setGraphicPhoto(nameGraph)
 
     def closeIt(self, q):
         """
@@ -135,7 +129,8 @@ class ImageViewer(QtWidgets.QMainWindow, interface.Ui_MainWindow):
         """
         self.show()
 
-
+    def stop(self):
+        self.stopped = True
         
 
 def mainInterface():
