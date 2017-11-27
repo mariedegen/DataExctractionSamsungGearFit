@@ -45,11 +45,7 @@ class ImageViewer(QtWidgets.QMainWindow, interface.Ui_MainWindow):
         self.actionImport.triggered.connect(self.importData)
         self.emotionChoice.currentIndexChanged.connect(self.emotionChoiceIndex)
 
-        my_queue = Queue()
-        thread2 = threading.Thread(target = self.actualizeGraphic, args = (self.data,))
-        thread2.start()
-
-    def actualizeGraphic(self, data):
+    def actualizeGraphic(self):
         """
             To show the graphic with data 
             :param self: the object

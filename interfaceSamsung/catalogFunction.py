@@ -88,5 +88,6 @@ class CatalogFunction():
         date2 = str(date.tm_mday)+"-"+str(date.tm_mon)+"-"+str(date.tm_year)
         nomFichier = date2+"_Heart"+".png"
         pl.savefig(nomFichier)
+        pl.close()
 
         return nomFichier
