@@ -99,7 +99,9 @@ class ImageViewer(QtWidgets.QMainWindow, interface.Ui_MainWindow):
             :param self: the current object
             :param q: the action triggered
         """
+        print ("Before writing (data:", self.data, ")")
         self.functionGraph.WriteFileSamsung(self.data)
+        print("After writing")
         
         #to display a message
         QMessageBox.about(self, "Data export", "Data exported !")

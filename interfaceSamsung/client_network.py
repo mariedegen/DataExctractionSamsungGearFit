@@ -9,7 +9,7 @@ import time
 
 
 
-def clientNetwork(imageViewer):
+def clientNetwork(imageViewerSamsung):
 
     dataStr = ""
     tabData = []

@@ -3,6 +3,10 @@ The catalog of graph and data functions
 """
 
 import os, base64, requests, urllib, time, json, numpy as np, pylab as pl, datetime
+from PyQt5 import QtGui, QtCore, QtWidgets
+from PyQt5.QtGui import *
+from PyQt5.QtCore import *
+from PyQt5.QtWidgets import *
 
 class CatalogFunction():
     """
@@ -18,15 +22,17 @@ class CatalogFunction():
             :param self: the object
             :param userName: the name of the user
         """
-
         dataHeart = self.ExtractData(data)
-        
-        date = time.localtime()
-        date2 = str(date.tm_mday)+"-"+str(date.tm_mon)+"-"+str(date.tm_year)
-        nomFichier = "Heart"+"_"+date2+".json"
 
-        with open(nomFichier, 'w') as f:
-            json.dump(dataHeart, f, indent=4) 
+        #date = time.localtime()
+        #date2 = str(date.tm_mday)+"-"+str(date.tm_mon)+"-"+str(date.tm_year)
+        fileName = QFileDialog.getSaveFileName(None,'Save the file')
+        #nomFichier = "Heart"+"_"+date2+".json"
+        print('dataheart:', dataHeart)
+        print(fileName)
+        if fileName[0]:
+            with open(fileName[0], 'w') as f:
+                json.dump(dataHeart, f, indent=4)
             
     def GetGraphHeartSamsung(self, data):
         """

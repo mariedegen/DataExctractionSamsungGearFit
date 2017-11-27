@@ -131,11 +131,11 @@ static void app_terminate(void *data)
 
 	//Release all the resources
 	free(ad->tab_result);
-//	stop_bt_server(ad->server);
-//	free(ad->server);
-//	free(ad->win);
-//	free(ad->conform);
-//	free(ad->nf);
+	stop_bt_server(ad->server);
+	free(ad->server);
+	free(ad->win);
+	free(ad->conform);
+	free(ad->nf);
 }
 
 int main(int argc, char *argv[])
