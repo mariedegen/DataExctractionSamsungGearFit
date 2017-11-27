@@ -8,7 +8,6 @@ from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 
-
 class CatalogFunction():
     """
         The catalog of functions
@@ -17,17 +16,23 @@ class CatalogFunction():
          - exports data
     """
 
-    def WriteFileSamsung(self, nameFile, donnee):
+    def WriteFileSamsung(self, data):
         """
             Write in a file data 
             :param self: the object
             :param userName: the name of the user
         """
-        dataHeart = self.ExtractData(donnee)
+        dataHeart = self.ExtractData(data)
 
-        with open(nameFile[0], 'w') as f:
-            json.dump(dataHeart, f, indent=4)
-    
+        #date = time.localtime()
+        #date2 = str(date.tm_mday)+"-"+str(date.tm_mon)+"-"+str(date.tm_year)
+        fileName = QFileDialog.getSaveFileName(None,'Save the file')
+        #nomFichier = "Heart"+"_"+date2+".json"
+        print('dataheart:', dataHeart)
+        print(fileName)
+        if fileName[0]:
+            with open(fileName[0], 'w') as f:
+                json.dump(dataHeart, f, indent=4)
             
     def GetGraphHeartSamsung(self, data):
         """
@@ -36,6 +41,7 @@ class CatalogFunction():
             :param userName: the name of the user
             :return nameGraph: the name of the graph
         """
+
         dataHeart = self.ExtractData(data)
         nameGraph = self.SaveGraphSamsung(dataHeart)
 
@@ -62,6 +68,7 @@ class CatalogFunction():
             :param self: the current object
             :param dataHeart: the data
         """
+
         debut = 0
         fin = len(dataHeart)
         pas = int((fin-debut)/5)
@@ -78,10 +85,8 @@ class CatalogFunction():
         pl.xticks(pl.arange(len(axeX)), axeX)
         pl.plot(x, dataHeart)
         date = time.localtime()
-        date2 = str(date.tm_mday)+"-"+str(date.tm_mon)+"-"+str(date.tm_year)+'_'+str(date.tm_hour)+'-'+str(date.tm_min)+'-'+str(date.tm_sec)
+        date2 = str(date.tm_mday)+"-"+str(date.tm_mon)+"-"+str(date.tm_year)
         nomFichier = date2+"_Heart"+".png"
         pl.savefig(nomFichier)
-        pl.close()
 
         return nomFichier
-

@@ -7,7 +7,9 @@ import random
 import sys
 import time 
 
-def clientNetwork(imageViewer):
+
+
+def clientNetwork(imageViewerSamsung):
 
     dataStr = ""
     tabData = []
@@ -64,9 +66,8 @@ def clientNetwork(imageViewer):
     del service_matches
     dataStr = ""
 
-    imageViewer.data = tabData
-    imageViewer.actualizeGraphic()
-    
+    imageViewerSamsung.data = tabData
+
 def conversionChartoFloat(data): 
     tabData = []
     for str in data.replace(",", ".").split(" "):

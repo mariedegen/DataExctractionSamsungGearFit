@@ -45,7 +45,11 @@ class ImageViewer(QtWidgets.QMainWindow, interface.Ui_MainWindow):
         self.actionImport.triggered.connect(self.importData)
         self.emotionChoice.currentIndexChanged.connect(self.emotionChoiceIndex)
 
-    def actualizeGraphic(self):
+        my_queue = Queue()
+        thread2 = threading.Thread(target = self.actualizeGraphic, args = (self.data,))
+        thread2.start()
+
+    def actualizeGraphic(self, data):
         """
             To show the graphic with data 
             :param self: the object
@@ -95,11 +99,12 @@ class ImageViewer(QtWidgets.QMainWindow, interface.Ui_MainWindow):
             :param self: the current object
             :param q: the action triggered
         """
-        name = QFileDialog.getSaveFileName(self, 'Save File', ".json")
-
-        if(name[0] != ""):
-            self.functionGraph.WriteFileSamsung(name, self.data)
-            QMessageBox.about(self, "Data export", "Data exported !")
+        print ("Before writing (data:", self.data, ")")
+        self.functionGraph.WriteFileSamsung(self.data)
+        print("After writing")
+        
+        #to display a message
+        QMessageBox.about(self, "Data export", "Data exported !")
 
     def importData(self,q):
         """
@@ -109,12 +114,14 @@ class ImageViewer(QtWidgets.QMainWindow, interface.Ui_MainWindow):
         """
         
         fname = QFileDialog.getOpenFileName(self, 'Open file', '/home')
+        print(fname)
         if fname[0]:
+
             with open(fname[0], 'r') as fichier:
-                donnee = json.load(fichier)
-                
-        nameGraph = self.functionGraph.SaveGraphSamsung(donnee)
-        self.setGraphicPhoto(nameGraph)
+                data = json.load(fichier)
+
+        nameGraphic = self.functionGraph.GetGraphHeartSamsung(data)
+        self.setGraphicPhoto(nameGraphic)
 
     def closeIt(self, q):
         """
@@ -130,21 +137,19 @@ class ImageViewer(QtWidgets.QMainWindow, interface.Ui_MainWindow):
         """
         self.show()
 
-    def stop(self):
-        self.stopped = True
+
         
 
-#def mainInterface():
-"""
-   To run the samusung application
-"""
-app = QtWidgets.QApplication([])
-imageViewer = ImageViewer()
+def mainInterface():
+    """
+       To run the samusung application
+    """
+    app = QtWidgets.QApplication([])
+    imageViewer = ImageViewer()
 
-my_queue = Queue()
-thread1 = threading.Thread(target = client_network.clientNetwork, args = (imageViewer,))
-thread1.start()
-        
-imageViewer.main()
-sys.exit(app.exec_())
-
+    my_queue = Queue()
+    thread1 = threading.Thread(target = client_network.clientNetwork, args = (imageViewer,))
+    thread1.start()
+            
+    imageViewer.main()
+    sys.exit(app.exec_())
