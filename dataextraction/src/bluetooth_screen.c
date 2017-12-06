@@ -1,8 +1,7 @@
-/*
- * bluetooth_screen.c
- *
- *  Created on: Oct 18, 2017
- *      Author: Marie
+ /**
+ * \brief bluetooth_screen.c
+ * \author DEGEN Marie
+ * \date Oct 18, 2017
  */
 
 #include <server_network.h>
@@ -11,6 +10,10 @@
 #include "constants.h"
 #include "bluetooth.h"
 
+/**
+* @brief The function for the bluetooth sending data screen
+* @param data appdata structure is being given
+**/
 void bluetooth_screen(void *data){
 	appdata_s *ad = (appdata_s*)data;
 

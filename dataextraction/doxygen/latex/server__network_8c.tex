@@ -1,0 +1,155 @@
+\hypertarget{server__network_8c}{}\section{server\+\_\+network.\+c File Reference}
+\label{server__network_8c}\index{server\+\_\+network.\+c@{server\+\_\+network.\+c}}
+{\ttfamily \#include $<$system\+\_\+info.\+h$>$}\newline
+{\ttfamily \#include $<$bluetooth.\+h$>$}\newline
+{\ttfamily \#include $<$bluetooth\+\_\+type.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}dataextraction.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$dlog.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}constants.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}server\+\_\+network.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}exit\+\_\+screen.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{server__network_8c_a73fdcc51ef259d53e6843b158ba2646d}{check\+Bt\+Error} (int \hyperlink{server__network_8c_a11614f44ef4d939bdd984953346a7572}{error}, const char $\ast$function\+Name)
+\begin{DoxyCompactList}\small\item\em Check the different type of error you can have for a given function. \end{DoxyCompactList}\item 
+bool \hyperlink{server__network_8c_aecd09175ad4e93b8e232d2ea9a65b202}{initialize\+\_\+bluetooth} ()
+\begin{DoxyCompactList}\small\item\em initialize the bluetooth \end{DoxyCompactList}\item 
+bool \hyperlink{server__network_8c_a4d11fcf471ff8203434d07e9796e9e4a}{finalize\+\_\+bluetooth} ()
+\begin{DoxyCompactList}\small\item\em detinitialize the bluetooth \end{DoxyCompactList}\item 
+bool \hyperlink{server__network_8c_afc187e4f1d35973f13df913bd69430e9}{is\+\_\+enbaled} ()
+\begin{DoxyCompactList}\small\item\em Check wether the bluetooth of the device is activated or not. \end{DoxyCompactList}\item 
+\hyperlink{server__network_8h_a1dfcda4d0742bb4e7823fb169181e647}{bt\+\_\+server\+\_\+s} $\ast$ \hyperlink{server__network_8c_a6a7782ec26b7c4707478f9225025038f}{start\+\_\+bt\+\_\+server} (appdata\+\_\+s $\ast$ad)
+\begin{DoxyCompactList}\small\item\em Bluetooth server management \+: start the server. \end{DoxyCompactList}\item 
+void \hyperlink{server__network_8c_ad40e88590992658c663a45ca0b96224a}{stop\+\_\+bt\+\_\+server} (\hyperlink{server__network_8h_a1dfcda4d0742bb4e7823fb169181e647}{bt\+\_\+server\+\_\+s} $\ast$server)
+\begin{DoxyCompactList}\small\item\em Bluetooth server management \+: stop the server. \end{DoxyCompactList}\item 
+void \hyperlink{server__network_8c_a08dcb8242e195cf95c917fec85773284}{bt\+\_\+server\+\_\+new\+\_\+client\+\_\+connected} (int result, bt\+\_\+socket\+\_\+connection\+\_\+state\+\_\+e connection\+\_\+state, bt\+\_\+socket\+\_\+connection\+\_\+s $\ast$connection, void $\ast$user\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Let the client connecting to the server and then send the data to them. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{server__network_8c_a11614f44ef4d939bdd984953346a7572}{error}
+\begin{DoxyCompactList}\small\item\em \hyperlink{server__network_8c}{server\+\_\+network.\+c} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{server__network_8c_a08dcb8242e195cf95c917fec85773284}\label{server__network_8c_a08dcb8242e195cf95c917fec85773284}} 
+\index{server\+\_\+network.\+c@{server\+\_\+network.\+c}!bt\+\_\+server\+\_\+new\+\_\+client\+\_\+connected@{bt\+\_\+server\+\_\+new\+\_\+client\+\_\+connected}}
+\index{bt\+\_\+server\+\_\+new\+\_\+client\+\_\+connected@{bt\+\_\+server\+\_\+new\+\_\+client\+\_\+connected}!server\+\_\+network.\+c@{server\+\_\+network.\+c}}
+\subsubsection{\texorpdfstring{bt\+\_\+server\+\_\+new\+\_\+client\+\_\+connected()}{bt\_server\_new\_client\_connected()}}
+{\footnotesize\ttfamily void bt\+\_\+server\+\_\+new\+\_\+client\+\_\+connected (\begin{DoxyParamCaption}\item[{int}]{result,  }\item[{bt\+\_\+socket\+\_\+connection\+\_\+state\+\_\+e}]{connection\+\_\+state,  }\item[{bt\+\_\+socket\+\_\+connection\+\_\+s $\ast$}]{connection,  }\item[{void $\ast$}]{user\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+Let the client connecting to the server and then send the data to them. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & for the error code \\
+\hline
+{\em connection\+\_\+state} & \\
+\hline
+{\em connection} & \\
+\hline
+{\em user\+\_\+data} & here appdata is given as an argument \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{server__network_8c_a73fdcc51ef259d53e6843b158ba2646d}\label{server__network_8c_a73fdcc51ef259d53e6843b158ba2646d}} 
+\index{server\+\_\+network.\+c@{server\+\_\+network.\+c}!check\+Bt\+Error@{check\+Bt\+Error}}
+\index{check\+Bt\+Error@{check\+Bt\+Error}!server\+\_\+network.\+c@{server\+\_\+network.\+c}}
+\subsubsection{\texorpdfstring{check\+Bt\+Error()}{checkBtError()}}
+{\footnotesize\ttfamily bool check\+Bt\+Error (\begin{DoxyParamCaption}\item[{int}]{error,  }\item[{const char $\ast$}]{function\+Name }\end{DoxyParamCaption})}
+
+
+
+Check the different type of error you can have for a given function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & error \\
+\hline
+{\em function\+Name} & the function we are trying \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{server__network_8c_a4d11fcf471ff8203434d07e9796e9e4a}\label{server__network_8c_a4d11fcf471ff8203434d07e9796e9e4a}} 
+\index{server\+\_\+network.\+c@{server\+\_\+network.\+c}!finalize\+\_\+bluetooth@{finalize\+\_\+bluetooth}}
+\index{finalize\+\_\+bluetooth@{finalize\+\_\+bluetooth}!server\+\_\+network.\+c@{server\+\_\+network.\+c}}
+\subsubsection{\texorpdfstring{finalize\+\_\+bluetooth()}{finalize\_bluetooth()}}
+{\footnotesize\ttfamily bool finalize\+\_\+bluetooth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+detinitialize the bluetooth 
+
+\mbox{\Hypertarget{server__network_8c_aecd09175ad4e93b8e232d2ea9a65b202}\label{server__network_8c_aecd09175ad4e93b8e232d2ea9a65b202}} 
+\index{server\+\_\+network.\+c@{server\+\_\+network.\+c}!initialize\+\_\+bluetooth@{initialize\+\_\+bluetooth}}
+\index{initialize\+\_\+bluetooth@{initialize\+\_\+bluetooth}!server\+\_\+network.\+c@{server\+\_\+network.\+c}}
+\subsubsection{\texorpdfstring{initialize\+\_\+bluetooth()}{initialize\_bluetooth()}}
+{\footnotesize\ttfamily bool initialize\+\_\+bluetooth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+initialize the bluetooth 
+
+\mbox{\Hypertarget{server__network_8c_afc187e4f1d35973f13df913bd69430e9}\label{server__network_8c_afc187e4f1d35973f13df913bd69430e9}} 
+\index{server\+\_\+network.\+c@{server\+\_\+network.\+c}!is\+\_\+enbaled@{is\+\_\+enbaled}}
+\index{is\+\_\+enbaled@{is\+\_\+enbaled}!server\+\_\+network.\+c@{server\+\_\+network.\+c}}
+\subsubsection{\texorpdfstring{is\+\_\+enbaled()}{is\_enbaled()}}
+{\footnotesize\ttfamily bool is\+\_\+enbaled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check wether the bluetooth of the device is activated or not. 
+
+\begin{DoxyReturn}{Returns}
+true if the bluetooth is enable, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{server__network_8c_a6a7782ec26b7c4707478f9225025038f}\label{server__network_8c_a6a7782ec26b7c4707478f9225025038f}} 
+\index{server\+\_\+network.\+c@{server\+\_\+network.\+c}!start\+\_\+bt\+\_\+server@{start\+\_\+bt\+\_\+server}}
+\index{start\+\_\+bt\+\_\+server@{start\+\_\+bt\+\_\+server}!server\+\_\+network.\+c@{server\+\_\+network.\+c}}
+\subsubsection{\texorpdfstring{start\+\_\+bt\+\_\+server()}{start\_bt\_server()}}
+{\footnotesize\ttfamily \hyperlink{server__network_8h_a1dfcda4d0742bb4e7823fb169181e647}{bt\+\_\+server\+\_\+s}$\ast$ start\+\_\+bt\+\_\+server (\begin{DoxyParamCaption}\item[{appdata\+\_\+s $\ast$}]{ad }\end{DoxyParamCaption})}
+
+
+
+Bluetooth server management \+: start the server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em appdata} & structure \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{server__network_8c_ad40e88590992658c663a45ca0b96224a}\label{server__network_8c_ad40e88590992658c663a45ca0b96224a}} 
+\index{server\+\_\+network.\+c@{server\+\_\+network.\+c}!stop\+\_\+bt\+\_\+server@{stop\+\_\+bt\+\_\+server}}
+\index{stop\+\_\+bt\+\_\+server@{stop\+\_\+bt\+\_\+server}!server\+\_\+network.\+c@{server\+\_\+network.\+c}}
+\subsubsection{\texorpdfstring{stop\+\_\+bt\+\_\+server()}{stop\_bt\_server()}}
+{\footnotesize\ttfamily void stop\+\_\+bt\+\_\+server (\begin{DoxyParamCaption}\item[{\hyperlink{server__network_8h_a1dfcda4d0742bb4e7823fb169181e647}{bt\+\_\+server\+\_\+s} $\ast$}]{server }\end{DoxyParamCaption})}
+
+
+
+Bluetooth server management \+: stop the server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em server} & the bluetooth server to stop \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{server__network_8c_a11614f44ef4d939bdd984953346a7572}\label{server__network_8c_a11614f44ef4d939bdd984953346a7572}} 
+\index{server\+\_\+network.\+c@{server\+\_\+network.\+c}!error@{error}}
+\index{error@{error}!server\+\_\+network.\+c@{server\+\_\+network.\+c}}
+\subsubsection{\texorpdfstring{error}{error}}
+{\footnotesize\ttfamily int error}
+
+
+
+\hyperlink{server__network_8c}{server\+\_\+network.\+c} 
+
+\begin{DoxyAuthor}{Author}
+D\+E\+G\+EN Marie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Oct 21, 2017 
+\end{DoxyDate}

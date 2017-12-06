@@ -1,11 +1,16 @@
-/*
- * timer.c
- *
- *  Created on: Oct 17, 2017
- *      Author: Marie
+/**
+ * \brief timer.c
+ * \author DEGEN Marie
+ * \date Oct 17, 2017
  */
+
 #include "timer.h"
 
+/**
+* @brief Timer in order to know how much time it record the heart beat
+* @param start
+* @return time the time since it started recording
+**/
 char* timer_sensor(unsigned int start)
 {
 	unsigned int end = time(NULL);

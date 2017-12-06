@@ -1,0 +1,13 @@
+digraph "dataextraction" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_7e17ac9cf8fba2cb04bc248c85b0ceb7 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="GitHub" fontname="Helvetica", fontsize="10", URL="dir_7e17ac9cf8fba2cb04bc248c85b0ceb7.html"]
+  subgraph clusterdir_08711687396811bca22fdfc4db4e2ce0 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_08711687396811bca22fdfc4db4e2ce0.html"];
+    dir_08711687396811bca22fdfc4db4e2ce0 [shape=plaintext label="dataextraction"];
+    dir_0b324a45f127c629e5b76ab0f7789468 [shape=box label="dataextraction" color="red" fillcolor="white" style="filled" URL="dir_0b324a45f127c629e5b76ab0f7789468.html"];
+  }
+  }
+}

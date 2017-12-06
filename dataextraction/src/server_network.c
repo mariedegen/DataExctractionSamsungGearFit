@@ -1,3 +1,9 @@
+/**
+ * \brief server_network.c
+ * \author DEGEN Marie
+ * \date Oct 21, 2017
+ */
+
 #include <system_info.h>
 #include <bluetooth.h>
 #include <bluetooth_type.h>
@@ -7,6 +13,7 @@
 #include "server_network.h"
 #include "exit_screen.h"
 
+/* For the code error */
 int error;
 
 /**
@@ -136,7 +143,10 @@ bool is_enbaled()
 	}
 }
 
-/* Bluetooth server management. */
+/**
+* @brief Bluetooth server management : start the server
+* @param appdata structure
+**/
 bt_server_s* start_bt_server(appdata_s *ad)
 {
 	// Create a server and initializes it.
@@ -175,6 +185,10 @@ bt_server_s* start_bt_server(appdata_s *ad)
 	return ad->server;
 }
 
+/**
+* @brief Bluetooth server management : stop the server
+* @param server the bluetooth server to stop
+**/
 void stop_bt_server(bt_server_s* server)
 {
 	int error = -1;
@@ -196,6 +210,13 @@ void stop_bt_server(bt_server_s* server)
 	checkBtError(error, "bt_socket_destroy_rfcomm");
 }
 
+/**
+* @brief Let the client connecting to the server and then send the data to them
+* @param result for the error code
+* @param connection_state
+* @param connection
+* @param user_data here appdata is given as an argument
+**/
 void bt_server_new_client_connected(int result, bt_socket_connection_state_e connection_state, bt_socket_connection_s *connection, void *user_data)
 {
 	appdata_s *ad = (void*)user_data;
@@ -257,8 +278,6 @@ void bt_server_new_client_connected(int result, bt_socket_connection_state_e con
 				strcat(arrayOfFloatsAsStrings, tempBuffer);
 			}
 
-			writeFile(arrayOfFloatsAsStrings);
-
 			dlog_print(DLOG_INFO, "BluetoothServer", "Sent: '%s'", arrayOfFloatsAsStrings);
 
 			//Sending the tab
@@ -305,19 +324,5 @@ void bt_server_new_client_connected(int result, bt_socket_connection_state_e con
 		{
 			dlog_print(DLOG_INFO, LOG_TAG, "Callback: No connection data");
 		}
-	}
-}
-
-void writeFile(const char *data){
-	FILE * file = NULL;
-
-	file = fopen("C:\\Users\\Marie\\Documents\\GitHub\\dataextraction\\dataextraction\\result.txt", "w");
-
-	if(file != NULL){
-		fputs(data, file);
-		fclose(file);
-	}
-	else {
-		dlog_print(DLOG_ERROR, LOG_TAG, "Can't open the file");
 	}
 }

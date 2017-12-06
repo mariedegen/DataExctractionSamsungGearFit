@@ -1,0 +1,28 @@
+var structappdata =
+[
+    [ "box", "structappdata.html#af1800da6589f3b33b93f082cba17d237", null ],
+    [ "box_bluetooth", "structappdata.html#ab645fa09eb1fe55ae0bf9f610428bdf2", null ],
+    [ "box_end", "structappdata.html#af1dc6b9c0b61a43e5aaea2b2a0082fee", null ],
+    [ "box_heart", "structappdata.html#a5aa23697e10b007a027c313888bd57fd", null ],
+    [ "box_recording", "structappdata.html#a06d0f348c95d5f723772ff476cbafd74", null ],
+    [ "conform", "structappdata.html#a9eb99245082e7dba12cf177857df50e5", null ],
+    [ "end_button", "structappdata.html#ac3c28fcefab276778eac3441069f858f", null ],
+    [ "label", "structappdata.html#a5f1f5ff6ce783aacab18b6d31269b0c8", null ],
+    [ "label2", "structappdata.html#af7794870313b0119a1a7eb8e793f3356", null ],
+    [ "label3", "structappdata.html#ad7fe0efecdfaad722956a0d6543e03c0", null ],
+    [ "label4", "structappdata.html#a9aa087547583f42f2245d7e3f59a7eee", null ],
+    [ "label_bluetooth", "structappdata.html#a02943b4ddef11369f2c9d662e2f390d4", null ],
+    [ "label_end", "structappdata.html#a66dda86ae1327ec51b68b18e1c218b75", null ],
+    [ "label_heart", "structappdata.html#a44a58effb6c21de290549b3441bcb469", null ],
+    [ "listener", "structappdata.html#aa977dfb866b24fd7d9a20a9a01b2fd1f", null ],
+    [ "nf", "structappdata.html#aedeb1845dc6e9e538005fafa1be7129b", null ],
+    [ "progress_bar", "structappdata.html#ae388d7128b452226cc2d59bcc897baae", null ],
+    [ "sensor", "structappdata.html#a5bae9b7801bc3808411925cde81d3f26", null ],
+    [ "server", "structappdata.html#a006fc931907500c0ed40d920b050aec6", null ],
+    [ "start", "structappdata.html#a885b350339beb75f5940572b641aaa58", null ],
+    [ "start_button", "structappdata.html#a4795dd81dac76b7d382069f078b04f8c", null ],
+    [ "stop_button", "structappdata.html#a4c10a67fd7dc46d1ecda37a4a4ea0957", null ],
+    [ "tab_result", "structappdata.html#a0fabaff8dc45fd6a24f7d371f11a3c6b", null ],
+    [ "tab_result_counter", "structappdata.html#aa91889b8d2b34d5f2e55fa5b0b570b28", null ],
+    [ "win", "structappdata.html#a588367fdb1ab298a0018bea36186a29a", null ]
+];

@@ -1,8 +1,7 @@
-/*
- * start_button_screen.c
- *
- *  Created on: Oct 18, 2017
- *      Author: Marie
+/**
+ * \brief start_button_screen.c
+ * \author DEGEN Marie
+ * \date Oct 18, 2017
  */
 
 #include "recording.h"
@@ -10,6 +9,10 @@
 #include "constants.h"
 #include "start_button_screen.h"
 
+/**
+* @brief The function for the start button screen
+* @param data appdata structure is being given
+**/
 void start_button_screen(void *data){
 	appdata_s *ad = (appdata_s*)data;
 

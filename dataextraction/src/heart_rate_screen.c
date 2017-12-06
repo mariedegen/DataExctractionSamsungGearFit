@@ -1,8 +1,7 @@
-/*
- * heartrate.c
- *
- *  Created on: Oct 14, 2017
- *      Author: Marie
+/**
+ * \brief heart_rate_screen.c
+ * \author DEGEN Marie
+ * \date Oct 14, 2017
  */
 
 #include "recording.h"
@@ -10,6 +9,10 @@
 #include "constants.h"
 #include "heart_rate_screen.h"
 
+/**
+* @brief The function for the heart rate searching screen
+* @param data appdata structure is being given
+**/
 void heart_rate_waiting(void *data) {
 	appdata_s *ad = (appdata_s*)data;
 

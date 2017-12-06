@@ -1,7 +1,8 @@
- /**  Created on: Sep 25, 2017
- *      Author: Marie DEGEN
- **/
-
+/**
+ * \brief dataextraction.c
+ * \author DEGEN Marie
+ * \date Sep 25, 2017
+ */
 #include <app.h>
 #include <Elementary.h>
 #include <system_settings.h>

@@ -1,0 +1,14 @@
+digraph "clicked_recording_stop"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3 [label="clicked_recording_stop",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="start_bt_server",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$server__network_8h.html#a6a7782ec26b7c4707478f9225025038f",tooltip="Bluetooth server management : start the server. "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="checkBtError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$server__network_8c.html#a73fdcc51ef259d53e6843b158ba2646d",tooltip="Check the different type of error you can have for a given function. "];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="bt_server_new_client\l_connected",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$server__network_8c.html#a08dcb8242e195cf95c917fec85773284",tooltip="Let the client connecting to the server and then send the data to them. "];
+  Node6 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

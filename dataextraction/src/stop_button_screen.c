@@ -1,8 +1,7 @@
-/*
- * stop_button_screen.c
- *
- *  Created on: Oct 18, 2017
- *      Author: Marie
+/**
+ * \brief stop_button_screen.c
+ * \author DEGEN Marie
+ * \date Oct 18, 2017
  */
 
 #include "recording.h"
@@ -10,6 +9,10 @@
 #include "constants.h"
 #include "stop_button_screen.h"
 
+/**
+* @brief The function for the stop button screen, when the record need to be stopped
+* @param data appdata structure is being given
+**/
 void stop_button_screen(void *data){
 	appdata_s *ad = (appdata_s*)data;
 

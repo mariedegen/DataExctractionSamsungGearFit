@@ -1,10 +1,8 @@
-/*
- * constants.h
- *
- *  Created on: Oct 14, 2017
- *      Author: Marie
+/**
+ * \brief constants.h
+ * \author DEGEN Marie
+ * \date Oct 14, 2017
  */
-
 #ifndef CONSTANTS_H_
 #define CONSTANTS_H_
 

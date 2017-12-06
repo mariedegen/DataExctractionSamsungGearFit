@@ -22,6 +22,7 @@ sensor_type_e type = SENSOR_HRM;
 int error;
 
 /**
+ * @brief Sensor event, if the heartbeat is higher than 40bpm than the next screen is displayed
  * @param sensor, the sensor
  * @param *event, a pointer on the sensor event
  * @param *user_data, a pointer on the user_data
@@ -49,7 +50,12 @@ void on_sensor_event(sensor_h sensor, sensor_event_s *event, void *user_data)
    }
 }
 
-
+/**
+ * @brief Sensor event for the start button, start to record the data
+ * @param sensor, the sensor
+ * @param *event, a pointer on the sensor event
+ * @param *user_data, a pointer on the user_data
+ */
 void on_sensor_event_2(sensor_h sensor, sensor_event_s *event, void *user_data)
 {
 	appdata_s *ad = (appdata_s*)user_data;
@@ -85,6 +91,10 @@ void on_sensor_event_2(sensor_h sensor, sensor_event_s *event, void *user_data)
 	}
 }
 
+/**
+ * @brief Create the sensor listener for the recording
+ * @param *user_data, a pointer on the user_data
+ */
 void create_HRM_listener(void *data) {
 	appdata_s *ad = (appdata_s*)data;
 	bool supported;
@@ -140,11 +150,12 @@ void create_HRM_listener(void *data) {
     }
 }
 
-/*
- * Callback for the clicked signal
- * Called when the button is clicked by the user
+/**
+ * @brief Callback for the clicked signal, Called when the button is clicked by the user
+ * @param *data, a pointer on the user_data
+ * @param *obj, the object
+ * @param *event, a pointer on the sensor event
  */
-
 void clicked_recording_start(void *data, Evas_Object *obj, void *event_info) {
 	appdata_s *ad = (appdata_s*)data;
 
@@ -167,6 +178,12 @@ void clicked_recording_start(void *data, Evas_Object *obj, void *event_info) {
 	elm_naviframe_item_pop(ad->nf);
 }
 
+/**
+ * @brief Callback for the clicked signal, Called when the button is clicked by the user
+ * @param *data, a pointer on the user_data
+ * @param *obj, the object
+ * @param *event, a pointer on the sensor event
+ */
 void clicked_recording_stop(void *data, Evas_Object *obj, void *event_info) {
 	appdata_s *ad = (appdata_s*)data;
 

@@ -1,0 +1,147 @@
+\hypertarget{recording_8c}{}\section{recording.\+c File Reference}
+\label{recording_8c}\index{recording.\+c@{recording.\+c}}
+{\ttfamily \#include $<$sensor.\+h$>$}\newline
+{\ttfamily \#include $<$dlog.\+h$>$}\newline
+{\ttfamily \#include $<$server\+\_\+network.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}recording.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dataextraction.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}timer.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{recording_8c_a70fc5e13b87cce8b0868ce5ebac0e8d9}{on\+\_\+sensor\+\_\+event} (sensor\+\_\+h sensor, sensor\+\_\+event\+\_\+s $\ast$event, void $\ast$user\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Sensor event, if the heartbeat is higher than 40bpm than the next screen is displayed. \end{DoxyCompactList}\item 
+void \hyperlink{recording_8c_ad9be7460b06552e8044b7639ff5601d6}{on\+\_\+sensor\+\_\+event\+\_\+2} (sensor\+\_\+h sensor, sensor\+\_\+event\+\_\+s $\ast$event, void $\ast$user\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Sensor event for the start button, start to record the data. \end{DoxyCompactList}\item 
+void \hyperlink{recording_8c_ac854bbdac52b6535742d6b6188edeee6}{create\+\_\+\+H\+R\+M\+\_\+listener} (void $\ast$data)
+\begin{DoxyCompactList}\small\item\em Create the sensor listener for the recording. \end{DoxyCompactList}\item 
+void \hyperlink{recording_8c_a1f1a144f59e67c6399913d7d51a8131f}{clicked\+\_\+recording\+\_\+start} (void $\ast$data, Evas\+\_\+\+Object $\ast$obj, void $\ast$event\+\_\+info)
+\begin{DoxyCompactList}\small\item\em Callback for the clicked signal, Called when the button is clicked by the user. \end{DoxyCompactList}\item 
+void \hyperlink{recording_8c_a54403f1c890b32bac66a685913e1cfe5}{clicked\+\_\+recording\+\_\+stop} (void $\ast$data, Evas\+\_\+\+Object $\ast$obj, void $\ast$event\+\_\+info)
+\begin{DoxyCompactList}\small\item\em Callback for the clicked signal, Called when the button is clicked by the user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+sensor\+\_\+type\+\_\+e \hyperlink{recording_8c_abffb09766da2fc510a79bb51f82a36e1}{type} = S\+E\+N\+S\+O\+R\+\_\+\+H\+RM
+\begin{DoxyCompactList}\small\item\em Sensor part, and recording of the heart rate. \end{DoxyCompactList}\item 
+int \hyperlink{recording_8c_a11614f44ef4d939bdd984953346a7572}{error}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{recording_8c_a1f1a144f59e67c6399913d7d51a8131f}\label{recording_8c_a1f1a144f59e67c6399913d7d51a8131f}} 
+\index{recording.\+c@{recording.\+c}!clicked\+\_\+recording\+\_\+start@{clicked\+\_\+recording\+\_\+start}}
+\index{clicked\+\_\+recording\+\_\+start@{clicked\+\_\+recording\+\_\+start}!recording.\+c@{recording.\+c}}
+\subsubsection{\texorpdfstring{clicked\+\_\+recording\+\_\+start()}{clicked\_recording\_start()}}
+{\footnotesize\ttfamily void clicked\+\_\+recording\+\_\+start (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{Evas\+\_\+\+Object $\ast$}]{obj,  }\item[{void $\ast$}]{event\+\_\+info }\end{DoxyParamCaption})}
+
+
+
+Callback for the clicked signal, Called when the button is clicked by the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$data,a} & pointer on the user\+\_\+data \\
+\hline
+{\em $\ast$obj,the} & object \\
+\hline
+{\em $\ast$event,a} & pointer on the sensor event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{recording_8c_a54403f1c890b32bac66a685913e1cfe5}\label{recording_8c_a54403f1c890b32bac66a685913e1cfe5}} 
+\index{recording.\+c@{recording.\+c}!clicked\+\_\+recording\+\_\+stop@{clicked\+\_\+recording\+\_\+stop}}
+\index{clicked\+\_\+recording\+\_\+stop@{clicked\+\_\+recording\+\_\+stop}!recording.\+c@{recording.\+c}}
+\subsubsection{\texorpdfstring{clicked\+\_\+recording\+\_\+stop()}{clicked\_recording\_stop()}}
+{\footnotesize\ttfamily void clicked\+\_\+recording\+\_\+stop (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{Evas\+\_\+\+Object $\ast$}]{obj,  }\item[{void $\ast$}]{event\+\_\+info }\end{DoxyParamCaption})}
+
+
+
+Callback for the clicked signal, Called when the button is clicked by the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$data,a} & pointer on the user\+\_\+data \\
+\hline
+{\em $\ast$obj,the} & object \\
+\hline
+{\em $\ast$event,a} & pointer on the sensor event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{recording_8c_ac854bbdac52b6535742d6b6188edeee6}\label{recording_8c_ac854bbdac52b6535742d6b6188edeee6}} 
+\index{recording.\+c@{recording.\+c}!create\+\_\+\+H\+R\+M\+\_\+listener@{create\+\_\+\+H\+R\+M\+\_\+listener}}
+\index{create\+\_\+\+H\+R\+M\+\_\+listener@{create\+\_\+\+H\+R\+M\+\_\+listener}!recording.\+c@{recording.\+c}}
+\subsubsection{\texorpdfstring{create\+\_\+\+H\+R\+M\+\_\+listener()}{create\_HRM\_listener()}}
+{\footnotesize\ttfamily void create\+\_\+\+H\+R\+M\+\_\+listener (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Create the sensor listener for the recording. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$user\+\_\+data,a} & pointer on the user\+\_\+data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{recording_8c_a70fc5e13b87cce8b0868ce5ebac0e8d9}\label{recording_8c_a70fc5e13b87cce8b0868ce5ebac0e8d9}} 
+\index{recording.\+c@{recording.\+c}!on\+\_\+sensor\+\_\+event@{on\+\_\+sensor\+\_\+event}}
+\index{on\+\_\+sensor\+\_\+event@{on\+\_\+sensor\+\_\+event}!recording.\+c@{recording.\+c}}
+\subsubsection{\texorpdfstring{on\+\_\+sensor\+\_\+event()}{on\_sensor\_event()}}
+{\footnotesize\ttfamily void on\+\_\+sensor\+\_\+event (\begin{DoxyParamCaption}\item[{sensor\+\_\+h}]{sensor,  }\item[{sensor\+\_\+event\+\_\+s $\ast$}]{event,  }\item[{void $\ast$}]{user\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+Sensor event, if the heartbeat is higher than 40bpm than the next screen is displayed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensor,the} & sensor \\
+\hline
+{\em $\ast$event,a} & pointer on the sensor event \\
+\hline
+{\em $\ast$user\+\_\+data,a} & pointer on the user\+\_\+data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{recording_8c_ad9be7460b06552e8044b7639ff5601d6}\label{recording_8c_ad9be7460b06552e8044b7639ff5601d6}} 
+\index{recording.\+c@{recording.\+c}!on\+\_\+sensor\+\_\+event\+\_\+2@{on\+\_\+sensor\+\_\+event\+\_\+2}}
+\index{on\+\_\+sensor\+\_\+event\+\_\+2@{on\+\_\+sensor\+\_\+event\+\_\+2}!recording.\+c@{recording.\+c}}
+\subsubsection{\texorpdfstring{on\+\_\+sensor\+\_\+event\+\_\+2()}{on\_sensor\_event\_2()}}
+{\footnotesize\ttfamily void on\+\_\+sensor\+\_\+event\+\_\+2 (\begin{DoxyParamCaption}\item[{sensor\+\_\+h}]{sensor,  }\item[{sensor\+\_\+event\+\_\+s $\ast$}]{event,  }\item[{void $\ast$}]{user\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+Sensor event for the start button, start to record the data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensor,the} & sensor \\
+\hline
+{\em $\ast$event,a} & pointer on the sensor event \\
+\hline
+{\em $\ast$user\+\_\+data,a} & pointer on the user\+\_\+data \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{recording_8c_a11614f44ef4d939bdd984953346a7572}\label{recording_8c_a11614f44ef4d939bdd984953346a7572}} 
+\index{recording.\+c@{recording.\+c}!error@{error}}
+\index{error@{error}!recording.\+c@{recording.\+c}}
+\subsubsection{\texorpdfstring{error}{error}}
+{\footnotesize\ttfamily int error}
+
+The error that is print in the log \mbox{\Hypertarget{recording_8c_abffb09766da2fc510a79bb51f82a36e1}\label{recording_8c_abffb09766da2fc510a79bb51f82a36e1}} 
+\index{recording.\+c@{recording.\+c}!type@{type}}
+\index{type@{type}!recording.\+c@{recording.\+c}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily sensor\+\_\+type\+\_\+e type = S\+E\+N\+S\+O\+R\+\_\+\+H\+RM}
+
+
+
+Sensor part, and recording of the heart rate. 
+
+\begin{DoxyAuthor}{Author}
+D\+E\+G\+EN Marie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Oct 2, 2017 The type of the sensor used 
+\end{DoxyDate}

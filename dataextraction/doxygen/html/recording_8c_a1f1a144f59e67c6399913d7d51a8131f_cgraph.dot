@@ -1,0 +1,11 @@
+digraph "clicked_recording_start"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="clicked_recording_start",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="on_sensor_event_2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$recording_8c.html#ad9be7460b06552e8044b7639ff5601d6",tooltip="Sensor event for the start button, start to record the data. "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="timer_sensor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$timer_8h.html#a8612bea9e2113066f70eb2117dc2cf63",tooltip="timer.h "];
+}

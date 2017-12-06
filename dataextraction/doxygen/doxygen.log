@@ -1,0 +1,57 @@
+warning: source ..\main.c is not a readable file or directory... skipping.
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:154: warning: argument 'a' of command @param is not found in the argument list of clicked_recording_start(void *data, Evas_Object *obj, void *event_info)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:154: warning: argument 'the' of command @param is not found in the argument list of clicked_recording_start(void *data, Evas_Object *obj, void *event_info)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:154: warning: argument 'event' of command @param is not found in the argument list of clicked_recording_start(void *data, Evas_Object *obj, void *event_info)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:154: warning: argument 'a' of command @param is not found in the argument list of clicked_recording_start(void *data, Evas_Object *obj, void *event_info)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:159: warning: The following parameters of clicked_recording_start(void *data, Evas_Object *obj, void *event_info) are not documented:
+  parameter 'event_info'
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:182: warning: argument 'a' of command @param is not found in the argument list of clicked_recording_stop(void *data, Evas_Object *obj, void *event_info)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:182: warning: argument 'the' of command @param is not found in the argument list of clicked_recording_stop(void *data, Evas_Object *obj, void *event_info)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:182: warning: argument 'event' of command @param is not found in the argument list of clicked_recording_stop(void *data, Evas_Object *obj, void *event_info)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:182: warning: argument 'a' of command @param is not found in the argument list of clicked_recording_stop(void *data, Evas_Object *obj, void *event_info)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:187: warning: The following parameters of clicked_recording_stop(void *data, Evas_Object *obj, void *event_info) are not documented:
+  parameter 'event_info'
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:95: warning: argument 'user_data' of command @param is not found in the argument list of create_HRM_listener(void *data)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:95: warning: argument 'a' of command @param is not found in the argument list of create_HRM_listener(void *data)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:98: warning: The following parameters of create_HRM_listener(void *data) are not documented:
+  parameter 'data'
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:25: warning: argument 'the' of command @param is not found in the argument list of on_sensor_event(sensor_h sensor, sensor_event_s *event, void *user_data)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:25: warning: argument 'a' of command @param is not found in the argument list of on_sensor_event(sensor_h sensor, sensor_event_s *event, void *user_data)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:25: warning: argument 'a' of command @param is not found in the argument list of on_sensor_event(sensor_h sensor, sensor_event_s *event, void *user_data)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:54: warning: argument 'the' of command @param is not found in the argument list of on_sensor_event_2(sensor_h sensor, sensor_event_s *event, void *user_data)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:54: warning: argument 'a' of command @param is not found in the argument list of on_sensor_event_2(sensor_h sensor, sensor_event_s *event, void *user_data)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:54: warning: argument 'a' of command @param is not found in the argument list of on_sensor_event_2(sensor_h sensor, sensor_event_s *event, void *user_data)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:154: warning: argument 'a' of command @param is not found in the argument list of clicked_recording_start(void *data, Evas_Object *obj, void *event_info)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:154: warning: argument 'the' of command @param is not found in the argument list of clicked_recording_start(void *data, Evas_Object *obj, void *event_info)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:154: warning: argument 'event' of command @param is not found in the argument list of clicked_recording_start(void *data, Evas_Object *obj, void *event_info)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:154: warning: argument 'a' of command @param is not found in the argument list of clicked_recording_start(void *data, Evas_Object *obj, void *event_info)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/inc/recording.h:27: warning: The following parameters of clicked_recording_start(void *data, Evas_Object *obj, void *event_info) are not documented:
+  parameter 'event_info'
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:182: warning: argument 'a' of command @param is not found in the argument list of clicked_recording_stop(void *data, Evas_Object *obj, void *event_info)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:182: warning: argument 'the' of command @param is not found in the argument list of clicked_recording_stop(void *data, Evas_Object *obj, void *event_info)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:182: warning: argument 'event' of command @param is not found in the argument list of clicked_recording_stop(void *data, Evas_Object *obj, void *event_info)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:182: warning: argument 'a' of command @param is not found in the argument list of clicked_recording_stop(void *data, Evas_Object *obj, void *event_info)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/inc/recording.h:30: warning: The following parameters of clicked_recording_stop(void *data, Evas_Object *obj, void *event_info) are not documented:
+  parameter 'event_info'
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:95: warning: argument 'user_data' of command @param is not found in the argument list of create_HRM_listener(void *data)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:95: warning: argument 'a' of command @param is not found in the argument list of create_HRM_listener(void *data)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/inc/recording.h:24: warning: The following parameters of create_HRM_listener(void *data) are not documented:
+  parameter 'data'
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:25: warning: argument 'the' of command @param is not found in the argument list of on_sensor_event(sensor_h sensor, sensor_event_s *event, void *user_data)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:25: warning: argument 'a' of command @param is not found in the argument list of on_sensor_event(sensor_h sensor, sensor_event_s *event, void *user_data)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:25: warning: argument 'a' of command @param is not found in the argument list of on_sensor_event(sensor_h sensor, sensor_event_s *event, void *user_data)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:54: warning: argument 'the' of command @param is not found in the argument list of on_sensor_event_2(sensor_h sensor, sensor_event_s *event, void *user_data)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:54: warning: argument 'a' of command @param is not found in the argument list of on_sensor_event_2(sensor_h sensor, sensor_event_s *event, void *user_data)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/recording.c:54: warning: argument 'a' of command @param is not found in the argument list of on_sensor_event_2(sensor_h sensor, sensor_event_s *event, void *user_data)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/server_network.c:20: warning: argument 'int' of command @param is not found in the argument list of checkBtError(int error, const char *functionName)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/server_network.c:24: warning: The following parameters of checkBtError(int error, const char *functionName) are not documented:
+  parameter 'error'
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/server_network.c:147: warning: argument 'appdata' of command @param is not found in the argument list of start_bt_server(appdata_s *ad)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/server_network.c:150: warning: The following parameters of start_bt_server(appdata_s *ad) are not documented:
+  parameter 'ad'
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/server_network.c:20: warning: argument 'int' of command @param is not found in the argument list of checkBtError(int error, const char *functionName)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/inc/server_network.h:31: warning: The following parameters of checkBtError(int error, const char *functionName) are not documented:
+  parameter 'error'
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/src/server_network.c:147: warning: argument 'appdata' of command @param is not found in the argument list of start_bt_server(appdata_s *ad)
+C:/Users/Marie/Documents/GitHub/dataextraction/dataextraction/inc/server_network.h:43: warning: The following parameters of start_bt_server(appdata_s *ad) are not documented:
+  parameter 'ad'
