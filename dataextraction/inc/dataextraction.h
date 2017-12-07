@@ -57,6 +57,8 @@ struct appdata {
 	Evas_Object *conform;
 	Evas_Object *nf;
 
+	//Exit Button
+	Evas_Object *exit_button;
 
 	//Data
 	float *tab_result;

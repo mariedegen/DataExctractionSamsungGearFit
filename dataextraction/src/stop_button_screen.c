@@ -8,6 +8,7 @@
 #include "dataextraction.h"
 #include "constants.h"
 #include "stop_button_screen.h"
+#include "exit_screen.h"
 
 /**
 * @brief The function for the stop button screen, when the record need to be stopped
@@ -67,6 +68,15 @@ void stop_button_screen(void *data){
 	evas_object_show(ad->stop_button);
 	elm_box_pack_end(ad->box_recording, ad->stop_button);
 
+	//Exit button
+	ad->exit_button = elm_button_add(ad->box_recording);
+
+	//Set the button's style
+	elm_object_style_set(ad->exit_button, "bottom");
+	elm_object_text_set(ad->exit_button, EXIT_BUTTON);
+	evas_object_show(ad->exit_button);
+	elm_box_pack_end(ad->box_recording, ad->exit_button);
+
 	//Push this window into the naviframe
 	elm_naviframe_item_push(ad->nf, style_header(HEART_RECORDING), NULL, NULL, ad->box_recording, NULL);
 
@@ -75,4 +85,7 @@ void stop_button_screen(void *data){
 
 	//clicked_button function callback when click on the button
 	evas_object_smart_callback_add(ad->stop_button, "clicked", clicked_recording_stop, (void*)ad);
+
+	//clicked_button function callback when click on the exit button
+	evas_object_smart_callback_add(ad->exit_button, "clicked", clicked_end_app, (void*)ad);
 }
