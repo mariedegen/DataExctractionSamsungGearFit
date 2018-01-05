@@ -10,6 +10,7 @@
     <privileges>
         <privilege>http://tizen.org/privilege/healthinfo</privilege>
         <privilege>http://tizen.org/privilege/bluetooth</privilege>
+        <privilege>http://tizen.org/privilege/power</privilege>
     </privileges>
     <feature name="http://tizen.org/feature/network.bluetooth.le">true</feature>
     <feature name="http://tizen.org/feature/network.bluetooth">true</feature>

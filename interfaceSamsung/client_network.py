@@ -17,9 +17,6 @@ def clientNetwork(imageViewerSamsung):
     uuid="00001101-0000-1000-8000-00805F9B34FB" 
     finish = True
     end = 'END'
-
-    tabData = ["0","1","9","3","0"]
-    time.sleep(2)
     
     while finish:
         print ("Searching ...")

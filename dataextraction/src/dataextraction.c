@@ -18,6 +18,7 @@
 #include "constants.h"
 #include "server_network.h"
 #include "exit_screen.h"
+#include <device/power.h>
 
 
 static void win_delete_request_cb(void *data, Evas_Object *obj, void *event_info)
@@ -119,11 +120,14 @@ static void app_pause(void *data)
 {
 	/* Take necessary actions when application becomes invisible. */
 //	elm_exit();
+	//device_power_request_lock(POWER_LOCK_DISPLAY, 0);
+	device_power_wakeup(true);
 }
 
 static void app_resume(void *data)
 {
 	/* Take necessary actions when application becomes visible. */
+
 }
 
 static void app_terminate(void *data)
