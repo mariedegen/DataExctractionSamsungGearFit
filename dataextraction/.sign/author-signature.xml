@@ -10,14 +10,6 @@
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>eyYKjAt6AvuaiEU4rfHTNKh+o4uVGWPRo3ViQjfzO5U=</DigestValue>
 </Reference>
-<Reference URI="shared%2Fres%2Flogo.png">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>6zN7jAdveVwkJt2uyxYeWz2s7zMVO2PaCm+KtRwlC3k=</DigestValue>
-</Reference>
-<Reference URI="shared%2Fres%2Flogoblanc.png">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>2s0LnsYpN8fxf/QbtCG33rhp3CBEQyl9rKx2xHV9BPI=</DigestValue>
-</Reference>
 <Reference URI="tizen-manifest.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>ZvWrHoxLqLJJKt+hadpZllGlDrf3/ZJl/RXV2XIhxm0=</DigestValue>
@@ -31,11 +23,11 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-dQEN77w204us9iuOUlKc42sQne99LgInJ0mxbUZHD7nT/KJfdqlRlEelDNCq9eQYAPjWMj1l2txZ
-fcYgEwx9SbaMkQ4l53uoiU/Fau8h6DWcn8saG9ErBCZEruOIIVb6eX+FrpHKAH3L+X5AvQDBM3vB
-cNOwbe8UBedsDdvutoh5KjIQAflWpG/Joxq85+fKrDKrun418uGrODPZT1XeUeUcnzVddyDBntxk
-ERBUF/C4CFT4NPcALyNlLGKzkNZJWMEQSx43UnYH/0sduxw1MTKttnLdVbfcC40xIRVcjWwOVyFV
-ZzkM8pG8t89emIxSgEQoqhm/7isv5fJNU3ADtA==
+gSY3YkoNq9W7zxS++Mgiwqv/ewghG928jmB3QgjlLrcSW3/rabl3vx7o+IiOyqBlbxgB8XHKLPDT
+A1iOCUsVybhchDC4dVD/A1fKlwbU2TiPvrnJ+78ii1qv93pT5zj1D27mgckm5IbjGFbuQM/REmxB
+IsMWo2EaR3kwt/PssnSpZCy1SPb7Bhfo2Kk1d+SqVlH9lqZaywhWjeUoS/KiHHLlwd74auZLjPnR
+qupYMBRgJHXSZlazV4erkr+Cq/wm7/h3BEdLgjviWRHWjRQc/sPIb4qC7kuuSXTuGkQFJcDqH2VW
+bzSVnpZ0+dBc6atFPBIEY+oKQv6dHRYUKVM5IA==
 </SignatureValue>
 <KeyInfo>
 <X509Data>

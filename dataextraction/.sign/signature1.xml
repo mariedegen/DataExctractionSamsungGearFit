@@ -4,7 +4,7 @@
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>xjtdZeg6tb7Nw1fwX+O3XXhUrlLdjQVwS74ES3k74nk=</DigestValue>
+<DigestValue>wOsNwLSq7HOdJgkP1zyWP+lnNEeJflDAigHxiQeIlXM=</DigestValue>
 </Reference>
 <Reference URI="bin%2Fdataextraction">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -13,14 +13,6 @@
 <Reference URI="shared%2Fres%2Fheart.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>eyYKjAt6AvuaiEU4rfHTNKh+o4uVGWPRo3ViQjfzO5U=</DigestValue>
-</Reference>
-<Reference URI="shared%2Fres%2Flogo.png">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>6zN7jAdveVwkJt2uyxYeWz2s7zMVO2PaCm+KtRwlC3k=</DigestValue>
-</Reference>
-<Reference URI="shared%2Fres%2Flogoblanc.png">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>2s0LnsYpN8fxf/QbtCG33rhp3CBEQyl9rKx2xHV9BPI=</DigestValue>
 </Reference>
 <Reference URI="tizen-manifest.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -35,11 +27,11 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-o0CJ1Ic1xk1+bTBb09zpT3jqCBpsIc280sPC3dhfCitCNNSwZk0mfcsKTkk/Z7dl+9sZILtmXA6/
-eH/nSMOzhywO6y39NveFb6podAy3UZIxmudlp/TDdPTIi8F8stdCHndrYtuDI8QpRlj2RewuYzHK
-4ETVfDmKGiSezem3+c+ptF7bWNUzSeJgXQ3Q0j1jL6Hn4URj6R3Wr2WBz3SQUF+/gjqCxe6a7Rut
-4tJA/VURkJxxVf98TREypzOxIuefL6Ntr+JQ+lZj7060uIkZeNHggpgAp6cYJAP0DrgTyWkCALGr
-aGN1zXaW1XQTmMNQ6wnvbnRKDG6f6XNe1sevYg==
+N8ThCjKffGBNyGB5kckOBEzW9dLvXxUQskx5nUWBboCpioTQywVOCay0e23bF15WzPwKobGVh8Fl
+v+jG0npcoBpgRDaTpY2CqlQ6J+AxnraSN5KKnd/gSR3MJnLx3TBgVShjeodQUI6z3YKLqtgoW+I7
+QO7SeOXL6PCJfki0O0HI2Qb+lBTr9e0gAVfY1LCTRPEK7SLqcFlaIvoagS19d4Q2SIwevqHl74QB
+t62MXHS5+D5wq5PEi2IF/9g2khS3l6TiTLVnWyKaAck8OSC6nqIEcUsIOxRQdPCNtmPpDwp/lrW8
+3eGuOiwMSqswGeEXybTbfniXA6g0HMyV8RamWA==
 </SignatureValue>
 <KeyInfo>
 <X509Data>
