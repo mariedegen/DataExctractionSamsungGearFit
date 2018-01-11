@@ -1,10 +1,8 @@
-/*
- * SERVER_NETWORK.h
- *
- *  Created on: Oct 21, 2017
- *      Author: Marie
+/**
+ * \brief server_network.h
+ * \author DEGEN Marie
+ * \date Oct 21, 2017
  */
-
 #include <bluetooth.h>
 #include "dataextraction.h"
 
@@ -29,9 +27,16 @@ struct bt_server
 };
 typedef struct bt_server bt_server_s;
 
+/* Check every type of error the bluetooth can have */
 bool checkBtError(int error, const char* functionName);
+
+/* Initialize the Bluetooth */
 bool initialize_bluetooth();
+
+/* Finalize the bluetooth */
 bool finalize_bluetooth();
+
+/* Check wether the bluetooth is enabled or not */
 bool is_enbaled();
 
 /* Starts a bluetooth server and returns a pointer to it. */
@@ -42,7 +47,5 @@ void stop_bt_server(bt_server_s* server);
 
 /* Function called when a new client connects to the server. */
 void bt_server_new_client_connected(int result, bt_socket_connection_state_e connection_state, bt_socket_connection_s *connection, void *user_data);
-
-void writeFile(const char *data);
 
 #endif /* SERVER_NETWORK_H_ */

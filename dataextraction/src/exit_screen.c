@@ -1,8 +1,7 @@
-/*
- * exit_screen.c
- *
- *  Created on: Nov 4, 2017
- *      Author: Marie
+/**
+ * \brief exit_screen.c
+ * \author DEGEN Marie
+ * \date Nov 4, 2017
  */
 
 #include "recording.h"
@@ -16,11 +15,18 @@
 #include "heart_rate_screen.h"
 #include "exit_screen.h"
 
+/**
+* @brief Callback function when you click on the "OK" button
+**/
 void clicked_end_app()
 {
 	elm_exit();
 }
 
+/**
+* @brief The function for the exit screen
+* @param data appdata structure is being given
+**/
 void end_choice(void *data)
 {
 	appdata_s *ad = (appdata_s*)data;

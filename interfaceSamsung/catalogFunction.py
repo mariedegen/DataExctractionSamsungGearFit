@@ -23,12 +23,7 @@ class CatalogFunction():
             :param userName: the name of the user
         """
         dataHeart = self.ExtractData(data)
-
-        #date = time.localtime()
-        #date2 = str(date.tm_mday)+"-"+str(date.tm_mon)+"-"+str(date.tm_year)
-        fileName = QFileDialog.getSaveFileName(None,'Save the file')
-        #nomFichier = "Heart"+"_"+date2+".json"
-        
+        fileName = QFileDialog.getSaveFileName(None,'Save the file', ".json")
         print(fileName)
         if fileName[0]:      
             with open(fileName[0], 'w') as f:

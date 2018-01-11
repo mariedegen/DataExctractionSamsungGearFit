@@ -1,0 +1,22 @@
+digraph "main"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node8 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="app_create",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dataextraction_8c.html#ab630f40e2dff7ba0bc0200223e4efb0b"];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="initialize_bluetooth",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$server__network_8h.html#aecd09175ad4e93b8e232d2ea9a65b202",tooltip="initialize the bluetooth "];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="checkBtError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$server__network_8c.html#a73fdcc51ef259d53e6843b158ba2646d",tooltip="Check the different type of error you can have for a given function. "];
+  Node9 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="is_enbaled",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$server__network_8h.html#afc187e4f1d35973f13df913bd69430e9",tooltip="Check wether the bluetooth of the device is activated or not. "];
+  Node12 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="create_base_gui",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dataextraction_8c.html#a36215890466511210b5d7e1a178ac709"];
+  Node9 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="create_HRM_listener",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$recording_8c.html#ac854bbdac52b6535742d6b6188edeee6",tooltip="Create the sensor listener for the recording. "];
+  Node14 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="on_sensor_event",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$recording_8c.html#a70fc5e13b87cce8b0868ce5ebac0e8d9",tooltip="Sensor event, if the heartbeat is higher than 40bpm than the next screen is displayed. "];
+}

@@ -1,0 +1,9 @@
+digraph "is_enbaled"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node7 [label="is_enbaled",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="checkBtError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$server__network_8c.html#a73fdcc51ef259d53e6843b158ba2646d",tooltip="Check the different type of error you can have for a given function. "];
+}

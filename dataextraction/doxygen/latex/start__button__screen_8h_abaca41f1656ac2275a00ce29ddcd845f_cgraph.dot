@@ -1,0 +1,13 @@
+digraph "start_button_screen"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="start_button_screen",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 [label="clicked_recording_start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$recording_8c.html#a1f1a144f59e67c6399913d7d51a8131f",tooltip="Callback for the clicked signal, Called when the button is clicked by the user. "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="on_sensor_event_2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$recording_8c.html#ad9be7460b06552e8044b7639ff5601d6",tooltip="Sensor event for the start button, start to record the data. "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="timer_sensor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$timer_8h.html#a8612bea9e2113066f70eb2117dc2cf63",tooltip="timer.h "];
+}

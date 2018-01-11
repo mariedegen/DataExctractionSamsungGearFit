@@ -1,10 +1,8 @@
-/*
- * timer.h
- *
- *  Created on: Oct 17, 2017
- *      Author: Marie
+/**
+ * \brief timer.h
+ * \author DEGEN Marie
+ * \date Oct 17, 2017
  */
-
 #ifndef TIMER_H_
 #define TIMER_H_
 
@@ -13,6 +11,7 @@
 #include <time.h>
 #include <stdio.h>
 
+/* Timer function */
 char* timer_sensor(unsigned int start);
 
 

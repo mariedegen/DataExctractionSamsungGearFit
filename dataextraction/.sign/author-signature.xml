@@ -4,23 +4,15 @@
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
 <Reference URI="bin%2Fdataextraction">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>XiSr3b8Rdw1uA0uKMlWkPNBA7tcFgsHdL4xZbBC8GN8=</DigestValue>
+<DigestValue>ipn8FsAJHIYvqOensXHuQLRROc5HgLSNHBm/PxMp6wk=</DigestValue>
 </Reference>
 <Reference URI="shared%2Fres%2Fheart.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>eyYKjAt6AvuaiEU4rfHTNKh+o4uVGWPRo3ViQjfzO5U=</DigestValue>
 </Reference>
-<Reference URI="shared%2Fres%2Flogo.png">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>6zN7jAdveVwkJt2uyxYeWz2s7zMVO2PaCm+KtRwlC3k=</DigestValue>
-</Reference>
-<Reference URI="shared%2Fres%2Flogoblanc.png">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>2s0LnsYpN8fxf/QbtCG33rhp3CBEQyl9rKx2xHV9BPI=</DigestValue>
-</Reference>
 <Reference URI="tizen-manifest.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>3MyA4JwlevbSyse8pYFHlZ08GN+ocJGg0HEMCaofzgw=</DigestValue>
+<DigestValue>ZvWrHoxLqLJJKt+hadpZllGlDrf3/ZJl/RXV2XIhxm0=</DigestValue>
 </Reference>
 <Reference URI="#prop">
 <Transforms>
@@ -31,11 +23,11 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-FU5z/zu8AP4IPrg26Avds/BEhg/+CMq2XDHypvbVU1xsVDhtKEBUSocMPKSwxmeMFRrwIuJ13Ra/
-jmXTGK7l8eOBNQl0/DrRQ6HsgORkJ/Kx3zp+k43gWEHv475pRqGUR+IMZQ2MRfzMxZ8Z79EyZ+kc
-1arVrobkCtjbe3dZTdLpszcURwgLWOsLdUnyEHuvmOiFKrwpSRjXvgI7jMWRIFs7eJ/W3JPySiXI
-OASigmyuAwoC3iCFRjVX1JgEkHDCAdyC1NjrZqEItGmgb9e3iW+XYGGKSg0UCf2kVlCKPCcW01Yz
-yOby2PuH/V2PCWxP+KhSjX+B+b/6OvLV1O2nfw==
+gSY3YkoNq9W7zxS++Mgiwqv/ewghG928jmB3QgjlLrcSW3/rabl3vx7o+IiOyqBlbxgB8XHKLPDT
+A1iOCUsVybhchDC4dVD/A1fKlwbU2TiPvrnJ+78ii1qv93pT5zj1D27mgckm5IbjGFbuQM/REmxB
+IsMWo2EaR3kwt/PssnSpZCy1SPb7Bhfo2Kk1d+SqVlH9lqZaywhWjeUoS/KiHHLlwd74auZLjPnR
+qupYMBRgJHXSZlazV4erkr+Cq/wm7/h3BEdLgjviWRHWjRQc/sPIb4qC7kuuSXTuGkQFJcDqH2VW
+bzSVnpZ0+dBc6atFPBIEY+oKQv6dHRYUKVM5IA==
 </SignatureValue>
 <KeyInfo>
 <X509Data>

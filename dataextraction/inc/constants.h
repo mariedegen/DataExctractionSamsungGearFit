@@ -1,10 +1,8 @@
-/*
- * constants.h
- *
- *  Created on: Oct 14, 2017
- *      Author: Marie
+/**
+ * \brief constants.h
+ * \author DEGEN Marie
+ * \date Oct 14, 2017
  */
-
 #ifndef CONSTANTS_H_
 #define CONSTANTS_H_
 
@@ -22,6 +20,7 @@
 #define STOP_BUTTON_TIMER "00:00"
 #define STOP_BUTTON_RECORDING "Recording..."
 #define STOP_BUTTON "STOP"
+#define EXIT_BUTTON "EXIT"
 #define START_BUTTON_LABEL "Press the start button to begin the heart rate recording."
 #define START_BUTTON "START"
 #define END_SCREEN_MESSAGE "It's done. Thanks."
