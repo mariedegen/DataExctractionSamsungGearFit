@@ -119,9 +119,6 @@ static void app_control(app_control_h app_control, void *data)
 static void app_pause(void *data)
 {
 	/* Take necessary actions when application becomes invisible. */
-//	elm_exit();
-	//device_power_request_lock(POWER_LOCK_DISPLAY, 0);
-	device_power_wakeup(true);
 }
 
 static void app_resume(void *data)
